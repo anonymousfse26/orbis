@@ -9,7 +9,7 @@ from scope import __version__
 setup(
     name='scope',
     version=__version__,
-    description='scope: Maximizing the Power of Symbolic Execution by Adaptively Tuning External Parameters',
+    description='SCOPE: Enhancing Symbolic Execution through Optimized Option-Related Branch Exploration',
     # long_description=LONG_DESCRIPTION,
     python_version='>=3.6',
     packages=find_packages(include=('scope', 'scope.*')),
