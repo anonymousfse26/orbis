@@ -135,7 +135,8 @@ def main(argv=None):
     if os.path.exists(f"{str(os.getcwd())}/../data/option_depths/{args.program}.json"):
         with open(f"{str(os.getcwd())}/../data/option_depths/{args.program}.json", 'r') as json_depth:
             option_depths = json.load(json_depth)
-
+    print(f'[INFO] SCOPE : All configuration loaded. Start testing.')
+    
     while elapsed <= args.budget:
         explore_flag = rd.random()
         budget = time.time() - start
