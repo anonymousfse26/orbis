@@ -17,7 +17,7 @@ setup(
     setup_requires=[],
     install_requires=[
         'numpy',
-        'tree-sitter',
+        'tree-sitter<=0.21.3',
         'clang',
         'scikit-learn',
     ],
