@@ -27,7 +27,7 @@ Third, connect to Docker using the command below. The command will take you to a
 ### Run SCOPE
 Finally, you can run SCOPE with the following code. (e.g. grep-3.4).
 ```bash
-/scope/benchmarks $ scope -p grep -t 100 --init-budget=30 -d SCOPE_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
+/scope/benchmarks $ scope -p grep -t 36000 -d SCOPE_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
 ```
 Format : scope -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)> <path_to_exec_file(gcov)>
 + -p : Target Program
@@ -44,19 +44,10 @@ Then, you will see logs as follows.
 
 When the time budget expires without error, you can see the following output.
 ```bash
-[INFO] SCOPE : Iteration: 264 Iteration budget: 120 Total budget: 36000 Time Elapsed: 35344 Coverage: 3389 
-[INFO] SCOPE : Iteration: 265 Iteration budget: 120 Total budget: 36000 Time Elapsed: 35510 Coverage: 3389 
-[INFO] SCOPE : Iteration: 266 Iteration budget: 120 Total budget: 36000 Time Elapsed: 35717 Coverage: 3389 
 [INFO] SCOPE : Iteration: 267 Iteration budget: 120 Total budget: 36000 Time Elapsed: 35886 Coverage: 3389 
 [INFO] SCOPE : Iteration: 268 Iteration budget: 114 Total budget: 36000 Time Elapsed: 36060 Coverage: 3389 
-[INFO] SCOPE : Testing done. Achieve 3389 coverage.
 [INFO] SCOPE : Covered 250 option related branches.
-```
-
-### Run KLEE Default
-You can also run KLEE without any tuning by following the command below.
-```bash
-/scope/benchmarks $ scope -t 36000 -d KLEEdefault --tool klee grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
+[INFO] SCOPE : Testing done. Achieve 3389 coverage.
 ```
 
 
@@ -67,9 +58,6 @@ If you want to get results about how many branches SCOPE has covered, run the fo
 /scope/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST 
 ```
 
-If the command is executed successfully, you will get a graph like the following in a file named "coverage_result.png".
-
-<img src="https://github.com/unknownfse25/parasuit/assets/150991397/525cf702-e7e5-4152-84fb-6c19661db64b" width=30%, height=30%/>
 
 And if you want to compare multiple results in a graph, just list the directory names as: 
 ```bash
@@ -151,9 +139,9 @@ usage: report_bugs.py [-h] [--benchmark STR] [--table PATH] [DIRS ...]
 | Option | Description |
 |:------:|:------------|
 | `-h, --help`  | Show this help message and exit |
-| `DIRS`        | Name of directory to detect bugs |
 | `--benchmark` | Name of benchmark & verison |
 | `--table`     | Path to save bug table graph |
+| `DIRS`        | Name of directory to detect bugs |
 
 
 ### /benchmarks/report_coverage.py
@@ -164,10 +152,10 @@ usage: report_coverage.py [-h] [--benchmark STR] [--graph PATH] [--budget TIME] 
 | Option | Description |
 |:------:|:------------|
 | `-h, --help`  | Show help message and exit |
-| `DIRS`        | Names of directories to draw figure |
 | `--benchmark` | Name of benchmark & verison |
 | `--graph`     | Path to save coverage graph |
 | `--budget`    | Time budget of the coverage graph |
+| `DIRS`        | Names of directories to draw figure |
 
 
 ## Source Code Structure
