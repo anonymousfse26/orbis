@@ -1,0 +1,656 @@
+{
+    "-abort_on": [
+        39
+    ],
+    "-abstract_file": [
+        55
+    ],
+    "-acl": [
+        25
+    ],
+    "-add": [
+        26
+    ],
+    "-add_plainly": [
+        50
+    ],
+    "-alter_date_r": [
+        57
+    ],
+    "-append_partition": [
+        67
+    ],
+    "-application_id": [
+        60
+    ],
+    "-application_use": [
+        64
+    ],
+    "-as": [
+        26
+    ],
+    "-assert_volid": [
+        56
+    ],
+    "-auto_charset": [
+        55
+    ],
+    "-backslash_codes": [
+        49
+    ],
+    "-ban_stdio_write": [
+        50
+    ],
+    "-biblio_file": [
+        39
+    ],
+    "-blank": [
+        20
+    ],
+    "-boot_image": [
+        37
+    ],
+    "-calm_drive": [
+        39
+    ],
+    "-cdi": [
+        19
+    ],
+    "-cdx": [
+        20
+    ],
+    "-changes_pending": [
+        56
+    ],
+    "-charset": [
+        33
+    ],
+    "-check_md5": [
+        39
+    ],
+    "-check_md5_r": [
+        45
+    ],
+    "-check_media": [
+        46
+    ],
+    "-check_media_defaults": [
+        73
+    ],
+    "-chgrpi": [
+        31
+    ],
+    "-chgrp_ri": [
+        38
+    ],
+    "-chmodi": [
+        32
+    ],
+    "-chmod_ri": [
+        39
+    ],
+    "-chown_ri": [
+        40
+    ],
+    "-chowni": [
+        33
+    ],
+    "-clone": [
+        23
+    ],
+    "-close": [
+        22
+    ],
+    "-close_damaged": [
+        47
+    ],
+    "-close_filter_list": [
+        58
+    ],
+    "-commit": [
+        26
+    ],
+    "-commit_eject": [
+        44
+    ],
+    "-compare": [
+        31
+    ],
+    "-compare_l": [
+        38
+    ],
+    "-compare_r": [
+        37
+    ],
+    "-compliance": [
+        39
+    ],
+    "-concat": [
+        28
+    ],
+    "-copyright_file": [
+        51
+    ],
+    "-cp_clone": [
+        37
+    ],
+    "-cp_rax": [
+        32
+    ],
+    "-cpri": [
+        26
+    ],
+    "-cpax": [
+        27
+    ],
+    "-cut_out": [
+        33
+    ],
+    "-data_cache_size": [
+        58
+    ],
+    "-dev": [
+        17
+    ],
+    "-device_links": [
+        0
+    ],
+    "-devices": [
+        0
+    ],
+    "-dialog": [
+        27
+    ],
+    "-disk_dev_ino": [
+        46
+    ],
+    "-displacement": [
+        47
+    ],
+    "-disk_pattern": [
+        47
+    ],
+    "-drive_access": [
+        46
+    ],
+    "-drive_class": [
+        44
+    ],
+    "-dusi": [
+        25
+    ],
+    "-dummy": [
+        26
+    ],
+    "-dvd_obs": [
+        33
+    ],
+    "-dusx": [
+        26
+    ],
+    "-early_stdio_test": [
+        58
+    ],
+    "-ecma119_map": [
+        44
+    ],
+    "-eject": [
+        27
+    ],
+    "-end": [
+        18
+    ],
+    "-errfile_log": [
+        46
+    ],
+    "-error_behavior": [
+        56
+    ],
+    "-external_filter": [
+        60
+    ],
+    "-extract": [
+        35
+    ],
+    "-extract_cut": [
+        48
+    ],
+    "-extract_l": [
+        43
+    ],
+    "-extract_single": [
+        56
+    ],
+    "-file_name_limit": [
+        56
+    ],
+    "-file_size_limit": [
+        57
+    ],
+    "-findi": [
+        27
+    ],
+    "-findx": [
+        29
+    ],
+    "-follow": [
+        29
+    ],
+    "-for_backup": [
+        40
+    ],
+    "-format": [
+        29
+    ],
+    "-fs": [
+        18
+    ],
+    "-getfacli": [
+        43
+    ],
+    "-getfacl_ri": [
+        50
+    ],
+    "-getfattri": [
+        47
+    ],
+    "-getfattr_ri": [
+        54
+    ],
+    "-gid": [
+        26
+    ],
+    "-grow_blindly": [
+        54
+    ],
+    "-hardlinks": [
+        31
+    ],
+    "-hfsplus": [
+        26
+    ],
+    "-help": [
+        15
+    ],
+    "-hide": [
+        19
+    ],
+    "-history": [
+        27
+    ],
+    "-indev": [
+        32
+    ],
+    "-in_charset": [
+        48
+    ],
+    "-iso_nowtime": [
+        49
+    ],
+    "-iso_rr_pattern": [
+        59
+    ],
+    "-jigdo": [
+        34
+    ],
+    "-joliet": [
+        36
+    ],
+    "-launch_frontend": [
+        53
+    ],
+    "-list_arg_sorting": [
+        54
+    ],
+    "-list_delimiter": [
+        47
+    ],
+    "-list_extras": [
+        42
+    ],
+    "-list_formats": [
+        43
+    ],
+    "-list_profiles": [
+        49
+    ],
+    "-list_speeds": [
+        41
+    ],
+    "-lnsi": [
+        19
+    ],
+    "-load": [
+        19
+    ],
+    "-local_charset": [
+        45
+    ],
+    "-logfile": [
+        29
+    ],
+    "-lsli": [
+        22
+    ],
+    "-lsdli": [
+        27
+    ],
+    "-lsdlx": [
+        28
+    ],
+    "-lslx": [
+        23
+    ],
+    "-map": [
+        29
+    ],
+    "-map_l": [
+        36
+    ],
+    "-map_single": [
+        50
+    ],
+    "-mark": [
+        31
+    ],
+    "-md5": [
+        29
+    ],
+    "-mkdiri": [
+        42
+    ],
+    "-modesty_on_drive": [
+        70
+    ],
+    "-mount_cmd": [
+        49
+    ],
+    "-mount_opts": [
+        51
+    ],
+    "-move": [
+        35
+    ],
+    "-msg_op": [
+        40
+    ],
+    "-mvi": [
+        32
+    ],
+    "-named_pipe_loop": [
+        -57
+    ],
+    "-no_rc": [
+        26
+    ],
+    "-not_leaf": [
+        36
+    ],
+    "-not_list": [
+        37
+    ],
+    "-not_mgt": [
+        34
+    ],
+    "-not_paths": [
+        41
+    ],
+    "-options_from_file": [
+        71
+    ],
+    "-osirrox": [
+        42
+    ],
+    "-outdev": [
+        40
+    ],
+    "-out_charset": [
+        56
+    ],
+    "-overwrite": [
+        50
+    ],
+    "-pacifier": [
+        29
+    ],
+    "-padding": [
+        27
+    ],
+    "-page": [
+        20
+    ],
+    "-paste_in": [
+        33
+    ],
+    "-path-list": [
+        33
+    ],
+    "-pathspecs": [
+        35
+    ],
+    "-pkt_output": [
+        36
+    ],
+    "-preparer_id": [
+        37
+    ],
+    "-print": [
+        18
+    ],
+    "-print_info": [
+        34
+    ],
+    "-print_mark": [
+        35
+    ],
+    "-print_size": [
+        33
+    ],
+    "-prompt": [
+        0
+    ],
+    "-prog": [
+        14
+    ],
+    "-publisher": [
+        34
+    ],
+    "-pvd_info": [
+        27
+    ],
+    "-pwdi": [
+        16
+    ],
+    "-pwdx": [
+        17
+    ],
+    "-quoted_not_list": [
+        66
+    ],
+    "-quoted_path_list": [
+        70
+    ],
+    "-read_fs": [
+        34
+    ],
+    "-read_mkisofsrc": [
+        54
+    ],
+    "-read_speed": [
+        44
+    ],
+    "-reassure": [
+        37
+    ],
+    "-report_about": [
+        49
+    ],
+    "-report_el_torito": [
+        62
+    ],
+    "-report_system_area": [
+        69
+    ],
+    "-return_with": [
+        47
+    ],
+    "-rmi": [
+        24
+    ],
+    "-rm_ri": [
+        31
+    ],
+    "-rmdiri": [
+        35
+    ],
+    "-rockridge": [
+        41
+    ],
+    "-rollback": [
+        37
+    ],
+    "-rollback_end": [
+        49
+    ],
+    "-rom_toc_scan": [
+        51
+    ],
+    "-rr_reloc_dir": [
+        50
+    ],
+    "-scdbackup_tag": [
+        62
+    ],
+    "-scsi_dev_family": [
+        67
+    ],
+    "-scsi_log": [
+        47
+    ],
+    "-session_log": [
+        56
+    ],
+    "-session_string": [
+        66
+    ],
+    "-setfacli": [
+        48
+    ],
+    "-setfacl_listi": [
+        64
+    ],
+    "-setfacl_ri": [
+        56
+    ],
+    "-setfattri": [
+        52
+    ],
+    "-setfattr_listi": [
+        68
+    ],
+    "-setfattr_ri": [
+        60
+    ],
+    "-set_filter_r": [
+        61
+    ],
+    "-show_stream_r": [
+        64
+    ],
+    "-sh_style_result": [
+        69
+    ],
+    "-signal_handling": [
+        70
+    ],
+    "-sleep": [
+        41
+    ],
+    "-speed": [
+        42
+    ],
+    "-split_size": [
+        58
+    ],
+    "-status": [
+        46
+    ],
+    "-status_history_max": [
+        82
+    ],
+    "-stdio_sync": [
+        59
+    ],
+    "-stream_recording": [
+        78
+    ],
+    "-system_id": [
+        56
+    ],
+    "-tell_media_space": [
+        61
+    ],
+    "-temp_mem_limit": [
+        56
+    ],
+    "-sleep_peek": [
+        51
+    ],
+    "-toc": [
+        23
+    ],
+    "-toc_of": [
+        32
+    ],
+    "-uid": [
+        32
+    ],
+    "-unregister_filter": [
+        75
+    ],
+    "-update": [
+        44
+    ],
+    "-update_lx": [
+        55
+    ],
+    "-update_li": [
+        54
+    ],
+    "-update_lxi": [
+        58
+    ],
+    "-update_r": [
+        50
+    ],
+    "-use_immed_bit": [
+        64
+    ],
+    "-use_readline": [
+        62
+    ],
+    "-version": [
+        35
+    ],
+    "-volset_id": [
+        43
+    ],
+    "-volid": [
+        30
+    ],
+    "-volume_date": [
+        50
+    ],
+    "-write_type": [
+        54
+    ],
+    "-x": [
+        28
+    ],
+    "-xattr": [
+        40
+    ],
+    "-zisofs": [
+        44
+    ]
+}

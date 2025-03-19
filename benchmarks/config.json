@@ -1,0 +1,76 @@
+{
+    "xorriso" : {
+        "version": "xorriso-1.5.2",
+        "src_dir": "xorriso"
+    },
+
+    "sqlite3" : {
+        "version": "sqlite-autoconf-3330000",
+        "src_dir": ""
+    },
+
+    "gawk" : {
+        "version": "gawk-3.0.3",
+        "src_dir": ""
+    },
+
+    "gcal" : {
+        "version": "gcal-4.1",
+        "src_dir": "src"
+    },
+
+    "objdump" : {
+        "version": "binutils-2.36",
+        "src_dir": "binutils"
+    },
+
+    "find" : {
+        "version": "findutils-4.7.0",
+        "src_dir": "find"
+    },
+
+    "grep" : {
+        "version": "grep-3.4",
+        "src_dir": "src"
+    },
+
+    "diff" : {
+        "version": "diffutils-3.7",
+        "src_dir": "src"
+    },
+
+    "make" : {
+        "version": "make-4.3",
+        "src_dir": "src"
+    },
+
+    "du" : {
+        "version": "coreutils-8.32",
+        "src_dir": "src"
+    },
+
+    "patch" : {
+        "version": "patch-2.7.6",
+        "src_dir": "src"
+    },
+
+    "objcopy" : {
+        "version": "binutils-2.36",
+        "src_dir": "binutils"
+    },
+
+    "ptx" : {
+        "version": "coreutils-8.32",
+        "src_dir": "src"
+    },
+
+    "csplit" : {
+        "version": "coreutils-8.32",
+        "src_dir": "src"
+    },
+
+    "ls" : {
+        "version": "coreutils-8.32",
+        "src_dir": "src"
+    }
+}

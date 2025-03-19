@@ -1,0 +1,503 @@
+{
+  "options": {
+    "always-make": [
+      "-B",
+      "'B'",
+      "always_make_set"
+    ],
+    "directory": [
+      "-C",
+      "directories",
+      "'C'"
+    ],
+    "debug": [
+      "db_flags"
+    ],
+    "environment-overrides": [
+      "'e'",
+      "env_overrides",
+      "-e"
+    ],
+    "eval": [
+      "'E'",
+      "BATCH_MODE_ONLY_SHELL",
+      "-E",
+      "eval_strings"
+    ],
+    "file": [
+      "makefiles",
+      "'f'",
+      "-f",
+      "--makefile"
+    ],
+    "help": [
+      "-h",
+      "'h'",
+      "print_usage_flag"
+    ],
+    "ignore-errors": [
+      "-i",
+      "'i'",
+      "ignore_errors_flag"
+    ],
+    "include-dir": [
+      "-I",
+      "include_directories",
+      "'I'"
+    ],
+    "jobs": [
+      "positive_int",
+      "'j'",
+      "default_job_slots",
+      "-j",
+      "inf_jobs",
+      "arg_job_slots"
+    ],
+    "keep-going": [
+      "-k",
+      "'k'"
+    ],
+    "load-average": [
+      "floating",
+      "-l",
+      "max_load_average",
+      "'l'",
+      "--max-load"
+    ],
+    "check-symlink-times": [
+      "check_symlink_flag",
+      "'L'",
+      "-L"
+    ],
+    "just-print": [
+      "-n",
+      "--dry-run",
+      "--recon",
+      "just_print_flag",
+      "'n'"
+    ],
+    "old-file": [
+      "-o",
+      "'o'",
+      "old_files",
+      "--assume-old"
+    ],
+    "output-sync": [
+      "-O",
+      "output_sync_option",
+      "string",
+      "'O'"
+    ],
+    "print-data-base": [
+      "'p'",
+      "print_data_base_flag",
+      "-p"
+    ],
+    "question": [
+      "'q'",
+      "question_flag",
+      "-q"
+    ],
+    "no-builtin-rules": [
+      "-r",
+      "'r'",
+      "no_builtin_rules_flag"
+    ],
+    "no-builtin-variables": [
+      "-R",
+      "'R'",
+      "no_builtin_variables_flag"
+    ],
+    "silent": [
+      "--quiet",
+      "-s",
+      "'s'"
+    ],
+    "no-silent": [],
+    "no-keep-going": [
+      "-S",
+      "'S'",
+      "--stop"
+    ],
+    "touch": [
+      "-t",
+      "'t'",
+      "touch_flag"
+    ],
+    "trace": [
+      "trace_flag"
+    ],
+    "version": [
+      "-v",
+      "'v'",
+      "print_version_flag"
+    ],
+    "print-directory": [
+      "'w'",
+      "-w",
+      "print_directory_flag"
+    ],
+    "no-print-directory": [
+      "-w",
+      "inhibit_print_directory_flag"
+    ],
+    "what-if": [
+      "'W'",
+      "-W",
+      "--assume-new",
+      "--new-file",
+      "new_files"
+    ],
+    "warn-undefined-variables": [
+      "warn_undefined_variables_flag"
+    ]
+  },
+  "total_br": {
+    "always-make": [],
+    "directory": [
+      "output.c 96",
+      "main.c 1743",
+      "main.c 1702",
+      "main.c 2382",
+      "main.c 1746",
+      "output.c 132",
+      "output.c 570",
+      "output.c 107",
+      "main.c 1726",
+      "output.c 95",
+      "output.c 112",
+      "main.c 1694",
+      "output.c 94",
+      "main.c 1707",
+      "output.c 101",
+      "output.c 634",
+      "output.c 137",
+      "main.c 1691",
+      "output.c 106",
+      "main.c 1748",
+      "output.c 133",
+      "main.c 2392",
+      "main.c 2385",
+      "main.c 2387",
+      "output.c 602"
+    ],
+    "debug": [
+      "getopt.c 999",
+      "job.c 1233",
+      "main.c 743",
+      "main.c 758",
+      "main.c 734",
+      "variable.c 291",
+      "main.c 737",
+      "rule.c 292",
+      "main.c 729",
+      "main.c 727",
+      "main.c 746",
+      "main.c 749",
+      "main.c 723",
+      "variable.c 290",
+      "getopt1.c 141",
+      "variable.c 295",
+      "main.c 764",
+      "getopt.c 995",
+      "function.c 1147",
+      "main.c 752",
+      "main.c 757",
+      "main.c 740",
+      "variable.c 285",
+      "getopt1.c 145",
+      "main.c 731",
+      "main.c 722"
+    ],
+    "environment-overrides": [
+      "job.c 2898",
+      "variable.c 346",
+      "vms_progname.c 361",
+      "function.c 1140",
+      "main.c 79",
+      "getopt.c 1003",
+      "variable.c 340",
+      "variable.c 241",
+      "vms_progname.c 432",
+      "getopt1.c 149",
+      "variable.c 246",
+      "vms_progname.c 423"
+    ],
+    "eval": [
+      "main.c 3303",
+      "job.c 2898",
+      "vms_progname.c 361",
+      "main.c 1916",
+      "function.c 1140",
+      "variable.c 1731",
+      "main.c 79",
+      "vms_progname.c 432",
+      "variable.c 1721",
+      "main.c 1931",
+      "variable.c 1033",
+      "variable.c 1652",
+      "function.c 490",
+      "main.c 1922",
+      "vms_progname.c 423"
+    ],
+    "file": [
+      "read.c 218",
+      "main.c 1820",
+      "main.c 1824",
+      "main.c 2357",
+      "main.c 1818",
+      "main.c 1770",
+      "main.c 2352",
+      "main.c 2356",
+      "read.c 219",
+      "main.c 1807",
+      "main.c 1766",
+      "main.c 2359",
+      "read.c 223",
+      "main.c 1779",
+      "main.c 1794",
+      "main.c 1811",
+      "main.c 1769"
+    ],
+    "help": [
+      "main.c 3002"
+    ],
+    "ignore-errors": [
+      "remake.c 851",
+      "job.c 990",
+      "remake.c 190",
+      "remake.c 193",
+      "main.c 737",
+      "file.c 1076",
+      "job.c 980",
+      "job.c 970",
+      "job.c 998",
+      "job.c 985",
+      "job.c 1013",
+      "job.c 1027",
+      "main.c 2597",
+      "main.c 2266",
+      "function.c 1147",
+      "remake.c 165",
+      "job.c 1033",
+      "remake.c 161",
+      "remake.c 181",
+      "job.c 1000",
+      "job.c 976"
+    ],
+    "include-dir": [
+      "read.c 385",
+      "read.c 390"
+    ],
+    "jobs": [
+      "main.c 2944",
+      "main.c 1602",
+      "main.c 2664",
+      "main.c 1599",
+      "main.c 3172",
+      "main.c 1998",
+      "main.c 1482",
+      "main.c 3175",
+      "main.c 2946",
+      "main.c 2950",
+      "main.c 1995",
+      "main.c 2938",
+      "main.c 1615",
+      "main.c 3179",
+      "main.c 2002",
+      "main.c 3173",
+      "main.c 2941",
+      "main.c 2959",
+      "main.c 2953",
+      "main.c 2055",
+      "main.c 2962",
+      "main.c 740"
+    ],
+    "keep-going": [
+      "remote-cstms.c 208"
+    ],
+    "load-average": [
+      "main.c 3192",
+      "main.c 2977",
+      "main.c 3199",
+      "main.c 2666",
+      "job.c 2032",
+      "remake.c 1349",
+      "remake.c 1330",
+      "main.c 2978",
+      "main.c 2665",
+      "remake.c 1337",
+      "main.c 2668",
+      "main.c 3193",
+      "main.c 2670",
+      "main.c 2982",
+      "remote-cstms.c 116",
+      "remake.c 1363",
+      "remake.c 1352",
+      "main.c 3195"
+    ],
+    "check-symlink-times": [
+      "remake.c 1557",
+      "remake.c 1578",
+      "remake.c 1567",
+      "remake.c 1539",
+      "remake.c 1547",
+      "remake.c 1562",
+      "remake.c 1528",
+      "remake.c 1550",
+      "main.c 2107",
+      "remake.c 1580"
+    ],
+    "just-print": [
+      "vmsjobs.c 350",
+      "remake.c 934",
+      "job.c 1233",
+      "remake.c 190",
+      "job.c 1343",
+      "remake.c 940",
+      "job.c 1384",
+      "job.c 3466",
+      "remake.c 696",
+      "remake.c 1151",
+      "main.c 746",
+      "file.c 375",
+      "remake.c 933",
+      "file.c 401",
+      "file.c 396",
+      "job.c 3474",
+      "job.c 3502",
+      "remake.c 931",
+      "main.c 2521",
+      "commands.c 649",
+      "job.c 3492"
+    ],
+    "old-file": [
+      "main.c 2152",
+      "main.c 2149"
+    ],
+    "output-sync": [
+      "read.c 2350",
+      "read.c 2385",
+      "main.c 3213",
+      "read.c 2393",
+      "read.c 2399",
+      "remote-cstms.c 208",
+      "read.c 2356",
+      "read.c 2389",
+      "main.c 786",
+      "main.c 3216",
+      "main.c 790",
+      "read.c 2346",
+      "main.c 2882",
+      "main.c 2661",
+      "main.c 3212",
+      "main.c 788",
+      "main.c 784",
+      "main.c 782",
+      "read.c 2342",
+      "main.c 2907",
+      "read.c 2502"
+    ],
+    "print-data-base": [
+      "output.c 126",
+      "main.c 2347",
+      "main.c 3474"
+    ],
+    "question": [
+      "job.c 941",
+      "remake.c 933",
+      "file.c 372",
+      "remake.c 934",
+      "remake.c 218",
+      "remake.c 931",
+      "remake.c 696",
+      "remake.c 190",
+      "vms_exit.c 86",
+      "remake.c 940"
+    ],
+    "no-builtin-rules": [
+      "default.c 728",
+      "main.c 2022",
+      "default.c 686",
+      "default.c 678",
+      "main.c 2024",
+      "default.c 703",
+      "file.c 998"
+    ],
+    "no-builtin-variables": [
+      "default.c 743",
+      "main.c 1734",
+      "main.c 2033"
+    ],
+    "silent": [],
+    "no-silent": [],
+    "no-keep-going": [],
+    "touch": [
+      "remake.c 933",
+      "vmsjobs.c 350",
+      "file.c 372",
+      "remake.c 934",
+      "job.c 1233",
+      "remake.c 892",
+      "remake.c 893",
+      "remake.c 931",
+      "job.c 1297",
+      "remake.c 878",
+      "remake.c 899",
+      "remake.c 902",
+      "main.c 746",
+      "remake.c 1232",
+      "remake.c 940",
+      "remake.c 887"
+    ],
+    "trace": [
+      "job.c 1891",
+      "job.c 1343",
+      "job.c 1900",
+      "job.c 1886"
+    ],
+    "version": [
+      "main.c 3460",
+      "main.c 2799",
+      "main.c 749",
+      "main.c 1527"
+    ],
+    "print-directory": [
+      "function.c 1143",
+      "output.c 520",
+      "output.c 378",
+      "output.c 370"
+    ],
+    "no-print-directory": [
+      "main.c 1730"
+    ],
+    "what-if": [
+      "getopt.c 853",
+      "main.c 2512",
+      "getopt.c 831",
+      "getopt.c 850",
+      "getopt.c 815",
+      "getopt.c 785",
+      "main.c 2165",
+      "getopt.c 887",
+      "getopt.c 843",
+      "getopt.c 821",
+      "getopt.c 870",
+      "main.c 2509",
+      "getopt.c 801",
+      "getopt.c 820",
+      "getopt.c 857",
+      "getopt.c 861",
+      "getopt.c 794",
+      "main.c 2162",
+      "getopt.c 823",
+      "getopt.c 841",
+      "getopt.c 774",
+      "getopt.c 876",
+      "getopt.c 872",
+      "getopt.c 792",
+      "getopt.c 885"
+    ],
+    "warn-undefined-variables": []
+  }
+}

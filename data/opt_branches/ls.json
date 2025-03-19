@@ -1,0 +1,637 @@
+{
+  "options": {
+    "sort": [
+      "sort_types",
+      "SORT_OPTION",
+      "sort_args",
+      "-cftuvSUX"
+    ],
+    "all": [
+      "'a'",
+      "-a"
+    ],
+    "almost-all": [
+      "'A'",
+      "-A"
+    ],
+    "author": [
+      "AUTHOR_OPTION",
+      "-l"
+    ],
+    "escape": [
+      "'b'",
+      "-b"
+    ],
+    "block-size": [
+      "BLOCK_SIZE_OPTION",
+      "-l"
+    ],
+    "ignore-backups": [
+      "-B",
+      "'B'"
+    ],
+    "color": [
+      "-aU",
+      "-f",
+      "COLOR_OPTION",
+      "-ls"
+    ],
+    "directory": [
+      "-d",
+      "'d'"
+    ],
+    "dired": [
+      "'D'",
+      "-D"
+    ],
+    "classify": [
+      "-F",
+      "'F'"
+    ],
+    "file-type": [
+      "FILE_TYPE_INDICATOR_OPTION"
+    ],
+    "format": [
+      "-m",
+      "format_args",
+      "-l",
+      "format_types",
+      "FORMAT_OPTION",
+      "-x"
+    ],
+    "full-time": [
+      "FULL_TIME_OPTION",
+      "--time-style",
+      "-l"
+    ],
+    "group-directories-first": [
+      "GROUP_DIRECTORIES_FIRST_OPTION"
+    ],
+    "no-group": [
+      "'G'",
+      "-G"
+    ],
+    "human-readable": [
+      "-h",
+      "-s",
+      "'h'",
+      "-l"
+    ],
+    "si": [
+      "SI_OPTION"
+    ],
+    "dereference-command-line": [
+      "-H",
+      "'H'"
+    ],
+    "dereference-command-line-symlink-to-dir": [
+      "DEREFERENCE_COMMAND_LINE_SYMLINK_TO_DIR_OPTION"
+    ],
+    "hide": [
+      "HIDE_OPTION"
+    ],
+    "hyperlink": [
+      "HYPERLINK_OPTION"
+    ],
+    "indicator-style": [
+      "indicator_style_args",
+      "indicator_style_types",
+      "-p",
+      "INDICATOR_STYLE_OPTION"
+    ],
+    "inode": [
+      "-i",
+      "'i'"
+    ],
+    "ignore": [
+      "'I'",
+      "-I"
+    ],
+    "kibibytes": [
+      "'k'",
+      "-k"
+    ],
+    "dereference": [
+      "-L",
+      "'L'"
+    ],
+    "numeric-uid-gid": [
+      "'n'",
+      "-l",
+      "-n"
+    ],
+    "literal": [
+      "'N'",
+      "-N"
+    ],
+    "hide-control-chars": [
+      "'q'",
+      "-q"
+    ],
+    "show-control-chars": [
+      "SHOW_CONTROL_CHARS_OPTION"
+    ],
+    "quote-name": [
+      "'Q'",
+      "-Q"
+    ],
+    "quoting-style": [
+      "set_quoting_style",
+      "QUOTING_STYLE_OPTION"
+    ],
+    "reverse": [
+      "-r",
+      "'r'"
+    ],
+    "recursive": [
+      "-R",
+      "'R'"
+    ],
+    "size": [
+      "'s'",
+      "-s"
+    ],
+    "time": [
+      "time_types",
+      "TIME_OPTION",
+      "-t",
+      "time_args"
+    ],
+    "time-style": [
+      "TIME_STYLE_OPTION"
+    ],
+    "tabsize": [
+      "-T",
+      "'T'"
+    ],
+    "width": [
+      "-w",
+      "'w'"
+    ],
+    "context": [
+      "-Z",
+      "'Z'"
+    ],
+    "help": [],
+    "version": []
+  },
+  "total_br": {
+    "sort": [
+      "ls.c 2174",
+      "ls.c 1135",
+      "ls.c 1142",
+      "ls.c 1137",
+      "ls.c 1140",
+      "ls.c 4007",
+      "ls.c 3003",
+      "ls.c 1138",
+      "ls.c 2344",
+      "ls.c 1148",
+      "ls.c 1145",
+      "ls.c 1139"
+    ],
+    "all": [
+      "ls.c 1972",
+      "ls.c 2596",
+      "ls.c 2524",
+      "ls.c 4517"
+    ],
+    "almost-all": [
+      "ls.c 4510",
+      "ls.c 2082",
+      "ls.c 2604"
+    ],
+    "author": [
+      "ls.c 4332",
+      "ls.c 4319",
+      "ls.c 4326",
+      "ls.c 3564",
+      "ls.c 4323",
+      "ls.c 4329",
+      "ls.c 2161",
+      "ls.c 3561",
+      "ls.c 1129"
+    ],
+    "escape": [
+      "ls.c 1976",
+      "ls.c 2527",
+      "ls.c 2597",
+      "ls.c 1252",
+      "ls.c 4517",
+      "ls.c 2318"
+    ],
+    "block-size": [
+      "ls.c 2257",
+      "ls.c 2261"
+    ],
+    "ignore-backups": [
+      "ls.c 2605",
+      "ls.c 4510",
+      "ls.c 2086"
+    ],
+    "color": [
+      "ls.c 2199",
+      "ls.c 2196",
+      "ls.c 2210"
+    ],
+    "directory": [
+      "ls.c 3526",
+      "ls.c 1741",
+      "ls.c 2599",
+      "ls.c 4517",
+      "ls.c 1728",
+      "ls.c 1984"
+    ],
+    "dired": [
+      "ls.c 2607",
+      "ls.c 2333",
+      "ls.c 1701",
+      "ls.c 4510",
+      "ls.c 2095",
+      "ls.c 1816"
+    ],
+    "classify": [
+      "ls.c 3522",
+      "ls.c 3388",
+      "ls.c 3604",
+      "ls.c 3395",
+      "ls.c 3590",
+      "ls.c 3524",
+      "ls.c 3576",
+      "ls.c 3332",
+      "ls.c 3554",
+      "ls.c 3384",
+      "ls.c 3561",
+      "ls.c 3547",
+      "ls.c 3493",
+      "ls.c 4511",
+      "ls.c 3583",
+      "ls.c 3526",
+      "ls.c 3541",
+      "ls.c 4838",
+      "ls.c 3512",
+      "ls.c 3460",
+      "ls.c 3587",
+      "ls.c 3572",
+      "ls.c 3376",
+      "ls.c 3400",
+      "ls.c 3437",
+      "ls.c 3393",
+      "ls.c 2099",
+      "ls.c 2082",
+      "ls.c 2604",
+      "ls.c 3507",
+      "ls.c 3535",
+      "ls.c 3569",
+      "ls.c 3401",
+      "ls.c 3497",
+      "ls.c 3593",
+      "ls.c 3408",
+      "ls.c 3430",
+      "ls.c 3479",
+      "ls.c 3564",
+      "ls.c 3414",
+      "ls.c 3402",
+      "ls.c 3580",
+      "ls.c 3424",
+      "ls.c 3462",
+      "ls.c 4510",
+      "ls.c 3545",
+      "ls.c 3557",
+      "ls.c 3453",
+      "ls.c 3550",
+      "ls.c 2609",
+      "ls.c 3475",
+      "ls.c 3449"
+    ],
+    "file-type": [
+      "ls.c 2320",
+      "ls.c 2001",
+      "ls.c 3512",
+      "ls.c 2323"
+    ],
+    "format": [
+      "ls.c 2187"
+    ],
+    "full-time": [
+      "ls.c 2191"
+    ],
+    "group-directories-first": [
+      "ls.c 2179",
+      "ls.c 1657",
+      "ls.c 1659",
+      "ls.c 1662"
+    ],
+    "no-group": [
+      "ls.c 4511",
+      "ls.c 3557",
+      "ls.c 4332",
+      "ls.c 4319",
+      "ls.c 4326",
+      "ls.c 3554",
+      "ls.c 4323",
+      "ls.c 4329",
+      "ls.c 2103",
+      "ls.c 1131"
+    ],
+    "human-readable": [
+      "ls.c 4518",
+      "ls.c 2010"
+    ],
+    "si": [
+      "ls.c 2268"
+    ],
+    "dereference-command-line": [
+      "ls.c 4511",
+      "ls.c 3408",
+      "ls.c 3400",
+      "ls.c 2107"
+    ],
+    "dereference-command-line-symlink-to-dir": [
+      "ls.c 2111",
+      "ls.c 3401",
+      "ls.c 3408",
+      "ls.c 3414",
+      "ls.c 3402"
+    ],
+    "hide": [
+      "ls.c 2165"
+    ],
+    "hyperlink": [
+      "ls.c 3522",
+      "ls.c 3388",
+      "ls.c 3604",
+      "ls.c 3395",
+      "ls.c 3590",
+      "ls.c 3524",
+      "ls.c 1714",
+      "ls.c 3576",
+      "ls.c 3332",
+      "ls.c 3554",
+      "ls.c 3384",
+      "ls.c 3561",
+      "ls.c 3547",
+      "ls.c 3493",
+      "ls.c 3583",
+      "ls.c 2333",
+      "ls.c 3526",
+      "ls.c 3541",
+      "ls.c 3512",
+      "ls.c 3460",
+      "ls.c 3587",
+      "ls.c 3572",
+      "ls.c 3376",
+      "ls.c 3400",
+      "ls.c 2220",
+      "ls.c 3437",
+      "ls.c 3393",
+      "ls.c 3507",
+      "ls.c 3535",
+      "ls.c 3569",
+      "ls.c 2949",
+      "ls.c 2952",
+      "ls.c 3401",
+      "ls.c 3497",
+      "ls.c 3408",
+      "ls.c 1707",
+      "ls.c 2223",
+      "ls.c 3430",
+      "ls.c 3414",
+      "ls.c 3479",
+      "ls.c 3564",
+      "ls.c 3593",
+      "ls.c 3402",
+      "ls.c 3580",
+      "ls.c 3424",
+      "ls.c 3462",
+      "ls.c 3557",
+      "ls.c 3545",
+      "ls.c 3453",
+      "ls.c 3550",
+      "ls.c 3475",
+      "ls.c 3449"
+    ],
+    "indicator-style": [
+      "ls.c 2236"
+    ],
+    "inode": [
+      "ls.c 3522",
+      "ls.c 3388",
+      "ls.c 3604",
+      "ls.c 3395",
+      "ls.c 3590",
+      "ls.c 3614",
+      "ls.c 3524",
+      "ls.c 3576",
+      "ls.c 3332",
+      "ls.c 3554",
+      "ls.c 3384",
+      "ls.c 3561",
+      "ls.c 5027",
+      "ls.c 3547",
+      "ls.c 4279",
+      "ls.c 3493",
+      "ls.c 3583",
+      "ls.c 3526",
+      "ls.c 3541",
+      "ls.c 3512",
+      "ls.c 3460",
+      "ls.c 3587",
+      "ls.c 3572",
+      "ls.c 3376",
+      "ls.c 3400",
+      "ls.c 3437",
+      "ls.c 3393",
+      "ls.c 4808",
+      "ls.c 3507",
+      "ls.c 2016",
+      "ls.c 3535",
+      "ls.c 1121",
+      "ls.c 3401",
+      "ls.c 3497",
+      "ls.c 3569",
+      "ls.c 3593",
+      "ls.c 3408",
+      "ls.c 3430",
+      "ls.c 3479",
+      "ls.c 3564",
+      "ls.c 3414",
+      "ls.c 3610",
+      "ls.c 3402",
+      "ls.c 4518",
+      "ls.c 3580",
+      "ls.c 3424",
+      "ls.c 3462",
+      "ls.c 3557",
+      "ls.c 3545",
+      "ls.c 3453",
+      "ls.c 3550",
+      "ls.c 3475",
+      "ls.c 3449"
+    ],
+    "ignore": [
+      "ls.c 4511",
+      "ls.c 2115"
+    ],
+    "kibibytes": [
+      "ls.c 2297",
+      "ls.c 2020",
+      "ls.c 4519"
+    ],
+    "dereference": [
+      "ls.c 3522",
+      "ls.c 3388",
+      "ls.c 3604",
+      "ls.c 3395",
+      "ls.c 3590",
+      "ls.c 3524",
+      "ls.c 3576",
+      "ls.c 3332",
+      "ls.c 3554",
+      "ls.c 3384",
+      "ls.c 3561",
+      "ls.c 3547",
+      "ls.c 3493",
+      "ls.c 3583",
+      "ls.c 3526",
+      "ls.c 3541",
+      "ls.c 3512",
+      "ls.c 2119",
+      "ls.c 3460",
+      "ls.c 3587",
+      "ls.c 3572",
+      "ls.c 3376",
+      "ls.c 3400",
+      "ls.c 3437",
+      "ls.c 3393",
+      "ls.c 3507",
+      "ls.c 3535",
+      "ls.c 3569",
+      "ls.c 3401",
+      "ls.c 3497",
+      "ls.c 3593",
+      "ls.c 4512",
+      "ls.c 3408",
+      "ls.c 3430",
+      "ls.c 3479",
+      "ls.c 3564",
+      "ls.c 3414",
+      "ls.c 3402",
+      "ls.c 3580",
+      "ls.c 3424",
+      "ls.c 3462",
+      "ls.c 3557",
+      "ls.c 3545",
+      "ls.c 3453",
+      "ls.c 3550",
+      "ls.c 3475",
+      "ls.c 3449"
+    ],
+    "numeric-uid-gid": [
+      "ls.c 2536",
+      "ls.c 2032",
+      "ls.c 4519"
+    ],
+    "literal": [
+      "ls.c 4512",
+      "ls.c 2123"
+    ],
+    "hide-control-chars": [
+      "ls.c 2046",
+      "ls.c 4520"
+    ],
+    "show-control-chars": [
+      "ls.c 2253"
+    ],
+    "quote-name": [
+      "ls.c 2127",
+      "ls.c 4513"
+    ],
+    "quoting-style": [
+      "ls.c 2242"
+    ],
+    "reverse": [
+      "ls.c 2050",
+      "ls.c 2539",
+      "ls.c 4520"
+    ],
+    "recursive": [
+      "ls.c 1677",
+      "ls.c 3003",
+      "ls.c 2941",
+      "ls.c 2949",
+      "ls.c 2952",
+      "ls.c 1683",
+      "ls.c 3058",
+      "ls.c 4513",
+      "ls.c 2943",
+      "ls.c 2131"
+    ],
+    "size": [
+      "ls.c 3061",
+      "ls.c 4298",
+      "ls.c 3541",
+      "ls.c 3535",
+      "ls.c 3003",
+      "ls.c 1124",
+      "ls.c 5032",
+      "ls.c 4300",
+      "ls.c 2054",
+      "ls.c 4812",
+      "ls.c 4289",
+      "ls.c 4520"
+    ],
+    "time": [
+      "ls.c 4257",
+      "ls.c 1108",
+      "ls.c 4259",
+      "ls.c 4265",
+      "ls.c 1106",
+      "ls.c 2344",
+      "ls.c 1100",
+      "ls.c 1110",
+      "ls.c 1104",
+      "ls.c 1102",
+      "ls.c 4273",
+      "ls.c 4268",
+      "ls.c 4262",
+      "ls.c 2183",
+      "ls.c 4270"
+    ],
+    "time-style": [
+      "ls.c 2249"
+    ],
+    "tabsize": [
+      "ls.c 2140",
+      "ls.c 1950",
+      "ls.c 5146",
+      "ls.c 4513"
+    ],
+    "width": [
+      "ls.c 2072",
+      "ls.c 4521",
+      "ls.c 2073"
+    ],
+    "context": [
+      "ls.c 3462",
+      "ls.c 4818",
+      "ls.c 4332",
+      "ls.c 3569",
+      "ls.c 4319",
+      "ls.c 4326",
+      "ls.c 3453",
+      "ls.c 3479",
+      "ls.c 3460",
+      "ls.c 2274",
+      "ls.c 4515",
+      "ls.c 3572",
+      "ls.c 4323",
+      "ls.c 4329",
+      "ls.c 3475",
+      "ls.c 5040",
+      "ls.c 3493"
+    ],
+    "help": [],
+    "version": []
+  }
+}

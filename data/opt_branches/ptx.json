@@ -1,0 +1,218 @@
+{
+  "options": {
+    "auto-reference": [
+      "-A",
+      "'A'"
+    ],
+    "traditional": [
+      "'G'",
+      "-G"
+    ],
+    "flag-truncation": [
+      "-F",
+      "'F'"
+    ],
+    "macro-name": [
+      "-M",
+      "'M'"
+    ],
+    "format": [
+      "-T",
+      "format_args",
+      "MATCH",
+      "-O",
+      "format_vals"
+    ],
+    "right-side-refs": [
+      "-w",
+      "'R'",
+      "-R"
+    ],
+    "sentence-regexp": [
+      "-S",
+      "'S'"
+    ],
+    "word-regexp": [
+      "-W",
+      "'W'"
+    ],
+    "break-file": [
+      "'b'",
+      "-b"
+    ],
+    "ignore-case": [
+      "'f'",
+      "-f"
+    ],
+    "gap-size": [
+      "'g'",
+      "-g"
+    ],
+    "ignore-file": [
+      "'i'",
+      "-i"
+    ],
+    "only-file": [
+      "'o'",
+      "-o"
+    ],
+    "references": [
+      "-r",
+      "'r'"
+    ],
+    "typeset-mode": [
+      "'t'",
+      "-t"
+    ],
+    "width": [
+      "-w",
+      "'w'"
+    ],
+    "help": [],
+    "version": []
+  },
+  "total_br": {
+    "auto-reference": [
+      "ptx.c 1529",
+      "ptx.c 1725",
+      "ptx.c 1075",
+      "ptx.c 970",
+      "ptx.c 1115",
+      "ptx.c 1229",
+      "ptx.c 969",
+      "ptx.c 1539",
+      "ptx.c 1978",
+      "ptx.c 991",
+      "ptx.c 1213",
+      "ptx.c 1594",
+      "ptx.c 960",
+      "ptx.c 1730",
+      "ptx.c 1217",
+      "ptx.c 1210",
+      "ptx.c 1207",
+      "ptx.c 982",
+      "ptx.c 1533",
+      "ptx.c 1219",
+      "ptx.c 1651",
+      "ptx.c 1521",
+      "ptx.c 1633"
+    ],
+    "traditional": [
+      "ptx.c 2047",
+      "ptx.c 2071",
+      "ptx.c 1928",
+      "ptx.c 481",
+      "ptx.c 2080",
+      "ptx.c 2045",
+      "ptx.c 2073",
+      "ptx.c 665",
+      "ptx.c 1285",
+      "ptx.c 2038",
+      "ptx.c 2063",
+      "ptx.c 461",
+      "ptx.c 486",
+      "ptx.c 1259"
+    ],
+    "flag-truncation": [
+      "ptx.c 1982",
+      "ptx.c 1254",
+      "ptx.c 1424"
+    ],
+    "macro-name": [
+      "ptx.c 1986"
+    ],
+    "format": [],
+    "right-side-refs": [
+      "ptx.c 1730",
+      "ptx.c 1725",
+      "ptx.c 1651",
+      "ptx.c 1994",
+      "ptx.c 1649",
+      "ptx.c 1229"
+    ],
+    "sentence-regexp": [
+      "ptx.c 466",
+      "ptx.c 826",
+      "ptx.c 815",
+      "ptx.c 811",
+      "ptx.c 458",
+      "ptx.c 456",
+      "ptx.c 810",
+      "ptx.c 1998",
+      "ptx.c 821",
+      "ptx.c 461",
+      "ptx.c 818"
+    ],
+    "word-regexp": [
+      "ptx.c 2006",
+      "ptx.c 2008"
+    ],
+    "break-file": [
+      "ptx.c 479",
+      "ptx.c 349",
+      "ptx.c 1932",
+      "ptx.c 2099",
+      "ptx.c 481",
+      "ptx.c 486"
+    ],
+    "ignore-case": [
+      "ptx.c 445",
+      "ptx.c 570",
+      "ptx.c 359",
+      "ptx.c 556",
+      "ptx.c 554",
+      "ptx.c 560",
+      "ptx.c 446",
+      "ptx.c 566",
+      "ptx.c 1936"
+    ],
+    "gap-size": [
+      "ptx.c 1940",
+      "ptx.c 1943"
+    ],
+    "ignore-file": [
+      "ptx.c 1951",
+      "ptx.c 2109",
+      "ptx.c 943",
+      "ptx.c 2106"
+    ],
+    "only-file": [
+      "ptx.c 1063",
+      "ptx.c 2116",
+      "ptx.c 2113",
+      "ptx.c 1955",
+      "ptx.c 945",
+      "ptx.c 1127"
+    ],
+    "references": [
+      "ptx.c 991",
+      "ptx.c 1730",
+      "ptx.c 1725",
+      "ptx.c 781",
+      "ptx.c 369",
+      "ptx.c 1229",
+      "ptx.c 918",
+      "ptx.c 1594",
+      "ptx.c 1633",
+      "ptx.c 1959",
+      "ptx.c 919",
+      "ptx.c 929",
+      "ptx.c 982",
+      "ptx.c 1539",
+      "ptx.c 461",
+      "ptx.c 997",
+      "ptx.c 916"
+    ],
+    "typeset-mode": [
+      "ptx.c 374",
+      "ptx.c 1963"
+    ],
+    "width": [
+      "ptx.c 1967",
+      "ptx.c 1231",
+      "ptx.c 1970"
+    ],
+    "help": [],
+    "version": []
+  }
+}

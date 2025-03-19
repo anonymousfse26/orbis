@@ -1,0 +1,374 @@
+{
+    "-h": [
+        27
+    ],
+    "--reverse-bytes": [
+        62
+    ],
+    "--debugging": [
+        34
+    ],
+    "--add-symbol": [
+        36
+    ],
+    "--prefix-sections": [
+        65
+    ],
+    "--enable-deterministic-archives": [
+        96
+    ],
+    "--target": [
+        39
+    ],
+    "--interleave-width": [
+        63
+    ],
+    "--strip-unneeded-symbols": [
+        92
+    ],
+    "-D": [
+        32
+    ],
+    "-N": [
+        13
+    ],
+    "-L": [
+        18
+    ],
+    "--subsystem": [
+        50
+    ],
+    "-v": [
+        29
+    ],
+    "--output-format": [
+        57
+    ],
+    "--remove-leading-char": [
+        78
+    ],
+    "--file-alignment": [
+        51
+    ],
+    "--prefix-alloc-sections": [
+        82
+    ],
+    "--rename-section": [
+        64
+    ],
+    "--keep-section": [
+        51
+    ],
+    "--change-start": [
+        45
+    ],
+    "--adjust-start": [
+        42
+    ],
+    "--interleave": [
+        45
+    ],
+    "--decompress-debug-sections": [
+        83
+    ],
+    "--redefine-sym": [
+        56
+    ],
+    "--binary-architecture": [
+        62
+    ],
+    "--localize-hidden": [
+        59
+    ],
+    "-R": [
+        20
+    ],
+    "--keep-symbols": [
+        52
+    ],
+    "-U": [
+        33
+    ],
+    "--keep-symbol": [
+        49
+    ],
+    "--change-section-lma": [
+        63
+    ],
+    "--redefine-syms": [
+        59
+    ],
+    "--compress-debug-sections": [
+        76
+    ],
+    "--version": [
+        46
+    ],
+    "-p": [
+        22
+    ],
+    "--readonly-text": [
+        58
+    ],
+    "-g": [
+        23
+    ],
+    "-B": [
+        7
+    ],
+    "-o": [
+        33
+    ],
+    "--change-section-vma": [
+        64
+    ],
+    "--long-section-names": [
+        69
+    ],
+    "--output-file": [
+        49
+    ],
+    "--gap-fill": [
+        34
+    ],
+    "--verilog-data-width": [
+        78
+    ],
+    "--format": [
+        28
+    ],
+    "--info": [
+        25
+    ],
+    "--pure": [
+        32
+    ],
+    "--wildcard": [
+        49
+    ],
+    "--remove-section": [
+        64
+    ],
+    "-W": [
+        30
+    ],
+    "--add-section": [
+        38
+    ],
+    "--disable-deterministic-archives": [
+        98
+    ],
+    "--verbose": [
+        44
+    ],
+    "--strip-debug": [
+        57
+    ],
+    "-b": [
+        5
+    ],
+    "--strip-symbols": [
+        64
+    ],
+    "--srec-forceS3": [
+        57
+    ],
+    "--elf-stt-common": [
+        50
+    ],
+    "--localize-symbols": [
+        63
+    ],
+    "--change-leading-char": [
+        64
+    ],
+    "--alt-machine-code": [
+        53
+    ],
+    "--strip-unneeded": [
+        68
+    ],
+    "--change-warnings": [
+        54
+    ],
+    "--strip-all": [
+        50
+    ],
+    "-M": [
+        12
+    ],
+    "-V": [
+        28
+    ],
+    "-G": [
+        19
+    ],
+    "--weaken-symbols": [
+        66
+    ],
+    "--strip-symbol": [
+        61
+    ],
+    "--adjust-section-vma": [
+        59
+    ],
+    "--change-addresses": [
+        54
+    ],
+    "--adjust-warnings": [
+        52
+    ],
+    "--set-section-flags": [
+        72
+    ],
+    "--prefix-symbols": [
+        63
+    ],
+    "--writable-text": [
+        65
+    ],
+    "--set-start": [
+        49
+    ],
+    "--help": [
+        24
+    ],
+    "--merge-notes": [
+        48
+    ],
+    "--no-merge-notes": [
+        58
+    ],
+    "-K": [
+        11
+    ],
+    "-w": [
+        31
+    ],
+    "--discard-locals": [
+        52
+    ],
+    "--change-section-address": [
+        74
+    ],
+    "--strip-dwo": [
+        52
+    ],
+    "--no-adjust-warnings": [
+        71
+    ],
+    "--weaken": [
+        42
+    ],
+    "--keep-file-symbols": [
+        64
+    ],
+    "--image-base": [
+        42
+    ],
+    "--keep-global-symbol": [
+        68
+    ],
+    "--extract-symbol": [
+        53
+    ],
+    "--srec-len": [
+        46
+    ],
+    "--update-section": [
+        64
+    ],
+    "--section-alignment": [
+        71
+    ],
+    "--strip-unneeded-symbol": [
+        89
+    ],
+    "--dump-section": [
+        45
+    ],
+    "-X": [
+        25
+    ],
+    "--impure": [
+        31
+    ],
+    "--add-gnu-debuglink": [
+        55
+    ],
+    "--adjust-vma": [
+        36
+    ],
+    "--keep-global-symbols": [
+        71
+    ],
+    "-j": [
+        10
+    ],
+    "--only-section": [
+        54
+    ],
+    "--heap": [
+        23
+    ],
+    "--discard-all": [
+        42
+    ],
+    "--preserve-dates": [
+        62
+    ],
+    "--input-target": [
+        51
+    ],
+    "--remove-relocations": [
+        77
+    ],
+    "--globalize-symbol": [
+        59
+    ],
+    "--stack": [
+        37
+    ],
+    "-x": [
+        24
+    ],
+    "--weaken-symbol": [
+        63
+    ],
+    "--no-change-warnings": [
+        72
+    ],
+    "--set-section-alignment": [
+        85
+    ],
+    "--localize-symbol": [
+        60
+    ],
+    "--only-keep-debug": [
+        62
+    ],
+    "-i": [
+        8
+    ],
+    "--byte": [
+        18
+    ],
+    "--globalize-symbols": [
+        62
+    ],
+    "--output-target": [
+        58
+    ],
+    "--extract-dwo": [
+        43
+    ],
+    "--pad-to": [
+        36
+    ],
+    "--input-format": [
+        50
+    ],
+    "-S": [
+        21
+    ]
+}

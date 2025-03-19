@@ -1,0 +1,204 @@
+{
+  "options": {
+    "files0-from": [
+      "FILES0_FROM_OPTION"
+    ],
+    "null": [
+      "'0'"
+    ],
+    "all": [
+      "-a",
+      "'a'"
+    ],
+    "apparent-size": [
+      "APPARENT_SIZE_OPTION"
+    ],
+    "block-size": [
+      "-B",
+      "'B'",
+      "-k",
+      "-m"
+    ],
+    "total": [
+      "print_grand_total",
+      "-c",
+      "'c'"
+    ],
+    "dereference-args": [
+      "-D",
+      "-H",
+      "'D'"
+    ],
+    "max-depth": [
+      "'d'"
+    ],
+    "summarize": [
+      "-s",
+      "'s'"
+    ],
+    "human-readable": [
+      "-h",
+      "'h'"
+    ],
+    "inodes": [
+      "INODES_OPTION"
+    ],
+    "dereference": [
+      "'L'",
+      "-L"
+    ],
+    "count-links": [
+      "'l'",
+      "-l"
+    ],
+    "no-dereference": [
+      "'P'",
+      "-P"
+    ],
+    "separate-dirs": [
+      "-S",
+      "'S'"
+    ],
+    "si": [
+      "-h",
+      "HUMAN_SI_OPTION"
+    ],
+    "threshold": [
+      "-t",
+      "'t'"
+    ],
+    "time": [
+      "time_args",
+      "XARGMATCH",
+      "TIME_OPTION",
+      "optional_argument",
+      "time_types"
+    ],
+    "time-style": [
+      "TIME_STYLE_OPTION"
+    ],
+    "exclude-from": [
+      "-X",
+      "'X'"
+    ],
+    "exclude": [
+      "EXCLUDE_OPTION"
+    ],
+    "one-file-system": [
+      "'x'",
+      "-x"
+    ],
+    "help": [],
+    "version": []
+  },
+  "total_br": {
+    "files0-from": [
+      "du.c 1104",
+      "du.c 1025",
+      "du.c 1013",
+      "du.c 893",
+      "du.c 1017",
+      "du.c 1133",
+      "du.c 1084"
+    ],
+    "null": [
+      "du.c 772"
+    ],
+    "all": [
+      "du.c 664",
+      "du.c 776",
+      "du.c 930",
+      "du.c 658"
+    ],
+    "apparent-size": [
+      "du.c 780",
+      "du.c 954"
+    ],
+    "block-size": [
+      "du.c 858",
+      "du.c 862"
+    ],
+    "total": [
+      "du.c 1136",
+      "du.c 790"
+    ],
+    "dereference-args": [
+      "du.c 868"
+    ],
+    "max-depth": [
+      "du.c 809",
+      "du.c 812"
+    ],
+    "summarize": [
+      "du.c 836",
+      "du.c 936",
+      "du.c 949",
+      "du.c 942",
+      "du.c 930"
+    ],
+    "human-readable": [
+      "du.c 794"
+    ],
+    "inodes": [
+      "du.c 952",
+      "du.c 901",
+      "du.c 954"
+    ],
+    "dereference": [
+      "du.c 872"
+    ],
+    "count-links": [
+      "du.c 556",
+      "du.c 548",
+      "du.c 832",
+      "du.c 1056"
+    ],
+    "no-dereference": [
+      "du.c 876"
+    ],
+    "separate-dirs": [
+      "du.c 651",
+      "du.c 880",
+      "du.c 640"
+    ],
+    "si": [
+      "du.c 799"
+    ],
+    "threshold": [
+      "du.c 844",
+      "du.c 846",
+      "du.c 840"
+    ],
+    "time": [
+      "du.c 963",
+      "du.c 970",
+      "du.c 972",
+      "du.c 416",
+      "du.c 997",
+      "du.c 905",
+      "du.c 965",
+      "du.c 990",
+      "du.c 994",
+      "du.c 1005",
+      "du.c 985",
+      "du.c 977",
+      "du.c 1001"
+    ],
+    "time-style": [
+      "du.c 914"
+    ],
+    "exclude-from": [
+      "du.c 884",
+      "du.c 885"
+    ],
+    "exclude": [
+      "du.c 897"
+    ],
+    "one-file-system": [
+      "du.c 854",
+      "du.c 542"
+    ],
+    "help": [],
+    "version": []
+  }
+}

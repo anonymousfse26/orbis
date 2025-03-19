@@ -1,0 +1,197 @@
+{
+    "-A": [
+        27
+    ],
+    "--directory": [
+        32
+    ],
+    "-h": [
+        10
+    ],
+    "-I": [
+        34
+    ],
+    "--numeric-uid-gid": [
+        56
+    ],
+    "-D": [
+        30
+    ],
+    "-R": [
+        38
+    ],
+    "--show-control-chars": [
+        68
+    ],
+    "-G": [
+        32
+    ],
+    "--quote-name": [
+        47
+    ],
+    "--format": [
+        26
+    ],
+    "--time": [
+        31
+    ],
+    "--time-style": [
+        49
+    ],
+    "--hide": [
+        21
+    ],
+    "--hyperlink": [
+        37
+    ],
+    "--block-size": [
+        49
+    ],
+    "-Q": [
+        37
+    ],
+    "--si": [
+        19
+    ],
+    "--dereference-command-line": [
+        78
+    ],
+    "--all": [
+        12
+    ],
+    "--almost-all": [
+        34
+    ],
+    "--width": [
+        29
+    ],
+    "--no-group": [
+        36
+    ],
+    "--inode": [
+        24
+    ],
+    "--sort": [
+        27
+    ],
+    "--context": [
+        38
+    ],
+    "-n": [
+        15
+    ],
+    "-k": [
+        12
+    ],
+    "--reverse": [
+        33
+    ],
+    "--ignore-backups": [
+        52
+    ],
+    "--hide-control-chars": [
+        63
+    ],
+    "-a": [
+        4
+    ],
+    "-i": [
+        11
+    ],
+    "--group-directories-first": [
+        76
+    ],
+    "-s": [
+        20
+    ],
+    "--kibibytes": [
+        37
+    ],
+    "--literal": [
+        37
+    ],
+    "--dereference-command-line-symlink-to-dir": [
+        123
+    ],
+    "-d": [
+        7
+    ],
+    "--recursive": [
+        40
+    ],
+    "-q": [
+        18
+    ],
+    "--human-readable": [
+        50
+    ],
+    "--classify": [
+        39
+    ],
+    "-L": [
+        35
+    ],
+    "--file-type": [
+        34
+    ],
+    "--indicator-style": [
+        55
+    ],
+    "-Z": [
+        43
+    ],
+    "--escape": [
+        22
+    ],
+    "--dired": [
+        21
+    ],
+    "-r": [
+        19
+    ],
+    "--author": [
+        22
+    ],
+    "-b": [
+        5
+    ],
+    "-B": [
+        28
+    ],
+    "--ignore": [
+        28
+    ],
+    "--color": [
+        31
+    ],
+    "--dereference": [
+        39
+    ],
+    "--full-time": [
+        33
+    ],
+    "--quoting-style": [
+        57
+    ],
+    "-F": [
+        31
+    ],
+    "-H": [
+        33
+    ],
+    "-w": [
+        24
+    ],
+    "--size": [
+        25
+    ],
+    "-T": [
+        40
+    ],
+    "--tabsize": [
+        39
+    ],
+    "-N": [
+        36
+    ]
+}

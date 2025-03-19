@@ -1,0 +1,599 @@
+{
+  "options": {
+    "archive-headers": [
+      "-a",
+      "'a'"
+    ],
+    "file-headers": [
+      "-f",
+      "'f'"
+    ],
+    "private-headers": [
+      "-p",
+      "'p'"
+    ],
+    "private": [
+      "-P",
+      "'P'"
+    ],
+    "headers": [
+      "'h'",
+      "-h"
+    ],
+    "all-headers": [
+      "'x'",
+      "-x"
+    ],
+    "disassemble": [
+      "'d'",
+      "-d"
+    ],
+    "disassemble-all": [
+      "'D'",
+      "-D"
+    ],
+    "source": [
+      "-S",
+      "'S'"
+    ],
+    "source-comment": [
+      "OPTION_SOURCE_COMMENT"
+    ],
+    "full-contents": [
+      "-s",
+      "'s'"
+    ],
+    "debugging": [
+      "-g",
+      "'g'"
+    ],
+    "debugging-tags": [
+      "-e",
+      "'e'"
+    ],
+    "stabs": [
+      "'G'",
+      "-G"
+    ],
+    "ctf": [
+      "OPTION_CTF"
+    ],
+    "syms": [
+      "'t'",
+      "-t"
+    ],
+    "dynamic-syms": [
+      "'T'",
+      "-T"
+    ],
+    "reloc": [
+      "-r",
+      "'r'"
+    ],
+    "dynamic-reloc": [
+      "'R'",
+      "-R"
+    ],
+    "version": [
+      "-v",
+      "'V'"
+    ],
+    "info": [
+      "'i'",
+      "-i"
+    ],
+    "help": [
+      "'H'",
+      "-H"
+    ],
+    "target": [
+      "-b",
+      "'b'"
+    ],
+    "architecture": [
+      "-m",
+      "'m'"
+    ],
+    "section": [
+      "-j",
+      "'j'"
+    ],
+    "disassembler-options": [
+      "'M'",
+      "-M"
+    ],
+    "endian": [
+      "OPTION_ENDIAN",
+      "-EB",
+      "-EL"
+    ],
+    "file-start-context": [
+      "file_start_context"
+    ],
+    "include": [
+      "-I",
+      "'I'"
+    ],
+    "line-numbers": [
+      "-l",
+      "'l'"
+    ],
+    "file-offsets": [
+      "'F'",
+      "-F"
+    ],
+    "demangle": [
+      "-C",
+      "'C'"
+    ],
+    "recurse-limit": [
+      "OPTION_RECURSE_LIMIT"
+    ],
+    "no-recurse-limit": [
+      "OPTION_NO_RECURSE_LIMIT"
+    ],
+    "wide": [
+      "'w'",
+      "-w"
+    ],
+    "disassemble-zeroes": [
+      "'z'",
+      "-z"
+    ],
+    "start-address": [
+      "OPTION_START_ADDRESS"
+    ],
+    "stop-address": [
+      "OPTION_STOP_ADDRESS"
+    ],
+    "no-addresses": [
+      "no_addresses"
+    ],
+    "prefix-addresses": [
+      "prefix_addresses"
+    ],
+    "show-raw-insn": [
+      "show_raw_insn"
+    ],
+    "insn-width": [
+      "OPTION_INSN_WIDTH",
+      "-d"
+    ],
+    "adjust-vma": [
+      "OPTION_ADJUST_VMA"
+    ],
+    "special-syms": [
+      "dump_special_syms"
+    ],
+    "inlines": [
+      "OPTION_INLINES"
+    ],
+    "prefix": [
+      "-S",
+      "OPTION_PREFIX"
+    ],
+    "prefix-strip": [
+      "-S",
+      "OPTION_PREFIX_STRIP"
+    ],
+    "dwarf-depth": [
+      "OPTION_DWARF_DEPTH"
+    ],
+    "dwarf-start": [
+      "OPTION_DWARF_START"
+    ],
+    "dwarf-check": [
+      "OPTION_DWARF_CHECK"
+    ],
+    "ctf-parent": [
+      "OPTION_CTF_PARENT"
+    ],
+    "visualize-jumps": [
+      "OPTION_VISUALIZE_JUMPS"
+    ]
+  },
+  "total_br": {
+    "archive-headers": [
+      "objdump.c 5430"
+    ],
+    "file-headers": [
+      "objdump.c 5299"
+    ],
+    "private-headers": [
+      "objdump.c 5310"
+    ],
+    "private": [
+      "objdump.c 4869",
+      "objdump.c 5314"
+    ],
+    "headers": [
+      "objdump.c 5434"
+    ],
+    "all-headers": [
+      "objdump.c 5318"
+    ],
+    "disassemble": [
+      "objdump.c 5335"
+    ],
+    "disassemble-all": [
+      "objdump.c 2786",
+      "objdump.c 3062",
+      "objdump.c 3337",
+      "objdump.c 5343",
+      "objdump.c 2387"
+    ],
+    "source": [
+      "objdump.c 5348"
+    ],
+    "source-comment": [
+      "objdump.c 5353",
+      "objdump.c 5357"
+    ],
+    "full-contents": [
+      "objdump.c 5418",
+      "objdump.c 5045",
+      "objdump.c 4943"
+    ],
+    "debugging": [
+      "objdump.c 5362"
+    ],
+    "debugging-tags": [
+      "objdump.c 4859",
+      "objdump.c 5366",
+      "objdump.c 4955",
+      "objdump.c 4871"
+    ],
+    "stabs": [
+      "objdump.c 5414",
+      "objdump.c 4937"
+    ],
+    "ctf": [
+      "objdump.c 4935",
+      "objdump.c 5405"
+    ],
+    "syms": [
+      "objdump.c 5327"
+    ],
+    "dynamic-syms": [
+      "objdump.c 4917",
+      "objdump.c 5331",
+      "objdump.c 4931"
+    ],
+    "reloc": [
+      "objdump.c 5422"
+    ],
+    "dynamic-reloc": [
+      "objdump.c 3003",
+      "objdump.c 2968",
+      "objdump.c 4941",
+      "objdump.c 2997",
+      "objdump.c 2975",
+      "objdump.c 3126",
+      "objdump.c 2989",
+      "objdump.c 3122",
+      "objdump.c 2963",
+      "objdump.c 3006",
+      "objdump.c 3504",
+      "objdump.c 3119",
+      "objdump.c 2957",
+      "objdump.c 2977",
+      "objdump.c 3098",
+      "objdump.c 3113",
+      "objdump.c 2982",
+      "objdump.c 4917",
+      "objdump.c 5426"
+    ],
+    "version": [
+      "objdump.c 5439",
+      "objdump.c 5452"
+    ],
+    "info": [
+      "objdump.c 5462",
+      "objdump.c 5465",
+      "objdump.c 5303",
+      "objdump.c 5458"
+    ],
+    "help": [
+      "objdump.c 5444"
+    ],
+    "target": [
+      "objdump.c 5197"
+    ],
+    "architecture": [
+      "objdump.c 5173",
+      "objdump.c 3449",
+      "objdump.c 3445",
+      "objdump.c 2731",
+      "objdump.c 2354"
+    ],
+    "section": [
+      "objdump.c 5188"
+    ],
+    "disassembler-options": [
+      "objdump.c 5176",
+      "objdump.c 5179"
+    ],
+    "endian": [
+      "objdump.c 5286",
+      "objdump.c 5287",
+      "objdump.c 5289"
+    ],
+    "file-start-context": [
+      "objdump.c 1833",
+      "objdump.c 1828",
+      "objdump.c 1835",
+      "objdump.c 1837"
+    ],
+    "include": [
+      "objdump.c 5307"
+    ],
+    "line-numbers": [
+      "objdump.c 1791",
+      "objdump.c 4573",
+      "objdump.c 4550",
+      "objdump.c 4555",
+      "objdump.c 4571",
+      "objdump.c 5194",
+      "objdump.c 1770",
+      "objdump.c 4539",
+      "objdump.c 1755",
+      "objdump.c 1778",
+      "objdump.c 1703",
+      "objdump.c 1782",
+      "objdump.c 2692",
+      "objdump.c 4545",
+      "objdump.c 4562",
+      "objdump.c 1757",
+      "objdump.c 1797",
+      "objdump.c 1762"
+    ],
+    "file-offsets": [
+      "objdump.c 1405",
+      "objdump.c 2676",
+      "objdump.c 1378",
+      "objdump.c 4336",
+      "objdump.c 5191"
+    ],
+    "demangle": [
+      "objdump.c 5200",
+      "objdump.c 5202",
+      "objdump.c 5207"
+    ],
+    "recurse-limit": [
+      "objdump.c 5214"
+    ],
+    "no-recurse-limit": [
+      "objdump.c 5217"
+    ],
+    "wide": [
+      "objdump.c 5220"
+    ],
+    "disassemble-zeroes": [
+      "objdump.c 2656",
+      "objdump.c 2939",
+      "objdump.c 2822",
+      "objdump.c 2827",
+      "objdump.c 2925",
+      "objdump.c 2720",
+      "objdump.c 2883",
+      "objdump.c 2852",
+      "objdump.c 2835",
+      "objdump.c 2659",
+      "objdump.c 2695",
+      "objdump.c 2932",
+      "objdump.c 2702",
+      "objdump.c 2786",
+      "objdump.c 2877",
+      "objdump.c 2855",
+      "objdump.c 2704",
+      "objdump.c 2777",
+      "objdump.c 2866",
+      "objdump.c 2676",
+      "objdump.c 2847",
+      "objdump.c 2894",
+      "objdump.c 2731",
+      "objdump.c 2913",
+      "objdump.c 2825",
+      "objdump.c 2889",
+      "objdump.c 2861",
+      "objdump.c 2657",
+      "objdump.c 2804",
+      "objdump.c 2859",
+      "objdump.c 2928",
+      "objdump.c 5340",
+      "objdump.c 2692",
+      "objdump.c 2802",
+      "objdump.c 2898",
+      "objdump.c 2911",
+      "objdump.c 2934",
+      "objdump.c 2747",
+      "objdump.c 2670",
+      "objdump.c 2844",
+      "objdump.c 2906",
+      "objdump.c 2697",
+      "objdump.c 2734",
+      "objdump.c 2755",
+      "objdump.c 2806",
+      "objdump.c 2808",
+      "objdump.c 2655",
+      "objdump.c 2948",
+      "objdump.c 2873",
+      "objdump.c 2891",
+      "objdump.c 2923"
+    ],
+    "start-address": [
+      "objdump.c 5226",
+      "objdump.c 5228"
+    ],
+    "stop-address": [
+      "objdump.c 5233",
+      "objdump.c 5231"
+    ],
+    "no-addresses": [
+      "objdump.c 4355",
+      "objdump.c 3003",
+      "objdump.c 2605",
+      "objdump.c 2968",
+      "objdump.c 1021",
+      "objdump.c 1322",
+      "objdump.c 2997",
+      "objdump.c 2695",
+      "objdump.c 2975",
+      "objdump.c 2702",
+      "objdump.c 2989",
+      "objdump.c 2704",
+      "objdump.c 1399",
+      "objdump.c 2963",
+      "objdump.c 4366",
+      "objdump.c 2913",
+      "objdump.c 3006",
+      "objdump.c 2612",
+      "objdump.c 2957",
+      "objdump.c 2911",
+      "objdump.c 2977",
+      "objdump.c 3155",
+      "objdump.c 2599",
+      "objdump.c 2609",
+      "objdump.c 2906",
+      "objdump.c 2697",
+      "objdump.c 2982",
+      "objdump.c 2954"
+    ],
+    "prefix-addresses": [
+      "objdump.c 4355",
+      "objdump.c 2939",
+      "objdump.c 2925",
+      "objdump.c 2883",
+      "objdump.c 2605",
+      "objdump.c 1021",
+      "objdump.c 3351",
+      "objdump.c 2852",
+      "objdump.c 3228",
+      "objdump.c 3223",
+      "objdump.c 2835",
+      "objdump.c 2932",
+      "objdump.c 3256",
+      "objdump.c 2702",
+      "objdump.c 2877",
+      "objdump.c 3300",
+      "objdump.c 3262",
+      "objdump.c 2855",
+      "objdump.c 3218",
+      "objdump.c 3232",
+      "objdump.c 2704",
+      "objdump.c 2866",
+      "objdump.c 3193",
+      "objdump.c 3325",
+      "objdump.c 2847",
+      "objdump.c 2894",
+      "objdump.c 3221",
+      "objdump.c 3197",
+      "objdump.c 3250",
+      "objdump.c 4366",
+      "objdump.c 2913",
+      "objdump.c 3260",
+      "objdump.c 3323",
+      "objdump.c 3313",
+      "objdump.c 2861",
+      "objdump.c 2612",
+      "objdump.c 3337",
+      "objdump.c 3354",
+      "objdump.c 3298",
+      "objdump.c 3317",
+      "objdump.c 2859",
+      "objdump.c 2928",
+      "objdump.c 2898",
+      "objdump.c 2911",
+      "objdump.c 2934",
+      "objdump.c 3383",
+      "objdump.c 2844",
+      "objdump.c 3246",
+      "objdump.c 3236",
+      "objdump.c 2599",
+      "objdump.c 2609",
+      "objdump.c 2906",
+      "objdump.c 2697",
+      "objdump.c 3290",
+      "objdump.c 2873",
+      "objdump.c 3224",
+      "objdump.c 2923"
+    ],
+    "show-raw-insn": [
+      "objdump.c 4355",
+      "objdump.c 2939",
+      "objdump.c 2925",
+      "objdump.c 2883",
+      "objdump.c 2605",
+      "objdump.c 1021",
+      "objdump.c 2852",
+      "objdump.c 2835",
+      "objdump.c 2932",
+      "objdump.c 2702",
+      "objdump.c 2877",
+      "objdump.c 2855",
+      "objdump.c 2866",
+      "objdump.c 2847",
+      "objdump.c 2894",
+      "objdump.c 4366",
+      "objdump.c 2913",
+      "objdump.c 2861",
+      "objdump.c 2859",
+      "objdump.c 2928",
+      "objdump.c 2898",
+      "objdump.c 2911",
+      "objdump.c 2934",
+      "objdump.c 2844",
+      "objdump.c 2906",
+      "objdump.c 2873",
+      "objdump.c 2923"
+    ],
+    "insn-width": [
+      "objdump.c 5250",
+      "objdump.c 5248"
+    ],
+    "adjust-vma": [
+      "objdump.c 4853",
+      "objdump.c 5223"
+    ],
+    "special-syms": [
+      "objdump.c 4460",
+      "objdump.c 4474",
+      "objdump.c 4466",
+      "objdump.c 4478"
+    ],
+    "inlines": [
+      "objdump.c 5253",
+      "objdump.c 1797",
+      "objdump.c 1791"
+    ],
+    "prefix": [
+      "objdump.c 5236",
+      "objdump.c 5240"
+    ],
+    "prefix-strip": [
+      "objdump.c 5243",
+      "objdump.c 5245"
+    ],
+    "dwarf-depth": [
+      "objdump.c 5388"
+    ],
+    "dwarf-start": [
+      "objdump.c 4859",
+      "objdump.c 4871",
+      "objdump.c 5394"
+    ],
+    "dwarf-check": [
+      "objdump.c 5401"
+    ],
+    "ctf-parent": [
+      "objdump.c 5410"
+    ],
+    "visualize-jumps": [
+      "objdump.c 5269",
+      "objdump.c 5262",
+      "objdump.c 5260",
+      "objdump.c 5264",
+      "objdump.c 5256"
+    ]
+  }
+}

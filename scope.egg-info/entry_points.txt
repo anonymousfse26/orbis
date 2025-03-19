@@ -1,0 +1,3 @@
+[console_scripts]
+scope = scope.bin:main
+

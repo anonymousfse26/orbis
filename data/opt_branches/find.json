@@ -1,0 +1,304 @@
+{
+  "options": {
+    "print": [
+      "print",
+      "entry_print"
+    ],
+    "and": [
+      "and",
+      "AND_PREC"
+    ],
+    "not": [
+      "negate"
+    ],
+    "or": [
+      "OR_PREC"
+    ],
+    "daystart": [
+      "daystart"
+    ],
+    "follow": [
+      "follow"
+    ],
+    "regextype": [
+      "regextype"
+    ],
+    "help": [
+      "DebugHelp"
+    ],
+    "depth": [
+      "depth"
+    ],
+    "maxdepth": [
+      "maxdepth"
+    ],
+    "mindepth": [
+      "mindepth"
+    ],
+    "mount": [],
+    "noleaf": [
+      "noleaf"
+    ],
+    "version": [],
+    "xdev": [],
+    "ignore_readdir_race": [
+      "ignore_race"
+    ],
+    "noignore_readdir_race": [
+      "noignore_race"
+    ],
+    "amin": [
+      "amin"
+    ],
+    "anewer": [
+      "anewer"
+    ],
+    "atime": [],
+    "cmin": [
+      "cmin"
+    ],
+    "cnewer": [
+      "cnewer"
+    ],
+    "ctime": [],
+    "empty": [
+      "empty"
+    ],
+    "false": [],
+    "fstype": [
+      "fstype"
+    ],
+    "gid": [
+      "gid"
+    ],
+    "group": [
+      "group"
+    ],
+    "ilname": [
+      "ilname"
+    ],
+    "iname": [
+      "iname"
+    ],
+    "inum": [
+      "inum"
+    ],
+    "iwholename": [
+      "iwholename"
+    ],
+    "iregex": [
+      "iregex"
+    ],
+    "links": [
+      "links"
+    ],
+    "lname": [
+      "lname"
+    ],
+    "mmin": [
+      "mmin"
+    ],
+    "mtime": [],
+    "name": [],
+    "newer": [
+      "assert",
+      "newer",
+      "original_arg",
+      "parse_entry_newerXY"
+    ],
+    "nouser": [
+      "nouser"
+    ],
+    "nogroup": [
+      "nogroup"
+    ],
+    "path": [
+      "path"
+    ],
+    "perm": [
+      "perm"
+    ],
+    "regex": [
+      "regex"
+    ],
+    "readable": [],
+    "writable": [],
+    "executable": [],
+    "wholename": [
+      "wholename"
+    ],
+    "size": [
+      "size"
+    ],
+    "true": [],
+    "type": [
+      "type"
+    ],
+    "uid": [
+      "uid"
+    ],
+    "used": [
+      "used"
+    ],
+    "user": [
+      "user"
+    ],
+    "xtype": [
+      "xtype"
+    ],
+    "context": [
+      "context"
+    ],
+    "delete": [
+      "delete"
+    ],
+    "print0": [
+      "print0"
+    ],
+    "printf": [],
+    "fprintf": [],
+    "fprint0": [
+      "fprint0"
+    ],
+    "fprint": [
+      "fprint"
+    ],
+    "ls": [],
+    "fls": [
+      "fls"
+    ],
+    "prune": [
+      "prune"
+    ],
+    "quit": [
+      "quit"
+    ],
+    "exec": [],
+    "ok": [],
+    "execdir": [
+      "execdir"
+    ],
+    "okdir": [
+      "okdir"
+    ]
+  },
+  "total_br": {
+    "print": [],
+    "and": [
+      "tree.c 880"
+    ],
+    "not": [],
+    "or": [
+      "tree.c 875"
+    ],
+    "daystart": [],
+    "follow": [],
+    "regextype": [],
+    "help": [
+      "util.c 858"
+    ],
+    "depth": [],
+    "maxdepth": [],
+    "mindepth": [],
+    "mount": [],
+    "noleaf": [],
+    "version": [],
+    "xdev": [],
+    "ignore_readdir_race": [],
+    "noignore_readdir_race": [],
+    "amin": [],
+    "anewer": [],
+    "atime": [],
+    "cmin": [],
+    "cnewer": [],
+    "ctime": [],
+    "empty": [
+      "ftsfind.c 629",
+      "util.c 853",
+      "util.c 858"
+    ],
+    "false": [],
+    "fstype": [
+      "parser.c 1059"
+    ],
+    "gid": [],
+    "group": [],
+    "ilname": [],
+    "iname": [],
+    "inum": [],
+    "iwholename": [],
+    "iregex": [],
+    "links": [],
+    "lname": [],
+    "mmin": [],
+    "mtime": [],
+    "name": [],
+    "newer": [],
+    "nouser": [],
+    "nogroup": [],
+    "path": [
+      "parser.c 2861",
+      "pred.c 311",
+      "print.c 1190",
+      "oldfind.c 779",
+      "util.c 588",
+      "util.c 261",
+      "oldfind.c 868",
+      "parser.c 3383",
+      "fstype.c 103",
+      "parser.c 2836",
+      "parser.c 3393",
+      "print.c 1185",
+      "fstype.c 225",
+      "oldfind.c 755",
+      "oldfind.c 748",
+      "oldfind.c 752",
+      "parser.c 2849",
+      "parser.c 342",
+      "pred.c 1206",
+      "parser.c 3378",
+      "fstype.c 151"
+    ],
+    "perm": [],
+    "regex": [],
+    "readable": [],
+    "writable": [],
+    "executable": [],
+    "wholename": [],
+    "size": [],
+    "true": [],
+    "type": [
+      "tree.c 1623",
+      "oldfind.c 144",
+      "oldfind.c 139",
+      "oldfind.c 124",
+      "tree.c 1622",
+      "pred.c 1131",
+      "oldfind.c 121",
+      "oldfind.c 133",
+      "oldfind.c 136",
+      "oldfind.c 142",
+      "oldfind.c 127",
+      "oldfind.c 130"
+    ],
+    "uid": [],
+    "used": [],
+    "user": [],
+    "xtype": [],
+    "context": [],
+    "delete": [],
+    "print0": [],
+    "printf": [],
+    "fprintf": [],
+    "fprint0": [],
+    "fprint": [],
+    "ls": [],
+    "fls": [],
+    "prune": [],
+    "quit": [],
+    "exec": [],
+    "ok": [],
+    "execdir": [],
+    "okdir": []
+  }
+}

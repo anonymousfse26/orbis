@@ -1,0 +1,644 @@
+{
+  "options": {
+    "normal": [
+      "NORMAL_OPTION"
+    ],
+    "brief": [
+      "'q'",
+      "-q"
+    ],
+    "report-identical-files": [
+      "-s"
+    ],
+    "context": [
+      "'C'",
+      "-C",
+      "-c"
+    ],
+    "unified": [
+      "'U'",
+      "-u",
+      "-U"
+    ],
+    "ed": [
+      "-e"
+    ],
+    "rcs": [
+      "-n",
+      "'n'"
+    ],
+    "side-by-side": [
+      "-y",
+      "'y'"
+    ],
+    "width": [
+      "-W"
+    ],
+    "left-column": [
+      "LEFT_COLUMN_OPTION"
+    ],
+    "suppress-common-lines": [
+      "SUPPRESS_COMMON_LINES_OPTION"
+    ],
+    "show-c-function": [
+      "'p'",
+      "-p"
+    ],
+    "show-function-line": [
+      "-F",
+      "'F'"
+    ],
+    "label": [],
+    "expand-tabs": [
+      "-t"
+    ],
+    "initial-tab": [
+      "-T"
+    ],
+    "tabsize": [],
+    "suppress-blank-empty": [
+      "SUPPRESS_BLANK_EMPTY_OPTION"
+    ],
+    "paginate": [
+      "-l"
+    ],
+    "recursive": [
+      "-r",
+      "'r'"
+    ],
+    "no-dereference": [
+      "NO_DEREFERENCE_OPTION"
+    ],
+    "new-file": [
+      "-N",
+      "'N'"
+    ],
+    "unidirectional-new-file": [
+      "'P'"
+    ],
+    "ignore-file-name-case": [
+      "IGNORE_FILE_NAME_CASE_OPTION"
+    ],
+    "no-ignore-file-name-case": [
+      "NO_IGNORE_FILE_NAME_CASE_OPTION"
+    ],
+    "exclude": [
+      "-x",
+      "'x'"
+    ],
+    "exclude-from": [
+      "'X'",
+      "-X"
+    ],
+    "starting-file": [
+      "-S",
+      "'S'"
+    ],
+    "from-file": [
+      "from_file",
+      "FROM_FILE_OPTION"
+    ],
+    "to-file": [
+      "to_file",
+      "TO_FILE_OPTION"
+    ],
+    "ignore-case": [
+      "-i"
+    ],
+    "ignore-tab-expansion": [
+      "-E"
+    ],
+    "ignore-trailing-space": [
+      "-Z"
+    ],
+    "ignore-space-change": [
+      "-b"
+    ],
+    "ignore-all-space": [
+      "-w"
+    ],
+    "ignore-blank-lines": [
+      "-B"
+    ],
+    "ignore-matching-lines": [
+      "-I"
+    ],
+    "text": [
+      "-a"
+    ],
+    "strip-trailing-cr": [
+      "strip_trailing_cr"
+    ],
+    "ifdef": [
+      "-D",
+      "'D'"
+    ],
+    "GTYPE-group-format": [],
+    "line-format": [
+      "line_format",
+      "LINE_FORMAT_OPTION"
+    ],
+    "LTYPE-line-format": [],
+    "minimal": [
+      "-d"
+    ],
+    "horizon-lines": [
+      "HORIZON_LINES_OPTION"
+    ],
+    "speed-large-files": [],
+    "color": [
+      "COLOR_OPTION"
+    ],
+    "palette": [
+      "COLOR_PALETTE_OPTION"
+    ],
+    "help": [],
+    "version": [
+      "-v"
+    ]
+  },
+  "total_br": {
+    "normal": [
+      "diff.c 588",
+      "analyze.c 664"
+    ],
+    "brief": [
+      "sdiff.c 947",
+      "analyze.c 664",
+      "diff.c 471",
+      "sdiff.c 881",
+      "analyze.c 652",
+      "analyze.c 672",
+      "analyze.c 660",
+      "analyze.c 676",
+      "side.c 177",
+      "analyze.c 644",
+      "analyze.c 656",
+      "sdiff.c 882",
+      "analyze.c 668",
+      "analyze.c 648",
+      "analyze.c 630",
+      "analyze.c 642",
+      "analyze.c 634"
+    ],
+    "report-identical-files": [
+      "cmp.c 246",
+      "sdiff.c 881",
+      "diff.c 479",
+      "side.c 177",
+      "sdiff.c 512",
+      "sdiff.c 941"
+    ],
+    "context": [
+      "side.c 167",
+      "util.c 494",
+      "diff.c 346"
+    ],
+    "unified": [
+      "diff.c 354",
+      "util.c 926",
+      "diff.c 695",
+      "diff.c 361",
+      "util.c 922",
+      "analyze.c 644",
+      "diff.c 680",
+      "diff.c 347",
+      "side.c 171",
+      "analyze.c 648",
+      "diff.c 352",
+      "diff.c 349"
+    ],
+    "ed": [
+      "sdiff.c 891",
+      "sdiff.c 982",
+      "sdiff.c 893",
+      "sdiff.c 957",
+      "sdiff.c 949",
+      "sdiff.c 965",
+      "sdiff.c 994",
+      "sdiff.c 904",
+      "sdiff.c 1039",
+      "sdiff.c 962",
+      "sdiff.c 972",
+      "ifdef.c 225",
+      "diff3.c 308",
+      "sdiff.c 895",
+      "sdiff.c 990",
+      "sdiff.c 896",
+      "sdiff.c 1033",
+      "sdiff.c 1043",
+      "sdiff.c 987",
+      "sdiff.c 1026",
+      "sdiff.c 1042",
+      "util.c 418",
+      "sdiff.c 968",
+      "sdiff.c 967",
+      "sdiff.c 989",
+      "util.c 488",
+      "side.c 174",
+      "sdiff.c 953",
+      "sdiff.c 978",
+      "sdiff.c 1004",
+      "sdiff.c 907",
+      "sdiff.c 1059",
+      "sdiff.c 1000",
+      "diff.c 398"
+    ],
+    "rcs": [
+      "util.c 424",
+      "ifdef.c 229",
+      "ifdef.c 347",
+      "cmp.c 239",
+      "analyze.c 660",
+      "cmp.c 236",
+      "cmp.c 241",
+      "side.c 176",
+      "diff.c 454"
+    ],
+    "side-by-side": [
+      "analyze.c 672",
+      "diff.c 521",
+      "side.c 178"
+    ],
+    "width": [
+      "diff.c 527",
+      "sdiff.c 526",
+      "diff.c 529",
+      "side.c 171",
+      "side.c 178",
+      "diff.c 531",
+      "diff.c 525",
+      "sdiff.c 531",
+      "diff.c 507"
+    ],
+    "left-column": [
+      "ifdef.c 279",
+      "side.c 273",
+      "sdiff.c 504",
+      "side.c 268",
+      "diff.c 434",
+      "sdiff.c 880",
+      "cmp.c 232",
+      "sdiff.c 978",
+      "diff.c 570",
+      "side.c 270",
+      "ifdef.c 250",
+      "sdiff.c 895",
+      "sdiff.c 933",
+      "side.c 176",
+      "ifdef.c 227",
+      "diff.c 435"
+    ],
+    "suppress-common-lines": [
+      "cmp.c 246",
+      "sdiff.c 881",
+      "diff.c 479",
+      "side.c 177",
+      "diff.c 605",
+      "sdiff.c 512",
+      "sdiff.c 941"
+    ],
+    "show-c-function": [
+      "diff.c 673",
+      "diff.c 462",
+      "diff.c 670",
+      "side.c 177"
+    ],
+    "show-function-line": [
+      "side.c 167",
+      "side.c 168",
+      "util.c 489",
+      "util.c 421",
+      "util.c 497",
+      "diff.c 407",
+      "ifdef.c 226",
+      "side.c 175",
+      "diff3.c 283",
+      "ifdef.c 217",
+      "diff.c 411",
+      "util.c 492"
+    ],
+    "label": [
+      "ifdef.c 218",
+      "diff.c 448",
+      "diff.c 445",
+      "ifdef.c 286",
+      "diff.c 446",
+      "side.c 169",
+      "diff3.c 331",
+      "ifdef.c 257",
+      "diff3.c 329"
+    ],
+    "expand-tabs": [
+      "side.c 177",
+      "util.c 430",
+      "diff.c 487",
+      "sdiff.c 516"
+    ],
+    "initial-tab": [
+      "diff3.c 311",
+      "side.c 170",
+      "diff.c 491"
+    ],
+    "tabsize": [],
+    "suppress-blank-empty": [
+      "util.c 1236",
+      "context.c 396",
+      "diff.c 601",
+      "context.c 380",
+      "context.c 415"
+    ],
+    "paginate": [
+      "ifdef.c 279",
+      "diff.c 434",
+      "sdiff.c 880",
+      "cmp.c 232",
+      "sdiff.c 978",
+      "ifdef.c 250",
+      "ifdef.c 227",
+      "sdiff.c 895",
+      "sdiff.c 933",
+      "side.c 176",
+      "sdiff.c 504",
+      "diff.c 435"
+    ],
+    "recursive": [
+      "util.c 966",
+      "side.c 222",
+      "util.c 888",
+      "side.c 177",
+      "diff.c 475",
+      "util.c 946",
+      "util.c 955",
+      "util.c 1275",
+      "util.c 833",
+      "sdiff.c 1127",
+      "util.c 958",
+      "util.c 427",
+      "util.c 709",
+      "sdiff.c 880",
+      "sdiff.c 895",
+      "util.c 951",
+      "sdiff.c 896",
+      "util.c 960",
+      "diff.c 1290",
+      "util.c 896",
+      "util.c 1271",
+      "diff.c 1312",
+      "sdiff.c 1000",
+      "sdiff.c 937"
+    ],
+    "no-dereference": [
+      "diff.c 1194",
+      "diff.c 1253",
+      "diff.c 580"
+    ],
+    "new-file": [
+      "ifdef.c 220",
+      "diff.c 1109",
+      "util.c 424",
+      "ifdef.c 229",
+      "ifdef.c 347",
+      "cmp.c 239",
+      "diff.c 458",
+      "cmp.c 236",
+      "diff.c 1312",
+      "side.c 169",
+      "side.c 176",
+      "cmp.c 241",
+      "diff.c 1208",
+      "diff.c 454"
+    ],
+    "unidirectional-new-file": [
+      "diff.c 1109",
+      "diff.c 1312",
+      "diff.c 467",
+      "side.c 170",
+      "diff.c 1208"
+    ],
+    "ignore-file-name-case": [
+      "diff.c 561"
+    ],
+    "no-ignore-file-name-case": [
+      "diff.c 584"
+    ],
+    "exclude": [
+      "diff3.c 288",
+      "diff3.c 348",
+      "util.c 407",
+      "side.c 178",
+      "diff.c 511",
+      "ifdef.c 341"
+    ],
+    "exclude-from": [
+      "diff.c 515",
+      "ifdef.c 358",
+      "util.c 475",
+      "cmp.c 239",
+      "util.c 487",
+      "diff.c 454",
+      "util.c 472",
+      "util.c 497",
+      "util.c 469",
+      "diff.c 516",
+      "util.c 484",
+      "util.c 479",
+      "util.c 500",
+      "util.c 470",
+      "util.c 474",
+      "util.c 496",
+      "side.c 176",
+      "util.c 494",
+      "ifdef.c 341",
+      "util.c 424",
+      "util.c 489",
+      "ifdef.c 229",
+      "ifdef.c 347",
+      "util.c 478",
+      "util.c 408",
+      "util.c 481",
+      "util.c 485",
+      "ifdef.c 345",
+      "side.c 171",
+      "ifdef.c 354",
+      "cmp.c 241",
+      "util.c 488",
+      "util.c 492",
+      "util.c 477",
+      "util.c 476",
+      "util.c 486",
+      "util.c 493",
+      "cmp.c 236",
+      "util.c 473",
+      "util.c 495",
+      "util.c 480",
+      "diff3.c 302"
+    ],
+    "starting-file": [
+      "dir.c 261",
+      "dir.c 259",
+      "diff.c 483",
+      "dir.c 257",
+      "side.c 170"
+    ],
+    "from-file": [
+      "diff.c 774",
+      "diff.c 792",
+      "diff.c 545",
+      "diff.c 783",
+      "diff.c 769",
+      "diff.c 771",
+      "diff.c 777",
+      "diff.c 787",
+      "diff.c 794",
+      "diff.c 784"
+    ],
+    "to-file": [
+      "diff.c 774",
+      "diff.c 792",
+      "diff.c 622",
+      "diff.c 783",
+      "diff.c 771",
+      "diff.c 777",
+      "diff.c 787",
+      "diff.c 794",
+      "diff.c 784"
+    ],
+    "ignore-case": [
+      "cmp.c 224",
+      "cmp.c 226",
+      "sdiff.c 495",
+      "sdiff.c 1116",
+      "cmp.c 228",
+      "side.c 175",
+      "diff3.c 296",
+      "diff.c 426",
+      "sdiff.c 1115"
+    ],
+    "ignore-tab-expansion": [
+      "ifdef.c 216",
+      "side.c 167",
+      "diff.c 402",
+      "diff3.c 305",
+      "util.c 496",
+      "sdiff.c 487",
+      "diff.c 403"
+    ],
+    "ignore-trailing-space": [
+      "diff.c 337",
+      "diff.c 338",
+      "side.c 172",
+      "sdiff.c 535"
+    ],
+    "ignore-space-change": [
+      "diff.c 332",
+      "sdiff.c 475",
+      "util.c 415",
+      "sdiff.c 978",
+      "util.c 485",
+      "diff.c 333",
+      "cmp.c 219",
+      "sdiff.c 895",
+      "sdiff.c 1000",
+      "side.c 174"
+    ],
+    "ignore-all-space": [
+      "diff.c 527",
+      "sdiff.c 526",
+      "diff.c 529",
+      "side.c 171",
+      "side.c 178",
+      "diff.c 531",
+      "diff.c 525",
+      "sdiff.c 531",
+      "diff.c 507"
+    ],
+    "ignore-blank-lines": [
+      "side.c 167",
+      "sdiff.c 479",
+      "diff.c 342",
+      "util.c 493"
+    ],
+    "ignore-matching-lines": [
+      "sdiff.c 499",
+      "side.c 168",
+      "diff.c 430"
+    ],
+    "text": [
+      "diff3.c 1168",
+      "util.c 484",
+      "diff3.c 280",
+      "sdiff.c 471",
+      "util.c 412",
+      "side.c 174",
+      "diff.c 328"
+    ],
+    "strip-trailing-cr": [
+      "io.c 487",
+      "diff3.c 1227",
+      "io.c 493",
+      "cmp.c 644"
+    ],
+    "ifdef": [
+      "side.c 167",
+      "util.c 495",
+      "diff.c 377",
+      "diff.c 390"
+    ],
+    "GTYPE-group-format": [],
+    "line-format": [
+      "diff.c 740",
+      "diff.c 576",
+      "diff.c 574",
+      "diff.c 739"
+    ],
+    "LTYPE-line-format": [],
+    "minimal": [
+      "sdiff.c 972",
+      "diff.c 373",
+      "util.c 487",
+      "diff3.c 1174",
+      "sdiff.c 483",
+      "sdiff.c 967",
+      "sdiff.c 968",
+      "sdiff.c 895",
+      "sdiff.c 989",
+      "sdiff.c 994",
+      "side.c 174",
+      "sdiff.c 990",
+      "ifdef.c 341"
+    ],
+    "horizon-lines": [
+      "sdiff.c 1107",
+      "io.c 670",
+      "context.c 526",
+      "diff.c 556",
+      "io.c 675",
+      "cmp.c 346",
+      "sdiff.c 1103",
+      "diff.c 554"
+    ],
+    "speed-large-files": [
+      "sdiff.c 491",
+      "side.c 168",
+      "diff.c 422"
+    ],
+    "color": [
+      "diff.c 643"
+    ],
+    "palette": [
+      "diff.c 647"
+    ],
+    "help": [],
+    "version": [
+      "cmp.c 250",
+      "sdiff.c 881",
+      "util.c 433",
+      "diff.c 501",
+      "side.c 178",
+      "sdiff.c 520",
+      "diff3.c 317",
+      "sdiff.c 944"
+    ]
+  }
+}
