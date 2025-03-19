@@ -17,9 +17,9 @@ setup(
     setup_requires=[],
     install_requires=[
         'numpy',
-        'tree-sitter'
-        'clang'
-        'scikit-learn'
+        'tree-sitter',
+        'clang',
+        'scikit-learn',
     ],
     dependency_links=[],
     entry_points={
