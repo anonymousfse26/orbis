@@ -1,0 +1,239 @@
+{
+    "--extended-regexp": [
+        49
+    ],
+    "-": [
+        3
+    ],
+    "--": [
+        3
+    ],
+    "--fixed-strings": [
+        45
+    ],
+    "--basic-regexp": [
+        39
+    ],
+    "--perl-regexp": [
+        39
+    ],
+    "--regexp": [
+        37
+    ],
+    "--file": [
+        18
+    ],
+    "--ignore-case": [
+        46
+    ],
+    "--no-ignore-case": [
+        55
+    ],
+    "--word-regexp": [
+        57
+    ],
+    "--line-regexp": [
+        50
+    ],
+    "--null-data": [
+        41
+    ],
+    "--no-messages": [
+        49
+    ],
+    "--invert-match": [
+        50
+    ],
+    "--version": [
+        43
+    ],
+    "--help": [
+        23
+    ],
+    "--max-count": [
+        42
+    ],
+    "--byte-offset": [
+        39
+    ],
+    "--line-number": [
+        49
+    ],
+    "--line-buffered": [
+        54
+    ],
+    "--with-filename": [
+        62
+    ],
+    "--no-filename": [
+        47
+    ],
+    "--label": [
+        29
+    ],
+    "--only-matching": [
+        55
+    ],
+    "--quiet": [
+        32
+    ],
+    "--binary-files": [
+        41
+    ],
+    "--directories": [
+        43
+    ],
+    "--devices": [
+        30
+    ],
+    "--recursive": [
+        45
+    ],
+    "--dereference-recursive": [
+        73
+    ],
+    "--include": [
+        33
+    ],
+    "--exclude": [
+        26
+    ],
+    "--exclude-from": [
+        41
+    ],
+    "--exclude-dir": [
+        39
+    ],
+    "--files-without-match": [
+        64
+    ],
+    "--files-with-matches": [
+        60
+    ],
+    "--count": [
+        25
+    ],
+    "--initial-tab": [
+        46
+    ],
+    "--null": [
+        26
+    ],
+    "--before-context": [
+        46
+    ],
+    "--after-context": [
+        46
+    ],
+    "--context": [
+        29
+    ],
+    "--color": [
+        24
+    ],
+    "--colour": [
+        28
+    ],
+    "--binary": [
+        23
+    ],
+    "-E": [
+        19
+    ],
+    "-F": [
+        20
+    ],
+    "-G": [
+        21
+    ],
+    "-P": [
+        24
+    ],
+    "-e": [
+        33
+    ],
+    "-f": [
+        34
+    ],
+    "-i": [
+        36
+    ],
+    "-w": [
+        48
+    ],
+    "-x": [
+        49
+    ],
+    "-z": [
+        52
+    ],
+    "-s": [
+        45
+    ],
+    "-v": [
+        47
+    ],
+    "-V": [
+        27
+    ],
+    "-m": [
+        39
+    ],
+    "-b": [
+        30
+    ],
+    "-n": [
+        40
+    ],
+    "-H": [
+        22
+    ],
+    "-h": [
+        35
+    ],
+    "-o": [
+        41
+    ],
+    "-q": [
+        42
+    ],
+    "-d": [
+        32
+    ],
+    "-D": [
+        18
+    ],
+    "-r": [
+        44
+    ],
+    "-R": [
+        43
+    ],
+    "-L": [
+        37
+    ],
+    "-l": [
+        38
+    ],
+    "-c": [
+        31
+    ],
+    "-T": [
+        25
+    ],
+    "-Z": [
+        51
+    ],
+    "-B": [
+        16
+    ],
+    "-A": [
+        26
+    ],
+    "-C": [
+        17
+    ],
+    "-U": [
+        26
+    ]
+}

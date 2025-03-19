@@ -1,0 +1,209 @@
+{
+    "--sort": [
+        27
+    ],
+    "-": [
+        2
+    ],
+    "--": [
+        3
+    ],
+    "--all": [
+        12
+    ],
+    "--almost-all": [
+        34
+    ],
+    "--author": [
+        22
+    ],
+    "--escape": [
+        22
+    ],
+    "--block-size": [
+        49
+    ],
+    "--ignore-backups": [
+        52
+    ],
+    "--color": [
+        31
+    ],
+    "--directory": [
+        32
+    ],
+    "--dired": [
+        21
+    ],
+    "--classify": [
+        39
+    ],
+    "--file-type": [
+        34
+    ],
+    "--format": [
+        26
+    ],
+    "--full-time": [
+        33
+    ],
+    "--group-directories-first": [
+        76
+    ],
+    "--no-group": [
+        36
+    ],
+    "--human-readable": [
+        50
+    ],
+    "--si": [
+        19
+    ],
+    "--dereference-command-line": [
+        78
+    ],
+    "--dereference-command-line-symlink-to-dir": [
+        123
+    ],
+    "--hide": [
+        21
+    ],
+    "--hyperlink": [
+        37
+    ],
+    "--indicator-style": [
+        55
+    ],
+    "--inode": [
+        24
+    ],
+    "--ignore": [
+        28
+    ],
+    "--kibibytes": [
+        37
+    ],
+    "--dereference": [
+        39
+    ],
+    "--numeric-uid-gid": [
+        56
+    ],
+    "--literal": [
+        37
+    ],
+    "--hide-control-chars": [
+        63
+    ],
+    "--show-control-chars": [
+        68
+    ],
+    "--quote-name": [
+        47
+    ],
+    "--quoting-style": [
+        57
+    ],
+    "--reverse": [
+        33
+    ],
+    "--recursive": [
+        40
+    ],
+    "--size": [
+        25
+    ],
+    "--time": [
+        31
+    ],
+    "--time-style": [
+        49
+    ],
+    "--tabsize": [
+        39
+    ],
+    "--width": [
+        29
+    ],
+    "--context": [
+        38
+    ],
+    "--help": [
+        23
+    ],
+    "--version": [
+        41
+    ],
+    "-a": [
+        43
+    ],
+    "-A": [
+        27
+    ],
+    "-b": [
+        5
+    ],
+    "-B": [
+        28
+    ],
+    "-d": [
+        7
+    ],
+    "-D": [
+        30
+    ],
+    "-F": [
+        31
+    ],
+    "-G": [
+        32
+    ],
+    "-h": [
+        10
+    ],
+    "-H": [
+        33
+    ],
+    "-i": [
+        11
+    ],
+    "-I": [
+        34
+    ],
+    "-k": [
+        12
+    ],
+    "-L": [
+        35
+    ],
+    "-n": [
+        15
+    ],
+    "-N": [
+        36
+    ],
+    "-q": [
+        18
+    ],
+    "-Q": [
+        37
+    ],
+    "-r": [
+        19
+    ],
+    "-R": [
+        38
+    ],
+    "-s": [
+        20
+    ],
+    "-T": [
+        40
+    ],
+    "-w": [
+        24
+    ],
+    "-Z": [
+        43
+    ]
+}

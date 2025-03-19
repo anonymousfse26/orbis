@@ -1,0 +1,215 @@
+{
+    "-print": [
+        31
+    ],
+    "-": [
+        2
+    ],
+    "-and": [
+        18
+    ],
+    "-not": [
+        12
+    ],
+    "-or": [
+        26
+    ],
+    "-daystart": [
+        23
+    ],
+    "-follow": [
+        24
+    ],
+    "-regextype": [
+        37
+    ],
+    "-help": [
+        35
+    ],
+    "-depth": [
+        22
+    ],
+    "-maxdepth": [
+        29
+    ],
+    "-mindepth": [
+        30
+    ],
+    "-mount": [
+        29
+    ],
+    "-noleaf": [
+        16
+    ],
+    "-version": [
+        39
+    ],
+    "-xdev": [
+        34
+    ],
+    "-ignore_readdir_race": [
+        38
+    ],
+    "-noignore_readdir_race": [
+        34
+    ],
+    "-amin": [
+        18
+    ],
+    "-anewer": [
+        22
+    ],
+    "-atime": [
+        21
+    ],
+    "-cmin": [
+        18
+    ],
+    "-cnewer": [
+        21
+    ],
+    "-ctime": [
+        21
+    ],
+    "-empty": [
+        21
+    ],
+    "-false": [
+        26
+    ],
+    "-fstype": [
+        26
+    ],
+    "-gid": [
+        21
+    ],
+    "-group": [
+        24
+    ],
+    "-ilname": [
+        26
+    ],
+    "-iname": [
+        26
+    ],
+    "-inum": [
+        26
+    ],
+    "-iwholename": [
+        34
+    ],
+    "-iregex": [
+        29
+    ],
+    "-links": [
+        25
+    ],
+    "-lname": [
+        26
+    ],
+    "-mmin": [
+        27
+    ],
+    "-mtime": [
+        30
+    ],
+    "-name": [
+        14
+    ],
+    "-newer": [
+        13
+    ],
+    "-nouser": [
+        18
+    ],
+    "-nogroup": [
+        18
+    ],
+    "-path": [
+        28
+    ],
+    "-perm": [
+        29
+    ],
+    "-regex": [
+        32
+    ],
+    "-readable": [
+        34
+    ],
+    "-writable": [
+        32
+    ],
+    "-executable": [
+        28
+    ],
+    "-wholename": [
+        32
+    ],
+    "-size": [
+        32
+    ],
+    "-true": [
+        33
+    ],
+    "-type": [
+        32
+    ],
+    "-uid": [
+        32
+    ],
+    "-used": [
+        34
+    ],
+    "-user": [
+        35
+    ],
+    "-xtype": [
+        36
+    ],
+    "-context": [
+        24
+    ],
+    "-delete": [
+        22
+    ],
+    "-print0": [
+        33
+    ],
+    "-printf": [
+        34
+    ],
+    "-fprintf": [
+        28
+    ],
+    "-fprint0": [
+        27
+    ],
+    "-fprint": [
+        25
+    ],
+    "-ls": [
+        24
+    ],
+    "-fls": [
+        20
+    ],
+    "-prune": [
+        32
+    ],
+    "-quit": [
+        29
+    ],
+    "-exec": [
+        21
+    ],
+    "-ok": [
+        27
+    ],
+    "-execdir": [
+        26
+    ],
+    "-okdir": [
+        31
+    ]
+}

@@ -1,0 +1,353 @@
+{
+    "--help": [
+        27
+    ],
+    "-": [
+        9
+    ],
+    "--": [
+        10
+    ],
+    "--usage": [
+        38
+    ],
+    "--license": [
+        39
+    ],
+    "--copyleft": [
+        28
+    ],
+    "--copyright": [
+        0
+    ],
+    "--version": [
+        45
+    ],
+    "--exit-status-help-non-zero": [
+        0
+    ],
+    "--response-file": [
+        0
+    ],
+    "--shell-script": [
+        57
+    ],
+    "--date-variable": [
+        0
+    ],
+    "--export-date-variables": [
+        0
+    ],
+    "--text-variable": [
+        0
+    ],
+    "--export-text-variables": [
+        0
+    ],
+    "--filter-day": [
+        41
+    ],
+    "--filter-period": [
+        0
+    ],
+    "--filter-text": [
+        0
+    ],
+    "--ignore-case": [
+        47
+    ],
+    "--revert-match": [
+        0
+    ],
+    "--debug": [
+        25
+    ],
+    "--type": [
+        38
+    ],
+    "--orthodox-calendar": [
+        0
+    ],
+    "--with-week-number": [
+        0
+    ],
+    "--iso-week-number": [
+        0
+    ],
+    "--suppress-calendar": [
+        0
+    ],
+    "--pager": [
+        34
+    ],
+    "--disable-highlighting": [
+        0
+    ],
+    "--highlighting": [
+        0
+    ],
+    "--force-highlighting": [
+        0
+    ],
+    "--blocks": [
+        27
+    ],
+    "--calendar-dates": [
+        0
+    ],
+    "--holiday-dates": [
+        0
+    ],
+    "--fixed-dates": [
+        0
+    ],
+    "--starting-day": [
+        0
+    ],
+    "--mail": [
+        29
+    ],
+    "--holiday-list": [
+        0
+    ],
+    "--descending-holiday-list": [
+        0
+    ],
+    "--suppress-holiday-list-separator": [
+        0
+    ],
+    "--exclude-holiday-list-title": [
+        0
+    ],
+    "--astronomical-holidays": [
+        0
+    ],
+    "--bahai-holidays": [
+        0
+    ],
+    "--bahai-months": [
+        0
+    ],
+    "--celtic-holidays": [
+        0
+    ],
+    "--chinese-flexible-holidays": [
+        0
+    ],
+    "--chinese-flexible-months": [
+        0
+    ],
+    "--chinese-holidays": [
+        0
+    ],
+    "--chinese-months": [
+        0
+    ],
+    "--christian-holidays": [
+        0
+    ],
+    "--coptic-months": [
+        0
+    ],
+    "--ethiopic-months": [
+        0
+    ],
+    "--french-revolutionary-months": [
+        0
+    ],
+    "--hebrew-holidays": [
+        0
+    ],
+    "--hebrew-months": [
+        0
+    ],
+    "--indian-civil-months": [
+        0
+    ],
+    "--islamic-civil-holidays": [
+        0
+    ],
+    "--islamic-civil-months": [
+        0
+    ],
+    "--japanese-flexible-holidays": [
+        0
+    ],
+    "--japanese-flexible-months": [
+        0
+    ],
+    "--japanese-holidays": [
+        0
+    ],
+    "--japanese-months": [
+        0
+    ],
+    "--multicultural-new-year-holidays": [
+        0
+    ],
+    "--old-armenic-months": [
+        0
+    ],
+    "--old-egyptic-months": [
+        0
+    ],
+    "--orthodox-new-holidays": [
+        0
+    ],
+    "--orthodox-old-holidays": [
+        0
+    ],
+    "--persian-jalaali-holidays": [
+        0
+    ],
+    "--persian-jalaali-months": [
+        0
+    ],
+    "--zodiacal-marker-holidays": [
+        0
+    ],
+    "--cc-holidays": [
+        0
+    ],
+    "--adjust-value": [
+        42
+    ],
+    "--atmosphere": [
+        0
+    ],
+    "--limit": [
+        34
+    ],
+    "--precise": [
+        42
+    ],
+    "--execute-command": [
+        0
+    ],
+    "--time-offset": [
+        0
+    ],
+    "--cycle-end": [
+        0
+    ],
+    "--cycle-step": [
+        0
+    ],
+    "--transform-year": [
+        0
+    ],
+    "--gregorian-reform": [
+        0
+    ],
+    "--date-format": [
+        42
+    ],
+    "--translate-string": [
+        0
+    ],
+    "--list-of-fixed-dates": [
+        0
+    ],
+    "--descending-fixed-dates": [
+        0
+    ],
+    "--today": [
+        39
+    ],
+    "--heading-text": [
+        49
+    ],
+    "--grouping-text": [
+        0
+    ],
+    "--biorhythm-axis": [
+        0
+    ],
+    "--moonimage-lines": [
+        0
+    ],
+    "--include-resource-file-name": [
+        0
+    ],
+    "--alternative-format": [
+        0
+    ],
+    "--include-holidays": [
+        0
+    ],
+    "--include-week-number": [
+        0
+    ],
+    "--omit-multiple-date-part": [
+        0
+    ],
+    "--suppress-fixed-dates-list-separator": [
+        0
+    ],
+    "--suppress-date-part": [
+        0
+    ],
+    "--suppress-text-part": [
+        0
+    ],
+    "--exclude-fixed-dates-list-title": [
+        0
+    ],
+    "--include-consecutive-number": [
+        0
+    ],
+    "--zero-dates-only": [
+        0
+    ],
+    "--leap-day": [
+        41
+    ],
+    "--include-today": [
+        0
+    ],
+    "--list-mode": [
+        0
+    ],
+    "--period-of-fixed-dates": [
+        0
+    ],
+    "--tomorrow": [
+        0
+    ],
+    "--week": [
+        37
+    ],
+    "--end-of-week": [
+        44
+    ],
+    "--start-of-week": [
+        0
+    ],
+    "--month": [
+        33
+    ],
+    "--end-of-month": [
+        46
+    ],
+    "--start-of-month": [
+        0
+    ],
+    "--year": [
+        39
+    ],
+    "--end-of-year": [
+        0
+    ],
+    "--start-of-year": [
+        0
+    ],
+    "--resource-file": [
+        0
+    ],
+    "--here": [
+        28
+    ],
+    "-w": [
+        28
+    ]
+}

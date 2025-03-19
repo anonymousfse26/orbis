@@ -1,0 +1,200 @@
+{
+    "--normal": [
+        31
+    ],
+    "-": [
+        2
+    ],
+    "--": [
+        3
+    ],
+    "--brief": [
+        19
+    ],
+    "--report-identical-files": [
+        82
+    ],
+    "--context": [
+        27
+    ],
+    "--unified": [
+        40
+    ],
+    "--ed": [
+        11
+    ],
+    "--rcs": [
+        23
+    ],
+    "--side-by-side": [
+        53
+    ],
+    "--width": [
+        34
+    ],
+    "--left-column": [
+        43
+    ],
+    "--suppress-common-lines": [
+        84
+    ],
+    "--show-c-function": [
+        61
+    ],
+    "--show-function-line": [
+        71
+    ],
+    "--label": [
+        24
+    ],
+    "--expand-tabs": [
+        40
+    ],
+    "--initial-tab": [
+        44
+    ],
+    "--tabsize": [
+        37
+    ],
+    "--suppress-blank-empty": [
+        80
+    ],
+    "--paginate": [
+        37
+    ],
+    "--recursive": [
+        42
+    ],
+    "--no-dereference": [
+        54
+    ],
+    "--new-file": [
+        35
+    ],
+    "--unidirectional-new-file": [
+        87
+    ],
+    "--ignore-file-name-case": [
+        75
+    ],
+    "--no-ignore-file-name-case": [
+        85
+    ],
+    "--exclude": [
+        27
+    ],
+    "--exclude-from": [
+        42
+    ],
+    "--starting-file": [
+        58
+    ],
+    "--from-file": [
+        34
+    ],
+    "--to-file": [
+        39
+    ],
+    "--ignore-case": [
+        44
+    ],
+    "--ignore-tab-expansion": [
+        75
+    ],
+    "--ignore-trailing-space": [
+        79
+    ],
+    "--ignore-space-change": [
+        71
+    ],
+    "--ignore-all-space": [
+        57
+    ],
+    "--ignore-blank-lines": [
+        64
+    ],
+    "--ignore-matching-lines": [
+        76
+    ],
+    "--text": [
+        29
+    ],
+    "--strip-trailing-cr": [
+        71
+    ],
+    "--ifdef": [
+        23
+    ],
+    "--GTYPE-group-format": [
+        57
+    ],
+    "--line-format": [
+        44
+    ],
+    "--LTYPE-line-format": [
+        55
+    ],
+    "--minimal": [
+        31
+    ],
+    "--horizon-lines": [
+        47
+    ],
+    "--speed-large-files": [
+        69
+    ],
+    "--color": [
+        20
+    ],
+    "--palette": [
+        35
+    ],
+    "--help": [
+        19
+    ],
+    "--version": [
+        39
+    ],
+    "-q": [
+        36
+    ],
+    "-C": [
+        21
+    ],
+    "-U": [
+        43
+    ],
+    "-n": [
+        32
+    ],
+    "-y": [
+        49
+    ],
+    "-p": [
+        34
+    ],
+    "-F": [
+        25
+    ],
+    "-r": [
+        37
+    ],
+    "-N": [
+        33
+    ],
+    "-P": [
+        35
+    ],
+    "-x": [
+        47
+    ],
+    "-X": [
+        48
+    ],
+    "-S": [
+        39
+    ],
+    "-D": [
+        21
+    ]
+}

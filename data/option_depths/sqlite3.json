@@ -1,0 +1,104 @@
+{
+    "-append": [
+        17
+    ],
+    "-ascii": [
+        0
+    ],
+    "-bail": [
+        0
+    ],
+    "-batch": [
+        0
+    ],
+    "-box": [
+        0
+    ],
+    "-column": [
+        0
+    ],
+    "-cmd": [
+        6
+    ],
+    "-": [
+        2
+    ],
+    "-csv": [
+        0
+    ],
+    "-echo": [
+        0
+    ],
+    "-init": [
+        8
+    ],
+    "-header": [
+        0
+    ],
+    "-help": [
+        11
+    ],
+    "-html": [
+        0
+    ],
+    "-interactive": [
+        0
+    ],
+    "-json": [
+        0
+    ],
+    "-line": [
+        0
+    ],
+    "-list": [
+        0
+    ],
+    "-lookaside": [
+        17
+    ],
+    "-markdown": [
+        0
+    ],
+    "-memtrace": [
+        0
+    ],
+    "-mmap": [
+        13
+    ],
+    "-newline": [
+        10
+    ],
+    "-nofollow": [
+        0
+    ],
+    "-nullvalue": [
+        11
+    ],
+    "-pagecache": [
+        16
+    ],
+    "-quote": [
+        0
+    ],
+    "-readonly": [
+        0
+    ],
+    "-separator": [
+        10
+    ],
+    "-stats": [
+        0
+    ],
+    "-table": [
+        0
+    ],
+    "-version": [
+        18
+    ],
+    "-vfs": [
+        13
+    ],
+    "-zip": [
+        17
+    ]
+}
