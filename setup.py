@@ -18,7 +18,7 @@ setup(
     install_requires=[
         'numpy',
         'tree-sitter<=0.21.3',
-        'clang',
+        'clang<=6.0.0',
         'scikit-learn',
     ],
     dependency_links=[],
