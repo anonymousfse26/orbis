@@ -78,7 +78,9 @@ def main(argv=None):
         parser.print_usage()
         print('[INFO] SCOPE : following parameters are required: -t, llvm_bc, gcov_obj')
         sys.exit(1)
-
+        
+    args.gcov_obj = f"{str(os.getcwd())}/{args.gcov_obj}"
+    args.llvm_bc = f"{str(os.getcwd())}/{args.llvm_bc}"
     output_dir = Path(args.output_dir)
     original_path = f"{str(os.getcwd())}/{args.output_dir}"
     if output_dir.exists():
