@@ -39,15 +39,15 @@ Then, you will see logs as follows.
 ```bash
 [INFO] SCOPE : Coverage will be recorded at "SCOPE_TEST/coverage.csv" at every iteration.
 [INFO] SCOPE : All configuration loaded. Start testing.
-[INFO] SCOPE : Iteration: 1 Iteration budget: 120 Total budget: 36000 Time elapsed: 144 Next option argument: "--extended-regexp" Coverage: 1297
+[INFO] SCOPE : Iteration: 1 Iteration budget: 120 Total budget: 3600 Time elapsed: 133 Next option argument: "--label" Coverage: 1553
 ```
 
 When the time budget expires without error, you can see the following output.
 ```bash
-[INFO] SCOPE : Iteration: 267 Iteration budget: 120 Total budget: 36000 Time Elapsed: 35886 Coverage: 3389 
-[INFO] SCOPE : Iteration: 268 Iteration budget: 114 Total budget: 36000 Time Elapsed: 36060 Coverage: 3389 
-[INFO] SCOPE : Covered 250 option related branches.
-[INFO] SCOPE : Testing done. Achieve 3389 coverage.
+[INFO] SCOPE : Iteration: 29 Iteration budget: 120 Total budget: 3600 Time elapsed: 3585 Next option argument: "--null" Coverage: 3310
+[INFO] SCOPE : Iteration: 30 Iteration budget: 15 Total budget: 3600 Time elapsed: 3608 Next option argument: "--line-buffered" Coverage: 3310 
+[INFO] SCOPE : Covered 283 option related branches.
+[INFO] SCOPE : Testing done. Achieve 3310 coverage.
 ```
 
 
