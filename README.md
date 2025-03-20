@@ -55,6 +55,7 @@ When the time budget expires without error, you can see the following output.
 ### Branch Coverage
 If you want to get results about how many branches SCOPE has covered, run the following command.
 ```bash
+# Needs 'matplotlib' package
 /scope/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST 
 ```
 
