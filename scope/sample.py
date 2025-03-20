@@ -218,7 +218,7 @@ class Sampler:
         return " ".join(opt_list), original_opt
 
 
-    def sample(self, coverages, iter_covs, portion, elapsed, budget):
+    def sample(self, coverages, iter_covs, portion, elapsed, budget, bout_bin, random_bout_bin):
         for prev_opt in self.prev_opt_arg:
             self.covered_branches[prev_opt] = self.covered_branches[prev_opt].union(iter_covs)
 
@@ -286,9 +286,10 @@ class Sampler:
         sym_cmd = sym_cmd.strip()
         
         # Making sampled option argument as a seed
-        seeding_cmd = f"gen-bout {' '.join(opts)} --bout-file {self.running_dir}/seed_option_arguments/{self.pgm}.ktest"
+        seeding_cmd = f"{bout_bin} {' '.join(opts)} --bout-file {self.running_dir}/seed_option_arguments/{self.pgm}.ktest"
         if (portion < self.explore_rate):
-            seeding_cmd = f"gen-random-bout {self.running_dir}/seed_option_arguments/{self.pgm}.ktest {sym_cmd} --bout-file {self.running_dir}/seed_option_arguments/{self.pgm}.ktest"
+            seeding_cmd = f"{random_bout_bin} {self.running_dir}/seed_option_arguments/{self.pgm}.ktest {sym_cmd} --bout-file {self.running_dir}/seed_option_arguments/{self.pgm}.ktest"
+        print(seeding_cmd)
         os.system(seeding_cmd)
 
         return opt_arg, sym_cmd, branches_opt, f"{self.running_dir}/seed_option_arguments/{self.pgm}.ktest"
