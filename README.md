@@ -59,7 +59,7 @@ If you want to get results about how many branches SCOPE has covered, run the fo
 /scope/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST 
 ```
 You can get the following graph that represents the branch coverage flow:
-![coverage_result](https://github.com/user-attachments/assets/944cdde8-fdf1-49a4-891c-166474c3994f)
+![coverage_result](https://github.com/user-attachments/assets/93719cc6-7fe4-49cd-a5bb-efe44cc35ce8)
 
 And if you want to compare multiple results in a graph, just list the directory names as: 
 ```bash
