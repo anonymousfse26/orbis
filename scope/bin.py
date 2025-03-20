@@ -177,10 +177,10 @@ def main(argv=None):
             coverages.append(len(coverage))
             if explore_flag >= args.explore_rate:
                 seeder.save_seed(opt_arg, i, branches_opt, args.klee_replay, args.gcov)            
-                opt_arg, sym_cmd, branches_opt, bout_path = sampler.sample(coverages, coverage, explore_flag, int(time.time() - iter_start), time_budget)
+                opt_arg, sym_cmd, branches_opt, bout_path = sampler.sample(coverages, coverage, explore_flag, int(time.time() - iter_start), time_budget, args.gen_bout, args.gen_random_bout)
                 seed_data = seeder.guide_seed(opt_arg, option_depths, args.klee_replay)
             else:
-                opt_arg, sym_cmd, branches_opt, bout_path = sampler.sample(coverages, coverage, explore_flag, int(time.time() - iter_start), time_budget)
+                opt_arg, sym_cmd, branches_opt, bout_path = sampler.sample(coverages, coverage, explore_flag, int(time.time() - iter_start), time_budget, args.gen_bout, args.gen_random_bout)
 
             print(f'[INFO] SCOPE : Iteration: {i} '
                             f'Iteration budget: {time_budget} '
