@@ -67,8 +67,6 @@ Similar to branch coverage, bug-finding also allows you to search multiple direc
 /scope/benchmarks$ python3 report_bugs.py --benchmark grep-3.4 SCOPE_TEST1 SCOPE_TEST2 ...
 ```
 
-★ Caution: Multiple directories must all be tested against the same benchmark.
-
 
 ### Options of Reporting Programs
 + /benchmarks/report_coverage.py
