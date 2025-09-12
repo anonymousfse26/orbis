@@ -1,4 +1,4 @@
-# SCOPE
+# Orbis
 
 SCOPE: Enhancing Symbolic Execution through Optimized Option-Related Branch Exploration
 
