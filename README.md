@@ -1,35 +1,31 @@
 # Orbis
 
-SCOPE: Enhancing Symbolic Execution through Optimized Option-Related Branch Exploration
-
-
-<img src="https://github.com/user-attachments/assets/abbbb3ac-c8a1-4ebe-b7a8-44b5b405de0e" width=30%, height=30%/>
-
+Orbis: Guiding Symbolic Execution Techniques to Maximize Option-Related Branch Coverage
 
 #
-### Build SCOPE
+### Build ORBiS
 First, you have to clone our source code. 
 ```bash
-$ git clone https://github.com/anonymousicse26/scope.git
+$ git clone https://github.com/anonymousfse26/orbis.git
 ```
 
-Second, build SCOPE with Dockerfile. If you run the command below, SCOPE will be built, and a benchmark (grep-3.4) will be installed.
+Second, build ORBiS with Dockerfile. If you run the command below, ORBiS will be built, and a benchmark (grep-3.4) will be installed.
 ```bash
-$ cd scope
-/scope $ docker build -t scope .
+$ cd orbis
+/orbis $ docker build -t orbis .
 ```
 
-Third, connect to Docker using the command below. The command will take you to a directory named scope.
+Third, connect to Docker using the command below. The command will take you to a directory named orbis.
 ```bash
-/scope $ docker run -it --ulimit='stack=-1:-1' scope
+/orbis $ docker run -it --ulimit='stack=-1:-1' orbis
 ```
 
-### Run SCOPE
-Finally, you can run SCOPE with the following code. (e.g. grep-3.4).
+### Run ORBiS
+Finally, you can run ORBiS with the following code. (e.g. grep-3.4).
 ```bash
-/scope/benchmarks $ scope -p grep -t 36000 -d SCOPE_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
+/orbis/benchmarks $ orbis -p grep -t 36000 -d ORBiS_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
 ```
-Format : scope -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)> <path_to_exec_file(gcov)>
+Format : orbis -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)> <path_to_exec_file(gcov)>
 + -p : Target Program
 + -t : Time Budget (seconds)
 + -d : Output Directory
@@ -37,47 +33,47 @@ Format : scope -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_
 
 Then, you will see logs as follows.
 ```bash
-[INFO] SCOPE : Coverage will be recorded at "SCOPE_TEST/coverage.csv" at every iteration.
-[INFO] SCOPE : All configuration loaded. Start testing.
-[INFO] SCOPE : Iteration: 1 Iteration budget: 120 Total budget: 3600 Time elapsed: 133 Next option argument: "--label" Coverage: 1553
+[INFO] ORBiS : Coverage will be recorded at "ORBiS_TEST/coverage.csv" at every iteration.
+[INFO] ORBiS : All configuration loaded. Start testing.
+[INFO] ORBiS : Iteration: 1 Iteration budget: 120 Total budget: 3600 Time elapsed: 133 Next option argument: "--label" Coverage: 1553
 ```
 
 When the time budget expires without error, you can see the following output.
 ```bash
-[INFO] SCOPE : Iteration: 29 Iteration budget: 120 Total budget: 3600 Time elapsed: 3585 Next option argument: "--null" Coverage: 3310
-[INFO] SCOPE : Iteration: 30 Iteration budget: 15 Total budget: 3600 Time elapsed: 3608 Next option argument: "--line-buffered" Coverage: 3310 
-[INFO] SCOPE : Covered 283 option related branches.
-[INFO] SCOPE : Testing done. Achieve 3310 coverage.
+[INFO] ORBiS : Iteration: 29 Iteration budget: 120 Total budget: 3600 Time elapsed: 3585 Next option argument: "--null" Coverage: 3310
+[INFO] ORBiS : Iteration: 30 Iteration budget: 15 Total budget: 3600 Time elapsed: 3608 Next option argument: "--line-buffered" Coverage: 3310 
+[INFO] ORBiS : Covered 283 option related branches.
+[INFO] ORBiS : Testing done. Achieve 3310 coverage.
 ```
 
 
 ## Reporting Results
 ### Branch Coverage
-If you want to get results about how many branches SCOPE has covered, run the following command.
+If you want to get results about how many branches ORBiS has covered, run the following command.
 ```bash
 # Needs 'matplotlib' package
-/scope/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST 
+/orbis/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST 
 ```
 You can get the following graph that represents the branch coverage flow:
 ![coverage_result](https://github.com/user-attachments/assets/93719cc6-7fe4-49cd-a5bb-efe44cc35ce8)
 
 And if you want to compare multiple results in a graph, just list the directory names as: 
 ```bash
-/scope/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST1 SCOP_TEST2 ...
+/orbis/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST1 SCOP_TEST2 ...
 ```
 
 
 ### Bug Finding
-If you want to check information about what bugs SCOPE has found, run the following command.
+If you want to check information about what bugs ORBiS has found, run the following command.
 ```bash
-/scope/benchmarks $ python3 report_bugs.py --benchmark grep-3.4 SCOPE_TEST
+/orbis/benchmarks $ python3 report_bugs.py --benchmark grep-3.4 ORBiS_TEST
 ```
 
 If the command is executed successfully, you will get a bug report in a file named "bug_result.txt".
 ```bash
-/scope/benchmarks $ cat bug_result.txt
+/orbis/benchmarks $ cat bug_result.txt
 # Example from find-4.7.0
-TestCase : /SCOPE_TEST/iteration-3/test000005.ktest
+TestCase : /ORBiS_TEST/iteration-3/test000005.ktest
 Arguments : "./find" "-amin" "-+NAN" 
 CRASHED signal 6
 File: ../../find/parser.c
@@ -87,8 +83,8 @@ Line: 3143
 
 ## Usage
 ```
-$ scope --help
-usage: scope [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT]
+$ orbis --help
+usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT]
              [--gen-random-bout GEN_RANDOM_BOUT] [--gcov GCOV] [--init-budget INT]
              [--option-depth INT] [--n-testcases FLOAT] [--explore-rate FLOAT] [--config STR]
              [--init-args STR] [-d OUTPUT_DIR] [--src-depth SRC_DEPTH] [-o NUM_DASH]
@@ -128,14 +124,14 @@ usage: scope [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT
 ### Required Arguments
 | Option | Description |
 |:------:|:------------|
-| `-t, --budget` | Total time budget of SCOPE |
+| `-t, --budget` | Total time budget of ORBiS |
 | `llvm_bc` | LLVM bitecode file for klee |
 | `gcov_obj` | Executable with gcov support |
 
 ## Usage of Other Programs
 ### /benchmarks/report_bugs.py
 ```
-/scope/benchmarks$ python3 report_bugs.py --help
+/orbis/benchmarks$ python3 report_bugs.py --help
 usage: report_bugs.py [-h] [--benchmark STR] [--table PATH] [DIRS ...]
 ```
 | Option | Description |
@@ -148,7 +144,7 @@ usage: report_bugs.py [-h] [--benchmark STR] [--table PATH] [DIRS ...]
 
 ### /benchmarks/report_coverage.py
 ```
-/scope/benchmarks$ python3 report_coverage.py --help
+/orbis/benchmarks$ python3 report_coverage.py --help
 usage: report_coverage.py [-h] [--benchmark STR] [--graph PATH] [--budget TIME] [DIRS ...]
 ```
 | Option | Description |
@@ -172,12 +168,12 @@ Here are brief descriptions of the files. Some less-important files may be omitt
 ├── data                        <Saving data during experiments directory>
     ├── opt_branches            Directory of option-related branches for program
     └── option_depths           Directory of state depths for program options
-├── engine                      <Symbolic executor that interacts with SCOPE>
+├── engine                      <Symbolic executor that interacts with ORBiS>
     └── klee                    https://github.com/klee/klee.git
 ├── parser                      <Tool for generating abstract syntax tree>
     └── tree-sitter-c           https://tree-sitter.github.io/tree-sitter
-└── scope                       <Main source code directory>
-    ├── bin.py                  Entry point of SCOPE
+└── orbis                       <Main source code directory>
+    ├── bin.py                  Entry point of ORBiS
     ├── extract.py              Extracting options and option-related branches
     ├── klee.py                 Interacting with symbolic executors (e.g., KLEE)
     ├── report_ob.py            Calculating cumulative option-related branch coverage 
