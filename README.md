@@ -182,3 +182,18 @@ Here are brief descriptions of the files. Some less-important files may be omitt
 ```
 
 
+## Data Availability
+If you want to access data about the experiments of ParaSuit, you can download it at the following URL:
+https://github.com/anonymousfse26/orbis/releases/tag/experiments
+
+Download the following file from the URL
++ orbis_experiments.zip
+
+By clicking file or running the following codes on the terminal, you can download the data files.
+
+```
+$ wget https://github.com/anonymousfse26/orbis/releases/download/experiments/orbis_experiments.zip
+$ unzip orbis_experiments.zip
+```
+
+You can access the testcase directories for 6 programs: xorriso, sqlite3, gcal, find, csplit, and ls.
