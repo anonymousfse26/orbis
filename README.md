@@ -196,4 +196,4 @@ $ wget https://github.com/anonymousfse26/orbis/releases/download/experiments/orb
 $ unzip orbis_experiments.zip
 ```
 
-You can access the testcase directories for 6 programs: xorriso, sqlite3, gcal, find, csplit, and ls.
+You can access the testcase directories for 6 programs: xorriso, sqlite, gcal, find, csplit, and ls.
