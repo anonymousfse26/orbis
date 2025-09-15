@@ -59,7 +59,7 @@ You can get the following graph that represents the branch coverage flow:
 
 And if you want to compare multiple results in a graph, just list the directory names as: 
 ```bash
-/orbis/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST1 SCOP_TEST2 ...
+/orbis/benchmarks $ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST1 ORBiS_TEST2 ...
 ```
 
 
@@ -84,11 +84,11 @@ Line: 3143
 ## Usage
 ```
 $ orbis --help
-usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT]
-             [--gen-random-bout GEN_RANDOM_BOUT] [--gcov GCOV] [--init-budget INT]
-             [--option-depth INT] [--n-testcases FLOAT] [--explore-rate FLOAT] [--config STR]
-             [--init-args STR] [-d OUTPUT_DIR] [--src-depth SRC_DEPTH] [-o NUM_DASH]
-             [--engine ENGINE] [-t INT] [-p STR]
+usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY]
+             [--gen-bout GEN_BOUT] [--gen-random-bout GEN_RANDOM_BOUT]
+             [--gcov GCOV] [--init-budget INT] [--n-testcases FLOAT]
+             [--init-args STR] [-d OUTPUT_DIR] [--src-depth SRC_DEPTH]
+             [-t INT] [-p STR]
              [llvm_bc] [gcov_obj]
 ```
 
@@ -98,7 +98,7 @@ usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT
 |:------:|:------------|
 | `-h, --help` | show help message and exit |
 | `-d, --output-dir` | Directory where experiment results are saved |
-| `--gcov-depth` | Depth from the obj-gcov directory to the directory where the gcov file was created |
+| `--src-depth` | Depth from the obj-gcov directory to the directory where the gcov file was created |
 
 
 ### Executable Settings
@@ -115,10 +115,7 @@ usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY] [--gen-bout GEN_BOUT
 | Option | Description |
 |:------:|:------------|
 | `--init-budget` | Time budget for initial iteration |
-| `--option-depth` | Depth for extracting option-related branches |
 | `--n-testcases` | Select the top n test cases with high coverage as candidate seeds |
-| `--explore-rate` | Rate of exploration |
-| `--config` | Configuration related to the path of program |
 | `--init-args` | Initial symbolic argument formats |
 
 ### Required Arguments
@@ -160,25 +157,29 @@ usage: report_coverage.py [-h] [--benchmark STR] [--graph PATH] [--budget TIME] 
 Here are brief descriptions of the files. Some less-important files may be omitted.
 ```
 .
-├── benchmarks                  <Testing & reporting directory>
-    ├── building_benchmarks.sh  Building target programs
-    ├── config.json             Giving location of source codes for programs
-    ├── report_coverage.py      Reporting branch coverage results
-    └── report_bugs.py          Reporting bug-finding results
-├── data                        <Saving data during experiments directory>
-    ├── opt_branches            Directory of option-related branches for program
-    └── option_depths           Directory of state depths for program options
-├── engine                      <Symbolic executor that interacts with ORBiS>
-    └── klee                    https://github.com/klee/klee.git
-├── parser                      <Tool for generating abstract syntax tree>
-    └── tree-sitter-c           https://tree-sitter.github.io/tree-sitter
-└── orbis                       <Main source code directory>
-    ├── bin.py                  Entry point of ORBiS
-    ├── extract.py              Extracting options and option-related branches
-    ├── klee.py                 Interacting with symbolic executors (e.g., KLEE)
-    ├── report_ob.py            Calculating cumulative option-related branch coverage 
-    ├── sample.py               Sampling option argument based on score
-    └── seed.py                 Selecting efficient test-cases as seed 
+├── benchmarks                    <Testing & reporting directory>
+    ├── building_benchmarks.sh    Building target programs
+    ├── report_coverage.py        Reporting branch coverage results
+    └── report_bugs.py            Reporting bug-finding results
+├── data                          <Saving data during experiments directory>
+    ├── constraints               Directory of option-related path conditions for program
+    ├── opt_branches              Directory of option-related branches for program
+    └── option_dict               Directory of program options
+├── engine                        <Symbolic executor that interacts with ORBiS>
+    ├── osdi08                    https://github.com/klee/klee.git
+    ├── fse20                     https://github.com/kupl/HOMI_public.git
+    ├── ccs21                     https://github.com/eth-sri/learch.git
+    ├── icst21                    https://github.com/davidtr1037/klee-aaqc.git
+    └── icse22                    https://github.com/skkusal/symtuner.git
+├── parser                        <Tool for getting option-related data>
+    └── var_tracer                Dictionary to extract (variable, values) pair data
+└── orbis                         <Main source code directory>
+    ├── bin.py                    Entry point of ORBiS
+    ├── construct.py              Extracting options and option-related branches
+    ├── extract.py                Extracting options and option-related branches
+    ├── guide.py                  Selecting efficient test-cases as seed 
+    └── klee.py                   Interacting with symbolic executors (e.g., KLEE)
+    
 ```
 
 
