@@ -5,7 +5,6 @@ import shutil
 import sys
 import time
 
-import random as rd
 import subprocess as sp
 
 from pathlib import Path
@@ -50,8 +49,6 @@ def main(argv=None):
                         help='Directory where experiment results are saved (default=ORBiS_TEST)')
     parser.add_argument('--src-depth', default=1, type=int,
                         help='Depth from the obj-gcov directory to the directory where the gcov file was created (default=1)')
-    parser.add_argument('--engine', default='klee', type=str,
-                        help='Symbolic executor interacting with ORBiS (default=klee)')
 
     # Required arguments
     required = parser.add_argument_group('required arguments')
@@ -96,7 +93,6 @@ def main(argv=None):
 
     # Initialize Variables
     total_coverage = set()
-    total_testcases = list()
     new_arg = list()
     seeds = list()
     elapsed = 0
@@ -105,7 +101,6 @@ def main(argv=None):
     print(f'[INFO] ORBiS : All configuration loaded. Start testing.')
     
     while elapsed <= args.budget:
-        explore_flag = rd.random()
         iteration_dir = output_dir / f'iteration-{i}'
         time_budget = analyzer.budget_handler(elapsed, args.budget, len(total_coverage), i, list(constructor.option_branches.keys()))
 
@@ -138,7 +133,6 @@ def main(argv=None):
         user = os.getlogin()
         find_pgm_command = f"ps -u {user} -o pid,time,comm | grep {args.program}"
         kill_pgm_command = "awk '$2 > \"00:00:10\" {print $1}' | xargs kill"
-        print(f"{find_pgm_command} | {kill_pgm_command}")
         _ = sp.run(f"{find_pgm_command} | {kill_pgm_command}", shell=True, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
         analyzer.kill_tmp()
         
