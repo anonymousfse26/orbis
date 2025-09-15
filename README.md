@@ -107,7 +107,6 @@ usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY]
 | `--klee` | Path to "klee" executable |
 | `--klee-replay` | Path to "klee-replay" executable |
 | `--gen-bout` | Path to "gen-bout" executable |
-| `--gen-random-bout` | Path to "gen-random-bout" executable |
 | `--gcov` | Path to "gcov" executable |
 
 
