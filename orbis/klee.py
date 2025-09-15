@@ -87,7 +87,6 @@ class KLEE:
                             "-watchdog", "-max-memory-inhibit=false","-max-static-fork-pct=1", "-max-static-solve-pct=1", "-max-static-cpfork-pct=1", "-switch-type=internal", 
                             "-search=random-path -search=nurs:covnew", "-use-batching-search", "-batch-instructions=10000", 
                             str(target), " ".join(arguments), sym_args, "-sym-files 1 8", "-sym-stdin 8", "-sym-stdout"])
-        print(cmd)
         start = time.time()
         needs_bash = any(sym in cmd for sym in ("<(", ">(", "$(", "|", ">", "<", "`"))
         if needs_bash:
