@@ -134,10 +134,10 @@ class KLEEReplay:
             testcase = Path(testcase).absolute()
             os.chdir(str(target.parent))
             cmds = []
-            # cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=after", "--drop-empty-args"])
-            # cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=before", "--drop-empty-args"])
-            # cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=after"])
-            # cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=before"])
+            cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=after", "--drop-empty-args"])
+            cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=before", "--drop-empty-args"])
+            cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=after"])
+            cmds.append([str(self.bin), str(target), str(testcase), "--insert-symfiles-argv=before"])
             cmds.append([str(self.bin), str(target), str(testcase)])
 
             for cmd in cmds:
@@ -225,7 +225,7 @@ class KLEEAnalyze:
             os.system(f"rm -f {gcov}")
 
     
-    def kill_tmp(self, mypass="1234"):
+    def kill_tmp(self, mypass="1234"):    # mypass : Your sudo passwords
         target_dir = "/tmp"
         patterns = [
             "klee-replay-[0-9A-Za-z]*",
@@ -240,5 +240,4 @@ class KLEEAnalyze:
 
         if paths:
             for path in paths:
-                sp.run(["sudo", "-S", "rm", "-rf", path], input=mypass + "\n", universal_newlines=True, stdout=sp.DEVNULL, stderr=sp.DEVNULL, check=True)
-                # sp.run(["rm", "-rf", *paths], input=mypass + "\n", universal_newlines=True)
+                sp.run(["rm", "-rf", path], input=mypass + "\n", universal_newlines=True, stdout=sp.DEVNULL, stderr=sp.DEVNULL, check=True)
