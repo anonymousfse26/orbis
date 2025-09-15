@@ -3,8 +3,6 @@ from setuptools import setup
 
 from orbis import __version__
 
-# with open('./README.md') as f:
-#     LONG_DESCRIPTION = f.read()
 
 setup(
     name='orbis',
