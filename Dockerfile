@@ -14,8 +14,9 @@ WORKDIR /root
 RUN wget https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tgz
 RUN tar xzf Python-3.9.7.tgz
 WORKDIR /root/Python-3.9.7
-RUN ./configure --enable-optimizations
+RUN ./configure --enable-optimizations --enable-shared
 RUN make install
+ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 
 RUN apt-get -y install python3-pip
@@ -72,7 +73,6 @@ RUN mv ${BASE_DIR}/orbis/changed/osdi08/Executor.cpp ${BASE_DIR}/orbis/engine/kl
 RUN mv ${BASE_DIR}/orbis/changed/osdi08/ExprPPrinter.cpp ${BASE_DIR}/orbis/engine/klee/lib/Expr/ExprPPrinter.cpp
 RUN mv ${BASE_DIR}/orbis/changed/osdi08/klee-replay.c ${BASE_DIR}/orbis/engine/klee/tools/klee-replay/klee-replay.c
 RUN mv ${BASE_DIR}/orbis/changed/osdi08/main.cpp ${BASE_DIR}/orbis/engine/klee/tools/klee/main.cpp
-RUN chmod 777 -R *
 
 WORKDIR ${BASE_DIR}/orbis
 RUN curl -OL https://github.com/google/googletest/archive/release-1.7.0.zip
@@ -107,7 +107,6 @@ RUN mv ${BASE_DIR}/orbis/changed/fse20/CMakeLists.txt ${BASE_DIR}/orbis/engine/h
 RUN mv ${BASE_DIR}/orbis/changed/fse20/Executor.h ${BASE_DIR}/orbis/engine/homi/lib/Core/Executor.h
 RUN mv ${BASE_DIR}/orbis/changed/fse20/file-creator.c ${BASE_DIR}/orbis/engine/homi/tools/klee-replay/file-creator.c
 RUN mv ${BASE_DIR}/orbis/changed/fse20/klee-replay.h ${BASE_DIR}/orbis/engine/homi/tools/klee-replay/klee-replay.h
-RUN chmod 777 -R *
 RUN mkdir build
 WORKDIR ${BASE_DIR}/orbis/engine/homi/build
 RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 ${BASE_DIR}/orbis/engine/homi
@@ -121,6 +120,10 @@ WORKDIR ${BASE_DIR}
 RUN git clone https://github.com/eth-sri/learch.git
 RUN cp -r ${BASE_DIR}/learch/klee ${BASE_DIR}/orbis/engine/learch
 
+ENV CPLUS_INCLUDE_PATH=/usr/local/include/python3.9:$CPLUS_INCLUDE_PATH
+ENV LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
 ## Replace KLEE with modified codes.
 WORKDIR ${BASE_DIR}/engine/learch
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/ExecutionState.cpp ${BASE_DIR}/orbis/engine/learch/lib/Core/ExecutionState.cpp
@@ -129,10 +132,11 @@ RUN mv ${BASE_DIR}/orbis/changed/ccs21/Executor.cpp ${BASE_DIR}/orbis/engine/lea
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/ExprPPrinter.cpp ${BASE_DIR}/orbis/engine/learch/lib/Expr/ExprPPrinter.cpp
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/klee-replay.c ${BASE_DIR}/orbis/engine/learch/tools/klee-replay/klee-replay.c
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/main.cpp ${BASE_DIR}/orbis/engine/learch/tools/klee/main.cpp
-RUN chmod 777 -R *
 RUN mkdir build
 WORKDIR ${BASE_DIR}/orbis/engine/learch/build
-RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 ${BASE_DIR}/orbis/engine/learch
+RUN apt-get update
+RUN apt-get install python3-dev
+RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 -DSQLITE3_INCLUDE_DIR=/usr/include -DSQLITE3_LIBRARY=/usr/lib/x86_64-linux-gnu/libsqlite3.so -DCMAKE_EXE_LINKER_FLAGS="-lsqlite3 -Wl,--no-as-needed" -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/local/bin/python3.9 -DPYTHON_INCLUDE_DIR=/usr/local/include/python3.9 -DCMAKE_EXE_LINKER_FLAGS="-lsqlite3 -Wl,--no-as-needed -lpython3.9" -DPYTHON_LIBRARY=/usr/local/lib/libpython3.9.so -DPYTHON_LIBRARIES=/usr/local/lib/libpython3.9.so ${BASE_DIR}/orbis/engine/learch
 RUN make
 WORKDIR ${BASE_DIR}/orbis/engine/learch
 RUN env -i /bin/bash -c '(source testing-env.sh; env > test.env)'
@@ -152,17 +156,19 @@ RUN mv ${BASE_DIR}/orbis/changed/icst21/ExprPPrinter.cpp ${BASE_DIR}/orbis/engin
 RUN mv ${BASE_DIR}/orbis/changed/icst21/klee-replay.c ${BASE_DIR}/orbis/engine/aaqc/tools/klee-replay/klee-replay.c
 RUN mv ${BASE_DIR}/orbis/changed/icst21/main.cpp ${BASE_DIR}/orbis/engine/aaqc/tools/klee/main.cpp
 RUN mv ${BASE_DIR}/orbis/changed/icst21/klee-replay.h ${BASE_DIR}/orbis/engine/aaqc/tools/klee-replay/klee-replay.h
-RUN chmod 777 -R *
 RUN mkdir build
 WORKDIR ${BASE_DIR}/orbis/engine/aaqc/build
-RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 ${BASE_DIR}/orbis/engine/learch
+RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 -DSQLITE3_INCLUDE_DIR=/usr/include -DSQLITE3_LIBRARY=/usr/lib/x86_64-linux-gnu/libsqlite3.so -DCMAKE_EXE_LINKER_FLAGS="-lsqlite3 -Wl,--no-as-needed -lpython3.9" -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/local/bin/python3.9 -DPYTHON_INCLUDE_DIR=/usr/local/include/python3.9 -DPYTHON_LIBRARY=/usr/local/lib/libpython3.9.so ${BASE_DIR}/orbis/engine/learch
 RUN make
 WORKDIR ${BASE_DIR}/orbis/engine/learch
 RUN env -i /bin/bash -c '(source testing-env.sh; env > test.env)'
 
+WORKDIR ${BASE_DIR}/orbis/engine
+RUN chmod 777 -R *
+
 
 ## Install Symtuner (ICSE'22)
-WORKDIR ${BASE_DIR}/engine/icse22
+WORKDIR ${BASE_DIR}/orbis/changed/icse22
 RUN python3 setup.py install
 
 # Install Benchmarks (e.g. grep-3.4)
