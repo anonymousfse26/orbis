@@ -1,6 +1,6 @@
-# Orbis
+# ORBiS
 
-Orbis: Guiding Symbolic Execution Techniques to Maximize Option-Related Branch Coverage
+ORBiS: Guiding Symbolic Execution Techniques to Maximize Option-Related Branch Coverage
 
 #
 ### Build ORBiS
