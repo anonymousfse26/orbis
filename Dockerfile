@@ -96,7 +96,7 @@ RUN git clone https://github.com/kupl/HOMI_public.git
 RUN cp -r ${BASE_DIR}/HOMI_public/klee ${BASE_DIR}/orbis/engine/homi
 
 ## Replace KLEE with modified codes.
-WORKDIR ${BASE_DIR}/engine
+WORKDIR ${BASE_DIR}/engine/homi
 RUN mv ${BASE_DIR}/orbis/changed/fse20/ExecutionState.cpp ${BASE_DIR}/orbis/engine/homi/lib/Core/ExecutionState.cpp
 RUN mv ${BASE_DIR}/orbis/changed/fse20/ExecutionState.h ${BASE_DIR}/orbis/engine/homi/include/klee/ExecutionState.h
 RUN mv ${BASE_DIR}/orbis/changed/fse20/Executor.cpp ${BASE_DIR}/orbis/engine/homi/lib/Core/Executor.cpp
@@ -122,7 +122,7 @@ RUN git clone https://github.com/eth-sri/learch.git
 RUN cp -r ${BASE_DIR}/learch/klee ${BASE_DIR}/orbis/engine/learch
 
 ## Replace KLEE with modified codes.
-WORKDIR ${BASE_DIR}/engine
+WORKDIR ${BASE_DIR}/engine/learch
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/ExecutionState.cpp ${BASE_DIR}/orbis/engine/learch/lib/Core/ExecutionState.cpp
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/ExecutionState.h ${BASE_DIR}/orbis/engine/learch/include/klee/ExecutionState.h
 RUN mv ${BASE_DIR}/orbis/changed/ccs21/Executor.cpp ${BASE_DIR}/orbis/engine/learch/lib/Core/Executor.cpp
@@ -136,6 +136,34 @@ RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=
 RUN make
 WORKDIR ${BASE_DIR}/orbis/engine/learch
 RUN env -i /bin/bash -c '(source testing-env.sh; env > test.env)'
+
+
+## Install AAQC (ICST'21)
+WORKDIR ${BASE_DIR}
+RUN git clone https://github.com/davidtr1037/klee-aaqc.git 
+RUN cp -r ${BASE_DIR}/learch/klee ${BASE_DIR}/orbis/engine/aaqc
+
+## Replace KLEE with modified codes.
+WORKDIR ${BASE_DIR}/engine/aaqc
+RUN mv ${BASE_DIR}/orbis/changed/icst21/ExecutionState.cpp ${BASE_DIR}/orbis/engine/aaqc/lib/Core/ExecutionState.cpp
+RUN mv ${BASE_DIR}/orbis/changed/icst21/ExecutionState.h ${BASE_DIR}/orbis/engine/aaqc/include/klee/ExecutionState.h
+RUN mv ${BASE_DIR}/orbis/changed/icst21/Executor.cpp ${BASE_DIR}/orbis/engine/aaqc/lib/Core/Executor.cpp
+RUN mv ${BASE_DIR}/orbis/changed/icst21/ExprPPrinter.cpp ${BASE_DIR}/orbis/engine/aaqc/lib/Expr/ExprPPrinter.cpp
+RUN mv ${BASE_DIR}/orbis/changed/icst21/klee-replay.c ${BASE_DIR}/orbis/engine/aaqc/tools/klee-replay/klee-replay.c
+RUN mv ${BASE_DIR}/orbis/changed/icst21/main.cpp ${BASE_DIR}/orbis/engine/aaqc/tools/klee/main.cpp
+RUN mv ${BASE_DIR}/orbis/changed/icst21/klee-replay.h ${BASE_DIR}/orbis/engine/aaqc/tools/klee-replay/klee-replay.h
+RUN chmod 777 -R *
+RUN mkdir build
+WORKDIR ${BASE_DIR}/orbis/engine/aaqc/build
+RUN cmake -DENABLE_SOLVER_STP=ON -DENABLE_POSIX_RUNTIME=ON -DENABLE_KLEE_UCLIBC=ON -DKLEE_UCLIBC_PATH=${BASE_DIR}/orbis/klee-uclibc -DENABLE_UNIT_TESTS=ON -DGTEST_SRC_DIR=${BASE_DIR}/orbis/googletest-release-1.7.0 -DLLVM_CONFIG_BINARY=/usr/bin/llvm-config-6.0 -DLLVMCC=/usr/bin/clang-6.0 -DLLVMCXX=/usr/bin/clang++-6.0 ${BASE_DIR}/orbis/engine/learch
+RUN make
+WORKDIR ${BASE_DIR}/orbis/engine/learch
+RUN env -i /bin/bash -c '(source testing-env.sh; env > test.env)'
+
+
+## Install Symtuner (ICSE'22)
+WORKDIR ${BASE_DIR}/engine/icse22
+RUN python3 setup.py install
 
 # Install Benchmarks (e.g. grep-3.4)
 WORKDIR ${BASE_DIR}/orbis/benchmarks
