@@ -155,7 +155,6 @@ class Constructor:
                 self.covered_set_data[key] = self.covered_set_data[key].union(covered)
                 self.coverage_data[key].append(len(covered))
             self.selected_count[key] += len(intersected) / len(key_set)
-        print(self.selected_count)
         
         # Make data for newly generated option configuration
         new_option = " ".join(options)
