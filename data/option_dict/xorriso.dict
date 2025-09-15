@@ -1,0 +1,255 @@
+FORMAT:<exec> <option>
+-x
+-dev stdio:/tmp/dummy.iso
+-drive_class harmless /tmp/*
+-drive_class banned /tmp/*
+-drive_access exclusive
+-drive_access shared:unrestricted
+-drive_access readonly
+-scsi_dev_family default
+-scsi_dev_family sr
+-scsi_dev_family scd
+-scsi_dev_family sg
+-read_speed 4xCD
+-grow_blindly off
+-load session 1
+-load track 1
+-load lba 1
+-displacement 0
+-read_fs any
+-read_fs norock
+-read_fs nojoliet
+-read_fs ecma119
+-rom_toc_scan on
+-rom_toc_scan force
+-rom_toc_scan off
+-calm_drive in
+-calm_drive out
+-calm_drive all
+-calm_drive on
+-calm_drive off
+-assert_volid 'MYVOL' FAILURE --
+-charset UTF-8
+-in_charset UTF-8
+-auto_charset on
+-auto_charset off
+-out_charset UTF-8
+-local_charset UTF-8
+-hardlinks on
+-acl on
+-acl off
+-xattr on
+-xattr user
+-xattr any
+-xattr off
+-md5 on
+-md5 all
+-md5 off
+-for_backup
+-ecma119_map uppercase
+-iso_nowtime dynamic
+-disk_dev_ino on
+-disk_dev_ino ino_only
+-disk_dev_ino off
+# -scdbackup_tag <(echo dummy) TAG
+-ban_stdio_write
+-early_stdio_test on
+-early_stdio_test appendable_wo
+-early_stdio_test off
+-data_cache_size 4 32
+-close_damaged as_needed
+-volid MYISO
+-volset_id VOLSET
+-publisher PUB
+-application_id APP
+-system_id SYS
+-volume_date c 20250101
+-copyright_file COPYRIGHT.TXT
+-biblio_file BIBLIO.TXT
+-abstract_file ABSTRACT.TXT
+-application_use A
+-joliet on
+-joliet off
+-hfsplus on
+-hfsplus off
+-rockridge on
+-rockridge off
+-jigdo clear
+-compliance deep_paths_off
+-rr_reloc_dir RR_MOVE
+-boot_image any discard
+# -append_partition 1 0x83 <(echo dummy)
+-uid 1000
+-gid 1000
+-devices
+-device_links
+-toc
+-toc_of in
+-toc_of out
+-toc_of all
+-print_size
+-tell_media_space
+-pvd_info
+-list_formats
+-list_speeds
+-list_profiles in
+-list_profiles out
+-list_profiles all
+-mount_opts exclusive
+-mount_opts shared
+-pvd_info --
+-report_el_torito plain
+-report_el_torito help
+-report_el_torito cmd
+-report_el_torito as_mkisofs
+-report_system_area plain
+-report_system_area help
+-report_system_area cmd
+-report_system_area as_mkisofs
+-list_delimiter END
+-pathspecs on
+-pathspecs off
+-pathspecs as_mkisofs
+-file_name_limit 100
+-file_size_limit 50M 200M
+-add_plainly unknown
+-add_plainly dashed
+-add_plainly any
+-update /tmp/src.txt /src.txt
+-cpr /tmp/srcdir --
+-rm /old.txt --
+-rm_r /olddir --
+-alter_date m 20250101000000 /file.txt --
+-alter_date_r a 20250101000000 /dir --
+-find / -type f -exec lsdl
+-rmdir /emptydir --
+-not_paths /proc /sys /dev --
+-commit
+-rollback
+-overwrite on
+-overwrite off
+-close on
+-close off
+-ls
+-lsl /boot
+-lsdl /etc
+-du /
+-pwd
+-pwdx
+-cd /usr
+-cdi /srcdir --
+-cdx /var/log
+-dialog on
+-dialog off
+-prompt on
+-prompt off
+-status short
+-status long
+-status history
+-page 25
+-abort_on never
+-abort_on failure
+-abort_on sorry
+-abort_on warning
+-report_about NEVER
+-report_about FAILURE
+-report_about SORRY
+-report_about WARNING
+-report_about HINT
+-report_about NOTE
+-report_about ALL
+-launch_frontend /bin/echo xorriso-frontend
+-external_filter myzip suffix=.gz /bin/gzip -c --
+-close_filter_list
+-zisofs level=9:block_size=128k:by_magic=on
+-zisofs level=9:block_size=128k:by_magic=off
+-changes_pending no
+-changes_pending mkisofs_printed
+-changes_pending show_status
+-commit_eject in
+-commit_eject out
+-commit_eject all
+-commit_eject none
+-write_type auto
+-write_type tao
+-write_type sao/dao
+-close as_needed
+-padding 300k
+-dummy on
+-dummy off
+-speed max
+-stream_recording on
+-stream_recording off
+-modesty_on_drive on:min_percent=25:max_percent=30:min_usec=1000:max_usec=8000:timeout_sec=10 --
+-dvd_obs 64k
+-use_immed_bit on
+-use_immed_bit off
+-use_immed_bit default
+-stdio_sync on
+-stdio_sync off
+-stdio_sync end
+-stdio_sync 16m
+-fs 8m
+-eject in
+-eject out
+-eject all
+-pwdi
+-iso_rr_pattern on
+-iso_rr_pattern ls
+-iso_rr_pattern off
+-disk_pattern on
+-disk_pattern ls
+-disk_pattern off
+-lsd '/boot*'
+-lsx '/tmp/*'
+-lsdx '/var/*'
+-lslx '/etc/*'
+-lsdlx '/dev'
+-getfacl_r /srcdir --
+-dux '/tmp/*'
+-dus '/*'
+-dusx '/var/*'
+-findx /tmp -name '*.iso' -type f -exec echo
+-compare /tmp/src.txt /src.txt
+-compare_r /tmp/srcdir /srcdir --
+-show_stream_r /srcdir --
+-osirrox on:auto_chmod_on
+-osirrox on -extract_l /srcdir /tmp /srcdir/a /srcdir/b --
+-osirrox on -extract_single /srcdir /tmp/dir_only --
+-osirrox on -extract /srcdir /tmp/ --
+-check_media --
+-check_media_defaults --
+-as mkisofs
+-read_mkisofsrc
+-as cdrecord
+-pacifier xorriso
+-pacifier cdrecord
+-pacifier mkisofs
+-signal_handling on
+-signal_handling off
+-signal_handling sig_dfl
+-signal_handling sig_ign
+-error_behavior image_loading best_effort
+-dialog single_line
+-sh_style_result on
+-sh_style_result off
+-backslash_codes in_quotes:encode_output
+-pkt_output on
+-pkt_output off
+-msg_op start_sieve 'WARNING'
+-logfile . /dev/null
+-temp_mem_limit 32m
+-prog xrs
+# -options_from_file <(printf '-version\n-end\n')
+-print "hello"
+-print_info "info"
+-print_mark "mark"
+-sleep 1
+-session_log /dev/null
+-scsi_log on
+-scsi_log off
+-list_extras all
+-list_extras codes
+-list_arg_sorting
+-end
+-rollback_end

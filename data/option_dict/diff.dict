@@ -1,0 +1,86 @@
+FORMAT:<exec> <option> <file> <file>
+--normal
+-q
+--brief
+-s
+--report-identical-files
+-c
+-C 5
+--context=2
+-u
+-U 1
+--unified=5
+-e
+--ed
+-n
+--rcs
+-y
+--side-by-side
+-W 50
+--width=50
+--left-column
+--suppress-common-lines
+-p
+--show-c-function
+-F '^foo'
+--show-function-line='^foo'
+--label=OLD
+-t
+--expand-tabs
+-T
+--initial-tab
+--tabsize=4
+--suppress-blank-empty
+-l
+--paginate
+-r
+--recursive
+--no-dereference
+-N
+--new-file
+--unidirectional-new-file
+--ignore-file-name-case
+--no-ignore-file-name-case
+-x '*.o'
+--exclude='*.o'
+# -X <(printf '*.o\n*.tmp\n')
+# --exclude-from=<(printf '*.o\n*.tmp\n')
+-S start_here 
+--starting-file=start_here
+# --from-file=<(printf 'BASE\n')
+# --to-file=<(printf 'TARGET\n')
+-i
+--ignore-case
+-E
+--ignore-tab-expansion
+-Z
+--ignore-trailing-space
+-b
+--ignore-space-change
+-w
+--ignore-all-space
+-B
+--ignore-blank-lines
+-I '^#'
+--ignore-matching-lines='^#'
+-a
+--text
+--strip-trailing-cr
+-D FEATURE
+--ifdef=FEATURE
+--old-group-format='[%<|%>]'
+--new-group-format='[%<|%>]'
+--changed-group-format='[%<|%>]'
+--unchanged-group-format='[%<|%>]'
+--line-format='%L'
+--old-line-format='OLD:%L'
+--new-line-format='OLD:%L'
+--unchanged-line-format='OLD:%L'
+-d
+--minimal
+--horizon-lines=2
+--speed-large-files
+--color=never
+--color=always
+--color=auto
+--palette='di=01;34:fi=0'

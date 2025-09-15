@@ -1,0 +1,74 @@
+-p1
+--strip=2
+-F3
+--fuzz=5
+-l
+--ignore-whitespace
+-c
+--context
+-e
+--ed
+-n
+--normal
+-u
+--unified
+-N
+--forward
+-R
+--reverse
+# -i <(echo "patch contents")
+# --input=<(echo "patch contents")
+# -o <(echo "dummy")
+# --output=<(echo "dummy")
+# -r <(echo "rejects")
+# --reject-file=<(echo "rejects")
+-D PATCHMARK
+--ifdef=PATCHMARK
+--merge
+-E
+--remove-empty-files
+-Z
+--set-utc
+-T
+--set-time
+--quoting-style=literal
+--quoting-style=shell
+--quoting-style=shell-always
+--quoting-style=c
+--quoting-style=escape
+-b
+--backup
+--backup-if-mismatch
+--no-backup-if-mismatch
+-V simple
+-V numbered
+-V existing
+--version-control=simple
+--version-control=numbered
+--version-control=existing
+-B BACK_
+--prefix=BACK_
+-Y OLD_
+--basename-prefix=OLD_
+-z .bak
+--suffix=.bak
+-g-1
+--get=1
+-t
+--batch
+-f
+--force
+-s
+--quiet
+--silent
+--verbose
+--dry-run
+--posix
+# -d "$(mktemp -d)"
+# --directory="$(mktemp -d)"
+--reject-format=context
+--reject-format=unified
+--binary
+--read-only=ignore
+--read-only=warn
+--read-only=fail

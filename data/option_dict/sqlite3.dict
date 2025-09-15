@@ -1,0 +1,32 @@
+FORMAT:<exec> <option> :memory: <file>
+-ascii
+-box
+-column
+-csv
+-html
+-json
+-line
+-list
+-markdown
+-quote
+-table
+-append
+-bail
+-batch
+-echo
+-interactive
+-readonly
+-nofollow
+-stats
+-memtrace
+-cmd "CREATE TABLE t(x);"
+# -init <(echo "PRAGMA foreign_keys=ON;")
+-lookaside 512 10
+-pagecache 1024 20
+-mmap 268435456
+-newline "\r\n"
+-separator ","
+-nullvalue "NULL"
+-header
+-noheader
+-vfs unix

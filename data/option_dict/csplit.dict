@@ -1,0 +1,14 @@
+FORMAT:<exec> <option> <file> /<pattern>/
+--suffix-format=%02d.txt
+-b %02d.txt
+--prefix=split
+-f split
+--keep-files
+-k
+--suppress-matched
+--digits=2
+-n 2
+--quiet
+-s
+--elide-empty-files
+-z

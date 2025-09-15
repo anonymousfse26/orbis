@@ -1,0 +1,209 @@
+FORMAT:<exec> <option>
+-R resp.txt
+--response-file=resp.txt
+-S script.sh
+--shell-script=script.sh
+-f gcal.rc
+-F gcal.rc
+--resource-file=gcal.rc
+# -# '0101 Special day'
+# --here='0101 Special day'
+-v a=1127:b=054
+--date-variable=a=1127:b=054
+--export-date-variables
+# -r "\$a=foo:\$b=bar"
+# --text-variable="\$a=foo:\$b=bar"
+--export-text-variables
+-D VCHL
+--filter-day=VCHL
+-P i20240101#20240110
+--filter-period=i20240101#20240110
+-I "Holiday"
+--filter-text="Holiday"
+--ignore-case
+--revert-match
+--debug
+--debug=all
+-i
+-i-
+--type=special
+--type=standard
+-O
+--orthodox-calendar
+-K
+--with-week-number
+--iso-week-number=yes
+--iso-week-number=no
+-u
+--suppress-calendar
+-p
+--pager
+-H no
+-H yes
+-H "\x2:\xAE"
+--highlighting=no
+--highlighting=yes
+--highlighting="\x2:\xAE"
+-b 12
+--blocks=12
+-j
+-jb
+--calendar-dates=special
+--calendar-dates=both
+-jn
+-jnb
+--holiday-dates=special
+--holiday-dates=both
+-jc
+-jcb
+--fixed-dates=special
+--fixed-dates=both
+-s 1
+--starting-day=1
+--starting-day=Mon
+-n
+-N
+-n-
+-N-
+--holiday-list=long
+--holiday-list=short
+--descending-holiday-list=long
+--descending-holiday-list=short
+-G
+--suppress-holiday-list-separator
+-X
+--exclude-holiday-list-title
+--astronomical-holidays
+--bahai-holidays
+--bahai-months
+--celtic-holidays
+--chinese-holidays
+--chinese-months
+--christian-holidays
+--hebrew-holidays
+--hebrew-months
+--islamic-civil-holidays
+--islamic-civil-months
+--japanese-holidays
+--japanese-months
+--orthodox-new-holidays
+--orthodox-old-holidays
+--persian-jalaali-holidays
+--persian-jalaali-months
+--zodiacal-marker-holidays
+-q KR
+--adjust-value=15.0
+--atmosphere=1013.25,15
+--limit
+--precise
+--execute-command
+--time-offset=+09:00
+--cycle-end=23:59
+--cycle-step=01:00
+--transform-year=+1
+--gregorian-reform=1752
+--date-format=US
+--date-format=DE
+--date-format=GB
+--translate-string="A\"aO\"oU\"u"
+-c
+-C
+-c-
+-C-
+--list-of-fixed-dates=short
+--list-of-fixed-dates=long
+--descending-fixed-dates=short
+--descending-fixed-dates=long
+--today
+--heading-text="Fixed Dates"
+--grouping-text=day
+--biorhythm-axis=50
+--moonimage-lines=10
+--include-resource-file-name
+--alternative-format
+--include-holidays=long
+--include-week-number
+--omit-multiple-date-part
+--suppress-fixed-dates-list-separator
+--suppress-date-part
+--suppress-text-part
+--exclude-fixed-dates-list-title
+--include-consecutive-number
+--zero-dates-only
+--leap-day=february
+--include-today
+--list-mode
+--period-of-fixed-dates=0101
+--tomorrow
+--week
+--month
+--year
+--cc-holidays=AD+AE+AF+AG+AI
+--cc-holidays=AL+AM+AN_BO+AN_CU+AN_MA
+--cc-holidays=AN_SA+AO+AR+AS+AT
+--cc-holidays=AU_CT+AU_NT+AU_QU+AU_SA+AU_SW
+--cc-holidays=AU_TA+AU_VI+AU_WA+AW+AZ
+--cc-holidays=BA+BB+BD+BE+BF
+--cc-holidays=BG+BH+BI+BJ+BM
+--cc-holidays=BN+BO+BR+BS+BT
+--cc-holidays=BV+BW+BY+BZ+CA_AL
+--cc-holidays=CA_BC+CA_MA+CA_NB+CA_NF+CA_NS
+--cc-holidays=CA_NW+CA_ON+CA_PE+CA_QU+CA_SA
+--cc-holidays=CA_YU+CC+CD+CF+CG
+--cc-holidays=CH_AG+CH_AI+CH_AR+CH_BE+CH_BL
+--cc-holidays=CH_BS+CH_FR+CH_GE+CH_GL+CH_GR
+--cc-holidays=CH_JU+CH_LU+CH_NE+CH_NW+CH_OW
+--cc-holidays=CH_SG+CH_SH+CH_SO+CH_SZ+CH_TG
+--cc-holidays=CH_TI+CH_UR+CH_VD+CH_VS+CH_ZG
+--cc-holidays=CH_ZH+CI+CK+CL+CM
+--cc-holidays=CN+CO+CR+CU+CV
+--cc-holidays=CX+CY+CZ+DE_BB+DE_BE
+--cc-holidays=DE_BW+DE_BY+DE_HB+DE_HE+DE_HH
+--cc-holidays=DE_MV+DE_NI+DE_NW+DE_RP+DE_SH
+--cc-holidays=DE_SL+DE_SN+DE_ST+DE_TH+DJ
+--cc-holidays=DK+DM+DO+DZ+EC
+--cc-holidays=EE+EG+EH+ER+ES
+--cc-holidays=ET+FI+FJ+FK+FM
+--cc-holidays=FO+FR+GA+GB_EN+GB_NI
+--cc-holidays=GB_SL+GD+GE+GF+GH
+--cc-holidays=GI+GL+GM+GN+GP
+--cc-holidays=GQ+GR+GS+GT+GU
+--cc-holidays=GW+GY+HK+HM+HN
+--cc-holidays=HR+HT+HU+ID+IE
+--cc-holidays=IL+IN+IQ+IR+IS
+--cc-holidays=IT+JM+JO+JP+KE
+--cc-holidays=KG+KH+KI+KM+KN
+--cc-holidays=KP+KR+KW+KY+KZ
+--cc-holidays=LA+LB+LC+LI+LK
+--cc-holidays=LR+LS+LT+LU+LV
+--cc-holidays=LY+MA+MC+MD+MG
+--cc-holidays=MH+MK+ML+MN+MO
+--cc-holidays=MP+MQ+MR+MS+MT
+--cc-holidays=MU+MV+MW+MX+MY
+--cc-holidays=MZ+NA+NC+NE+NF
+--cc-holidays=NG+NI+NL+NM+NO
+--cc-holidays=NP+NR+NU+NZ+OM
+--cc-holidays=PA+PE+PF+PG+PH
+--cc-holidays=PK+PL+PM+PN+PR
+--cc-holidays=PT+PW+PY+QA+RE
+--cc-holidays=RO+RU+RW+SA+SB
+--cc-holidays=SC+SD+SE+SG+SH
+--cc-holidays=SI+SJ+SK+SL+SM
+--cc-holidays=SN+SO+SR+ST+SV
+--cc-holidays=SY+SZ+TC+TD+TG
+--cc-holidays=TH+TJ+TK+TM+TN
+--cc-holidays=TO+TR+TT+TV+TW
+--cc-holidays=TZ+UA+UG+US_AK+US_AL
+--cc-holidays=US_AR+US_AZ+US_CA+US_CO+US_CT
+--cc-holidays=US_DC+US_DE+US_FL+US_GA+US_HI
+--cc-holidays=US_IA+US_ID+US_IL+US_IN+US_KS
+--cc-holidays=US_KY+US_LA+US_MA+US_MD+US_ME
+--cc-holidays=US_MI+US_MN+US_MO+US_MS+US_MT
+--cc-holidays=US_NC+US_ND+US_NE+US_NH+US_NJ
+--cc-holidays=US_NM+US_NV+US_NY+US_OH+US_OK
+--cc-holidays=US_OR+US_PA+US_RI+US_SC+US_SD
+--cc-holidays=US_TN+US_TX+US_UT+US_VA+US_VT
+--cc-holidays=US_WA+US_WI+US_WV+US_WY+UY
+--cc-holidays=UZ+VC+VE+VG+VI
+--cc-holidays=VN+VU+WF+WS+YE
+--cc-holidays=YT+YU+ZA+ZM+ZW

@@ -1,0 +1,35 @@
+FORMAT:<exec> <option> <file>
+--auto-reference
+-A
+--traditional
+-G
+--flag-truncation="###"
+-F "###"
+--macro-name=PTX
+-M PTX
+--format=roff
+-O
+--format=tex
+-T
+--right-side-refs
+-R
+--sentence-regexp='[.!?]'
+-S '[.!?]'
+--word-regexp='[a-zA-Z0-9]+'
+-W '[a-zA-Z0-9]+'
+# --break-file=<(echo "break1" && echo "break2")
+# -b <(echo "break1" && echo "break2")
+--ignore-case
+-f
+--gap-size=2
+-g 2
+# --ignore-file=<(echo "the" && echo "a" && echo "an")
+# -i <(echo "the" && echo "a" && echo "an")
+# --only-file=<(echo "only1" && echo "only2")
+# -o <(echo "only1" && echo "only2")
+--references
+# -r <(echo "ref1" && echo "ref2")
+--typeset-mode
+-t
+--width=70
+-w 70

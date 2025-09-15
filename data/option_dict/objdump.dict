@@ -1,0 +1,48 @@
+FORMAT:<exec> <option> -f <file>
+-a
+--archive-headers
+--file-headers
+-p
+--private-headers
+# -P raw
+# -P loader
+# -P notes
+# -P attributes
+# --private=raw
+# --private=loader
+# --private=notes
+# --private=attributes
+-h
+--section-headers
+--headers
+-x
+--all-headers
+-d
+--disassemble
+-D
+--disassemble-all
+--disassemble=main
+--disassemble=_start
+--disassemble=printf
+-S
+--source
+--source-comment='/*SRC*/'
+-s
+--full-contents
+-g
+--debugging
+-e
+--debugging-tags
+-G
+--stabs
+-Wia
+--dwarf=info,abbrev
+-t
+--syms
+-r
+--reloc
+# --ctf=<(printf '[ctf section]')
+# -T
+# --dynamic-syms
+# -R
+# --dynamic-reloc

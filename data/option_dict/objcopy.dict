@@ -1,0 +1,121 @@
+FORMAT:<exec> <option> <file> <file>
+-I elf64-x86-64
+--input-target=elf64-x86-64
+-O elf64-x86-64
+--output-target=elf64-x86-64
+-B i386
+--binary-architecture=i386
+-F elf64-x86-64
+--target=elf64-x86-64
+--debugging
+-p
+--preserve-dates
+-D
+--enable-deterministic-archives
+-U
+--disable-deterministic-archives
+-j .text
+--only-section=.text
+# --add-gnu-debuglink=<(printf 'dummy')
+-R .comment
+--remove-section=.comment
+--remove-relocations=.text
+-S
+--strip-all
+-g
+--strip-debug
+--strip-dwo
+--strip-unneeded
+-N main
+--strip-symbol=main
+--strip-unneeded-symbol=main
+--only-keep-debug
+--extract-dwo
+--extract-symbol
+--keep-section=.text
+-K main
+--keep-symbol=main
+--keep-file-symbols
+--localize-hidden
+-L main
+--localize-symbol=main
+--globalize-symbol=main
+-G main
+--keep-global-symbol=main
+-W main
+--weaken-symbol=main
+--weaken
+-w -N 'main*'
+-x
+--discard-all
+-X
+--discard-locals
+-i 2
+--interleave=2
+--interleave-width=4
+-b 1
+--byte=1
+--gap-fill=0x90
+--pad-to=0x2000
+--set-start=0x400000
+--change-start=0x10
+--adjust-start=0x10
+--change-addresses=0x1000
+--adjust-vma=0x1000
+--change-section-address=.text+0x100
+--adjust-section-vma=.text+0x100
+--change-section-lma=.text=0x401000
+--change-warnings
+--no-change-warnings
+--adjust-warnings
+--no-adjust-warnings
+--set-section-flags .text=alloc,code,readonly
+--set-section-alignment .text=16
+# --add-section .new=<(printf 'PAYLOAD')
+# --update-section .comment=<(printf 'UPDATED')
+--rename-section .text=.text2,alloc,code
+--long-section-names enable
+--long-section-names disable
+--long-section-names keep
+--change-leading-char
+--remove-leading-char
+--reverse-bytes=4
+--redefine-sym main=main_alias
+# --redefine-syms <(printf 'main main_alias\n')
+--srec-len 32
+--srec-forceS3
+# --strip-symbols <(printf 'main\n')
+# --strip-unneeded-symbols <(printf 'main\n')
+# --keep-symbols <(printf 'main\n')
+# --localize-symbols <(printf 'main\n')
+# --globalize-symbols <(printf 'main\n')
+# --keep-global-symbols <(printf 'main\n')
+# --weaken-symbols <(printf 'main\n')
+--add-symbol added_sym=.text:0x0,global
+--alt-machine-code 0
+--writable-text
+--readonly-text
+--pure
+--impure
+--prefix-symbols p_
+--prefix-sections s_
+--prefix-alloc-sections a_
+--file-alignment 512
+--heap 1048576,65536
+--image-base 0x140000000
+--section-alignment 4096
+--stack 1048576,65536
+--subsystem console:6.00
+--compress-debug-sections=none
+--compress-debug-sections=zlib
+--compress-debug-sections=zlib-gnu
+--compress-debug-sections=zlib-gabi
+--decompress-debug-sections
+--elf-stt-common=yes
+--elf-stt-common=no
+--verilog-data-width 4
+-M
+--merge-notes
+--no-merge-notes
+-v
+--verbose

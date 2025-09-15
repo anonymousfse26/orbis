@@ -1,0 +1,55 @@
+FORMAT:<exec> <program> <option>
+# -f <(printf '%s\n' '{print $1}')
+# --file=<(printf '%s\n' '{print $1}')
+-F:
+--field-separator=:
+-v N=10
+--assign=N=10
+-b
+--characters-as-bytes
+-c
+--traditional
+# -C
+# --copyright
+# -d>(cat)
+# --dump-variables=>(cat)
+# -D>(cat)
+# --debug=>(cat)
+-e '{print $1}'
+--source='{print $1}'
+# -E <(printf '%s\n' '{print $1}')
+# --exec=<(printf '%s\n' '{print $1}')
+-g
+--gen-pot
+# -i <(printf '%s\n' '{print $1}')
+# --include=<(printf '%s\n' '{print $1}')
+-l inplace
+-load=inplace
+-Lfatal
+-Linvalid
+-Lno-ext
+--lint=fatal
+--lint=invalid
+--lint=no-ext
+-M
+--bignum
+-N
+--use-lc-numeric
+-n
+--non-decimal-data
+# -o>(cat)
+# --pretty-print=(cat)
+-O
+--optimize
+# -p>(cat)
+# --profile>(cat)
+-P
+--posix
+-r
+--re-interval
+-s
+--no-optimize
+-S
+--sandbox
+-t
+--lint-old

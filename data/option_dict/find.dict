@@ -1,0 +1,72 @@
+FORMAT:<exec> <path> <option>
+! -readable
+-name '*.c'
+-daystart
+-follow
+-regextype posix-extended -regex '.*/[a-z]+\.txt'
+-depth
+-maxdepth 2
+-mindepth 1
+-mount
+-noleaf
+-xdev
+-ignore_readdir_race
+-noignore_readdir_race
+# -H
+# -L
+# -P
+# -O2
+# -D help
+-amin -5
+# -anewer <(printf '')
+-atime +1
+-cmin -10
+# -cnewer <(printf '')
+-ctime 0
+-empty
+-false
+-fstype ext4
+-gid 0
+-group root
+-ilname '*link*'
+-iname '*.txt'
+-inum 12345
+-iwholename '*/docs/*'
+-iregex '.*/[a-z]+\.md'
+-links +1
+-lname '*target*'
+-mmin -30
+-mtime +1
+-name '*.log'
+# -newer <(printf '')
+-nouser
+-nogroup
+-path '*/build/*'
+-perm 0644
+-perm -u+x
+-regex '.*/file[0-9]+\.dat'
+-readable
+-writable
+-executable
+-wholename '*/src/*'
+-size +1k
+-true
+-type f
+-uid 0
+-used +1
+-user user
+-xtype l
+# -context '*'
+# -delete
+-print0
+-printf '%p\n'
+# -fprintf >(cat) '%p\n'
+-print
+# -fprint0 >(cat)
+# -fprint >(cat)
+-ls
+# -fls >(cat)
+-prune
+-quit
+# -execdir /bin/echo {} \;
+# -okdir /bin/echo {} \;

@@ -1,0 +1,65 @@
+FORMAT:<exec> <option>
+-b
+-m
+-B
+--always-make
+-C ../parser/value_tracer/data/inputs
+--directory=../parser/value_tracer/data/inputs
+-d
+--debug
+--debug=basic
+-e
+--environment-overrides
+-E 'FOO=BAR'
+--eval='FOO=BAR'
+-i
+--ignore-errors
+-I ../parser/value_tracer/data/inputs
+--include-dir=../parser/value_tracer/data/inputs
+-j
+-j4
+--jobs
+--jobs=4
+-k
+--keep-going
+-l2
+--load-average=2
+--max-load=2
+-L
+--check-symlink-times
+-n
+--just-print
+--dry-run
+--recon
+-o dummy.txt
+--old-file=dummy.txt
+--assume-old=dummy.txt
+-O
+--output-sync
+--output-sync=line
+-p
+--print-data-base
+-q
+--question
+-r
+--no-builtin-rules
+-R
+--no-builtin-variables
+-s
+--silent
+--quiet
+--no-silent
+-S
+--no-keep-going
+--stop
+-t
+--touch
+--trace
+-w
+--print-directory
+--no-print-directory
+-W dummy.txt
+--what-if=dummy.txt
+--new-file=dummy.txt
+--assume-new=dummy.txt
+--warn-undefined-variables

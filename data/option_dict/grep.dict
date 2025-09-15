@@ -1,0 +1,92 @@
+FORMAT:<exec> <option> <pattern> <file>
+-E
+--extended-regexp
+-F
+--fixed-strings
+-G
+--basic-regexp
+-P
+--perl-regexp
+-e
+--regexp
+# -f <(printf '%s\n' break1 break2)
+# --file=<(printf '%s\n' break1 break2)
+-i
+--ignore-case
+--no-ignore-case
+-w
+--word-regexp
+-x
+--line-regexp
+-z
+--null-data
+-s
+--no-messages
+-v
+--invert-match
+-m 5
+--max-count=1
+-b
+--byte-offset
+-n
+--line-number
+--line-buffered
+-H
+--with-filename
+-h
+--no-filename
+--label=stdin
+-o
+--only-matching
+-q
+--quiet
+--silent
+--binary-files=binary
+--binary-files=text
+--binary-files=without-match
+-a
+--text
+-I
+-d read
+-d recurse
+-d skip
+--directories=read
+--directories=recurse
+--directories=skip
+-D read
+-D skip
+--devices=read
+--devices=skip
+-r
+--recursive
+-R
+--dereference-recursive
+--include='*.c'
+--exclude='*.o'
+--exclude-from=<(echo "break1" && echo "break2")
+--exclude-dir=.git
+-L
+--files-without-match
+-l
+--files-with-matches
+-c
+--count
+-T
+--initial-tab
+-Z
+--null
+-B 3
+--before-context=10
+-A 3
+--after-context=1
+-C 3
+--context=10
+-2
+--color=always
+--color=never
+--color=auto
+--colour=always
+--colour=never
+--colour=auto
+-U
+--binary

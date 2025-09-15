@@ -1,0 +1,50 @@
+FORMAT:<exec> <option>
+-0
+--null
+-a
+--all
+--apparent-size
+-b
+--bytes
+-c
+--total
+-D
+--dereference-args
+-H
+-h
+--human-readable
+--inodes
+-k
+-L
+--dereference
+-l
+--count-links
+-m
+-P
+--no-dereference
+-S
+--separate-dirs
+--si
+-s
+--summarize
+--time
+-x
+--one-file-system
+-B 1M
+--block-size=1K
+--max-depth=1
+-d 0
+--threshold=50K
+-t -1M
+# --files0-from=<(printf '.\0')
+# -X <(printf 'node_modules\n*.o\n')
+# --exclude-from=<(printf '*.log\ncache/*\n')
+--exclude='*.o'
+--time-style=full-iso
+--time-style=long-iso
+--time-style=iso
+--time=atime
+--time=access
+--time=use
+--time=ctime
+--time=status
