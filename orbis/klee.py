@@ -74,7 +74,7 @@ class KLEE:
             for seed in seeds:
                 seed_cmd = f"{seed_cmd} -seed-file={seed}".lstrip()
             cmd = " ".join([self.bin, seed_cmd, "-allow-seed-extension", "-allow-seed-truncation", f"-seed-time={budget // 4}",  f"-arg-score-file={test_dir}/{pgm}.score",
-                            f"-output-dir={dir_path}", "-simplify-sym-indices", "-output-module", "-max-memory=1000", "-only-output-states-covering-new" 
+                            f"-output-dir={dir_path}", "-simplify-sym-indices", "-output-module", "-max-memory=1000", "-only-output-states-covering-new",
                             "-disable-inlining", "-optimize", "-use-forked-solver", "-use-cex-cache", "-libc=uclibc", "-posix-runtime",
                             "-external-calls=all", "-max-sym-array-size=4096", "-max-solver-time=30s", f"-max-time={budget}", 
                             "-watchdog", "-max-memory-inhibit=false","-max-static-fork-pct=1", "-max-static-solve-pct=1", "-max-static-cpfork-pct=1", "-switch-type=internal", 
