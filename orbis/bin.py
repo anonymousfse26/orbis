@@ -25,22 +25,13 @@ def main(argv=None):
 
     # Execution settings
     executable = parser.add_argument_group('executable settings')
-    # executable.add_argument('--klee', default=f'{str(os.getcwd())}/../engine/klee/build/bin/klee', type=str,
-    #                         help='Path to "klee" executable (default=klee)')
-    # executable.add_argument('--klee-replay', default=f'{str(os.getcwd())}/../engine/klee/build/bin/klee-replay', type=str,
-    #                         help='Path to "klee-replay" executable (default=klee-replay)')
-    # executable.add_argument('--gen-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-bout', type=str,
-    #                         help='Path to "gen-bout" executable (default=gen-bout)')
-    # executable.add_argument('--gen-random-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-random-bout', type=str,
-    #                         help='Path to "gen-random-bout" executable (default=gen-random-bout)')
-
-    executable.add_argument('--klee', default=f'/home/minjong/scope/benchmarks/../engine/klee/build/bin/klee', type=str,
+    executable.add_argument('--klee', default=f'{str(os.getcwd())}/../engine/klee/build/bin/klee', type=str,
                             help='Path to "klee" executable (default=klee)')
-    executable.add_argument('--klee-replay', default=f'/home/minjong/scope/benchmarks/../engine/klee/build/bin/klee-replay', type=str,
+    executable.add_argument('--klee-replay', default=f'{str(os.getcwd())}/../engine/klee/build/bin/klee-replay', type=str,
                             help='Path to "klee-replay" executable (default=klee-replay)')
-    executable.add_argument('--gen-bout', default=f'/home/minjong/scope/benchmarks/../engine/klee/build/bin/gen-bout', type=str,
+    executable.add_argument('--gen-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-bout', type=str,
                             help='Path to "gen-bout" executable (default=gen-bout)')
-    executable.add_argument('--gen-random-bout', default=f'/home/minjong/scope/benchmarks/../engine/klee/build/bin/gen-random-bout', type=str,
+    executable.add_argument('--gen-random-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-random-bout', type=str,
                             help='Path to "gen-random-bout" executable (default=gen-random-bout)')
     executable.add_argument('--gcov', default='gcov', type=str,
                             help='Path to "gcov" executable (default=gcov)')
@@ -80,8 +71,8 @@ def main(argv=None):
         print('[INFO] ORBiS : following parameters are required: -t, llvm_bc, gcov_obj')
         sys.exit(1)
 
-    # args.gcov_obj = f"{str(os.getcwd())}/{args.gcov_obj}"
-    # args.llvm_bc = f"{str(os.getcwd())}/{args.llvm_bc}"
+    args.gcov_obj = f"{str(os.getcwd())}/{args.gcov_obj}"
+    args.llvm_bc = f"{str(os.getcwd())}/{args.llvm_bc}"
     output_dir = Path(args.output_dir)
     original_path = f"{str(os.getcwd())}/{args.output_dir}"
     if output_dir.exists():
