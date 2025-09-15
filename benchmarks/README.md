@@ -1,6 +1,6 @@
-# SCOPE - Benchmarks
+# ORBiS - Benchmarks
 
-Using SCOPE, you can install 15 benchmarks
+Using ORBiS, you can install 15 benchmarks
 
 | Benchmark | version | Benchmark | version | Benchmark | version | Benchmark | version |
 |:------:|:------------|:------:|:------------|:------:|:------------|:------:|:------------|
@@ -11,60 +11,60 @@ Using SCOPE, you can install 15 benchmarks
  
 
 ## Install Benchmarks
-To install a benchmark to test, use following command.
+To install a benchmark to test, use the following command.
 ```
 # Example for grep-3.4
-/scope/benchmarks$ bash building_benchmark.sh grep-3.4
+/orbis/benchmarks$ bash building_benchmark.sh grep-3.4
 ```
 
-If you want to install multiple benchmarks, you can simply list benchmarks.
+If you want to install multiple benchmarks, you can simply list them.
 ```
-/scope/benchmarks$ bash building_benchmark.sh grep-3.4 gcal-4.1 gawk-5.1.0 ...
+/orbis/benchmarks$ bash building_benchmark.sh grep-3.4 gcal-4.1 gawk-5.1.0 ...
 ```
 
 And if you want to install all 15 benchmarks, just run the following command.
 ```
-/scope/benchmarks$ bash building_benchmark.sh all
+/orbis/benchmarks$ bash building_benchmark.sh all
 ```
 
-Finally, if you want to install multiple core for a benchmark, use '--n-objs' option.
+Finally, if you want to install multiple cores for a benchmark, use the '--n-objs' option.
 ```
-/scope/benchmarks$ bash building_benchmark.sh --n-objs 10 grep-3.4
+/orbis/benchmarks$ bash building_benchmark.sh --n-objs 10 grep-3.4
 ```
 
-## Run SCOPE
+## Run ORBiS
 ### Testing Benchmarks
-After the installation is ended, you can run SCOPE with that benchmark. For more information about running SCOPE, you can access to README.md file in the parent directory (/scope).
+After the installation is ended, you can run ORBiS with that benchmark. For more information about running ORBiS, you can access the README.md file in the parent directory (/orbis).
 
 ```bash
-/scope/benchmarks $ scope -p grep -t 36000 -d SCOPE_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
+/orbis/benchmarks $ orbis -p grep -t 36000 -d ORBiS_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
 ```
-Format : scope -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)>
+Format : orbis -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)>
 
 
 ## Analyzing Results
 ### Branch Coverage
-When the experiment is completed, SCOPE provides a line graph showing how many branches were covered in each time budget section through the 'report_coverage.py' program. If you run the command below, SCOPE returns the graph by creating a 'coverage_result.png' file in the same directory.
+When the experiment is completed, ORBiS provides a line graph showing how many branches were covered in each time budget section through the 'report_coverage.py' program. If you run the command below, ORBiS returns the graph by creating a 'coverage_result.png' file in the same directory.
 ```
-/scope/benchmarks$ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST
+/orbis/benchmarks$ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST
 usage: report_coverage.py [-h] [--benchmark STR] [--graph PATH] [--budget TIME] [DIRS ...]
 ```
 
-If you want to return multiple results in a single graph, just list the names of the directories such as:
+If you want to return multiple results in a single graph, just list the names of the directories, such as:
 ```
-/scope/benchmarks$ python3 report_coverage.py --benchmark grep-3.4 SCOPE_TEST KLEEdefault ...
+/orbis/benchmarks$ python3 report_coverage.py --benchmark grep-3.4 ORBiS_TEST KLEEdefault ...
 ```
 
 ### Bug-Finding
-SCOPE also provides the "report_bugs.py" program to extract test-cases that cause system errors among those generated through the experiment. When you execute the command below, SCOPE automatically detects bug-triggering test cases. As a result of execution, SCOPE returns the test-case causing the bug, its arguments, system crash signal, and the location (file name and line) of the code where the bug occurs.
+ORBiS also provides the "report_bugs.py" program to extract test-cases that cause system errors among those generated through the experiment. When you execute the command below, ORBiS automatically detects bug-triggering test cases. As a result of execution, ORBiS returns the test-case causing the bug, its arguments, the system crash signal, and the location (file name and line) of the code where the bug occurs.
 ```
-/scope/benchmarks$ python3 report_bugs.py --benchmark grep-3.4 SCOPE
+/orbis/benchmarks$ python3 report_bugs.py --benchmark grep-3.4 ORBiS
 ```
 
-Similar to branch coverage, bug-finding also allows you to search multiple directories at once, by simply listing the directories.
+Similar to branch coverage, bug-finding also allows you to search multiple directories at once by simply listing the directories.
 
 ```
-/scope/benchmarks$ python3 report_bugs.py --benchmark grep-3.4 SCOPE_TEST1 SCOPE_TEST2 ...
+/orbis/benchmarks$ python3 report_bugs.py --benchmark grep-3.4 ORBiS_TEST1 ORBiS_TEST2 ...
 ```
 
 
@@ -81,7 +81,7 @@ Similar to branch coverage, bug-finding also allows you to search multiple direc
 
 + /benchmarks/report_bugs.py
 ```
-/scope/benchmarks$ python3 report_bugs.py --help
+/orbis/benchmarks$ python3 report_bugs.py --help
 usage: report_bugs.py [-h] [--benchmark STR] [--table PATH] [DIRS ...]
 ```
 | Option | Description |
