@@ -154,7 +154,7 @@ def main(argv=None):
         # Run symbolic executor
         parameters[symbolic_executor.get_time_parameter()] = time_budget
         parameters['-output-dir'] = str(iteration_dir)
-        testcases, runtime = symbolic_executor.run(args.llvm_bc, parameters, seeds, new_arg, f"/home/minjong/symtuner/benchmarks/{args.output_dir}", args.program, time_budget)
+        testcases, runtime = symbolic_executor.run(args.llvm_bc, parameters, seeds, new_arg, f"{os.getcwd()}/{args.output_dir}", args.program, time_budget)
 
         # Collect result
         symtuner.add(args.gcov_obj, parameters, testcases, evaluation_argument)
@@ -179,7 +179,8 @@ def main(argv=None):
         new_arg = sampler.sample()
         seeds = guider.guide(new_arg, args.gen_bout)
 
-        find_pgm_command = f"ps -u minjong -o pid,time,comm | grep {args.program}"
+        user = os.getlogin()
+        find_pgm_command = f"ps -u {user} -o pid,time,comm | grep {args.program}"
         kill_pgm_command = "awk '$2 > \"00:00:10\" {print $1}' | xargs kill"
         _ = sp.run(f"{find_pgm_command} | {kill_pgm_command}", shell=True, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
         symtuner.kill_tmp()
