@@ -23,7 +23,7 @@ Third, connect to Docker using the command below. The command will take you to a
 ### Run ORBiS
 Finally, you can run ORBiS with the following code. (e.g. grep-3.4).
 ```bash
-/orbis/benchmarks $ orbis -p grep -t 36000 -d ORBiS_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
+/orbis/benchmarks $ orbis -p grep -t 3600 -d ORBiS_TEST grep-3.4/obj-llvm/src/grep.bc grep-3.4/obj-gcov/src/grep
 ```
 Format : orbis -p <target_program> -t <time_budget> -d <output_dir> <path_to_bc_file(llvm)> <path_to_exec_file(gcov)>
 + -p : Target Program
