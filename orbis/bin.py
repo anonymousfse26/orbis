@@ -30,8 +30,6 @@ def main(argv=None):
                             help='Path to "klee-replay" executable (default=klee-replay)')
     executable.add_argument('--gen-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-bout', type=str,
                             help='Path to "gen-bout" executable (default=gen-bout)')
-    executable.add_argument('--gen-random-bout', default=f'{str(os.getcwd())}/../engine/klee/build/bin/gen-random-bout', type=str,
-                            help='Path to "gen-random-bout" executable (default=gen-random-bout)')
     executable.add_argument('--gcov', default='gcov', type=str,
                             help='Path to "gcov" executable (default=gcov)')
 
