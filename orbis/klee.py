@@ -146,7 +146,7 @@ class KLEEReplay:
                 try:
                     _, stderr = process.communicate(timeout=0.1)
                 except sp.TimeoutExpired:
-                    print(f'[WARNING] SCOPE : KLEE replay timeout: {testcase}')
+                    pass
                 finally:
                     process.kill()
 
