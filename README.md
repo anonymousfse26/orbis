@@ -87,8 +87,7 @@ Line: 3143
 ```
 $ orbis --help
 usage: orbis [-h] [--klee KLEE] [--klee-replay KLEE_REPLAY]
-             [--gen-bout GEN_BOUT] [--gen-random-bout GEN_RANDOM_BOUT]
-             [--gcov GCOV] [--init-budget INT] [--n-testcases FLOAT]
+             [--gen-bout GEN_BOUT] [--gcov GCOV] [--init-budget INT] [--n-testcases FLOAT]
              [--init-args STR] [-d OUTPUT_DIR] [--src-depth SRC_DEPTH]
              [-t INT] [-p STR]
              [llvm_bc] [gcov_obj]
@@ -172,8 +171,7 @@ Here are brief descriptions of the files. Some less-important files may be omitt
     ├── ccs21                     https://github.com/eth-sri/learch.git
     ├── icst21                    https://github.com/davidtr1037/klee-aaqc.git
     └── icse22                    https://github.com/skkusal/symtuner.git
-├── parser                        <Tool for getting option-related data>
-    └── var_tracer                Dictionary to extract (variable, values) pair data
+├── tracer                        <Tool for getting option-related data>
 └── orbis                         <Main source code directory>
     ├── bin.py                    Entry point of ORBiS
     ├── construct.py              Extracting options and option-related branches
