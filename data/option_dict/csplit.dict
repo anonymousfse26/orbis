@@ -1,4 +1,3 @@
-FORMAT:<exec> <option> <file> /<pattern>/
 --suffix-format=%02d.txt
 -b %02d.txt
 --prefix=split
