@@ -159,10 +159,10 @@ Here are brief descriptions of the files. Some less-important files may be omitt
     ├── report_coverage.py        Reporting branch coverage results
     └── report_bugs.py            Reporting bug-finding results
 ├── data                          <Saving data during experiments directory>
-    ├── constraints               Directory of option-related path conditions for program
-    ├── opt_branches              Directory of option-related branches for program
+    ├── constraints               Directory of option-related path conditions for the program
+    ├── opt_branches              Directory of option-related branches for the program
     └── option_dict               Directory of program options
-├── engine                        <Symbolic executor that interacts with ORBiS>
+├── changed                       <Changed files for each tool>
     ├── osdi08                    https://github.com/klee/klee.git
     ├── fse20                     https://github.com/kupl/HOMI_public.git
     ├── ccs21                     https://github.com/eth-sri/learch.git
@@ -194,4 +194,10 @@ $ wget https://github.com/anonymousfse26/orbis/releases/download/experiments/orb
 $ unzip orbis_experiments.zip
 ```
 
-You can access the testcase directories for 6 programs: xorriso, sqlite, gcal, find, csplit, and ls.
+You can access the test-case directories for 6 programs: xorriso, sqlite, gcal, find, csplit, and ls.
+
+Also, in each test directory, you will see the following files:
++ iteration-* : Iterations that used different option arguments and seed files.
+++ info : Log file that expresses the KLEE command for the iteration.
+++ test*.ktest : Generated test-cases for the target program. You can use the klee-replay to try each test-case.
++ coverage : Log file of elapsed time, accumulated coverage, coverage of each iteration, and used option arguments.
