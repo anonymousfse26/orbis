@@ -1,6 +1,7 @@
 import argparse
 import csv
 import os
+import pwd
 import shutil
 import sys
 import time
@@ -128,7 +129,7 @@ def main(argv=None):
         seeds = guider.guide(new_arg, args.gen_bout)
         i += 1
 
-        user = os.getlogin()
+        user = pwd.getpwuid(os.getuid()).pw_name
         find_pgm_command = f"ps -u {user} -o pid,time,comm | grep {args.program}"
         kill_pgm_command = "awk '$2 > \"00:00:10\" {print $1}' | xargs kill"
         _ = sp.run(f"{find_pgm_command} | {kill_pgm_command}", shell=True, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
