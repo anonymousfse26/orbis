@@ -8,7 +8,7 @@ import subprocess as sp
 class Extractor:
     def __init__(self, pgm, running_dir, test_dir, target, klee_bin, bout_bin):
         with open(f"{running_dir}/../data/option_dict/{pgm}.dict", "r") as option_dict:
-            self.options = [line.strip() for line in option_dict.readlines() if line[0] != "#"][1:]
+            self.options = [line.strip() for line in option_dict.readlines() if line[0] != "#"]
         self.pgm = pgm
         self.running_dir = running_dir
         self.test_dir = f"{running_dir}/{test_dir}"
