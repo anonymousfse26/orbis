@@ -20,6 +20,9 @@ Third, connect to Docker using the command below. The command will take you to a
 /orbis $ docker run -it --ulimit='stack=-1:-1' orbis
 ```
 
+If a program is tested without data in the '/orbis/data/option_dict' and '/orbis/data/opt_branches', ORBiS will fail to operate correctly and display an error. In such cases, you can use the provided tracer to generate the data files. Please refer to the README file in the 'tracer' directory for detailed instructions.
+
+
 ### Run ORBiS
 Finally, you can run ORBiS with the following code. (e.g. grep-3.4).
 ```bash
