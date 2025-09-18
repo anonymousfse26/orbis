@@ -35,15 +35,16 @@ Then, you will see logs as follows.
 ```bash
 [INFO] ORBiS : Coverage will be recorded at "ORBiS_TEST/coverage.csv" at every iteration.
 [INFO] ORBiS : All configuration loaded. Start testing.
-[INFO] ORBiS : Iteration: 1 Iteration budget: 120 Total budget: 3600 Time elapsed: 133 Next option argument: "--label" Coverage: 1553
+[INFO] ORBiS : Iteration: 1 Iteration budget: 120 Total budget: 3600 Time elapsed: 141 Used argument:  Coverage: 1711
+[INFO] ORBiS : Iteration: 2 Iteration budget: 120 Total budget: 3600 Time elapsed: 283 Used argument: -G Coverage: 2481
 ```
 
 When the time budget expires without error, you can see the following output.
 ```bash
-[INFO] ORBiS : Iteration: 29 Iteration budget: 120 Total budget: 3600 Time elapsed: 3585 Next option argument: "--null" Coverage: 3310
-[INFO] ORBiS : Iteration: 30 Iteration budget: 15 Total budget: 3600 Time elapsed: 3608 Next option argument: "--line-buffered" Coverage: 3310 
-[INFO] ORBiS : Covered 283 option related branches.
-[INFO] ORBiS : Testing done. Achieve 3310 coverage.
+[INFO] ORBiS : Iteration: 24 Iteration budget: 120 Total budget: 3600 Time elapsed: 3341 Used argument: -l Coverage: 3167 
+[INFO] ORBiS : Iteration: 25 Iteration budget: 120 Total budget: 3600 Time elapsed: 3479 Used argument: -q Coverage: 3168
+[INFO] ORBiS : Iteration: 26 Iteration budget: 120 Total budget: 3600 Time elapsed: 3625 Used argument: -c Coverage: 3169 
+[INFO] ORBiS : Testing done. Achieve 3169 coverage.
 ```
 
 
