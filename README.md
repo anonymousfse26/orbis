@@ -198,6 +198,6 @@ You can access the test-case directories for 6 programs: xorriso, sqlite, gcal, 
 
 Also, in each test directory, you will see the following files:
 + iteration-* : Iterations that used different option arguments and seed files.
-++ info : Log file that expresses the KLEE command for the iteration.
-++ test*.ktest : Generated test-cases for the target program. You can use the klee-replay to try each test-case.
+   + info : Log file that expresses the KLEE command for the iteration.
+   + test*.ktest : Generated test-cases for the target program. You can use the klee-replay to try each test-case.
 + coverage : Log file of elapsed time, accumulated coverage, coverage of each iteration, and used option arguments.
