@@ -14,6 +14,7 @@ Then, you will see the 'tracer.so' file in the same directory.
 Now, you can make the traceable execution file of the target program (e.g., ls-8.32).
 
 ```
+/orbis/tracer$ chmod +x build_pgm.sh
 /orbis/tracer$ ./build_pgm.sh -p ls -b ../benchmarks/coreutils-8.32/obj-llvm/src/ls.bc
 ```
 
