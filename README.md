@@ -174,7 +174,7 @@ Here are brief descriptions of the files. Some less-important files may be omitt
 ├── tracer                        <Tool for getting option-related data>
 └── orbis                         <Main source code directory>
     ├── bin.py                    Entry point of ORBiS
-    ├── construct.py              Extracting options and option-related branches
+    ├── construct.py              Constructing option arguments for each iteration
     ├── extract.py                Extracting options and option-related branches
     ├── guide.py                  Selecting efficient test-cases as seed 
     └── klee.py                   Interacting with symbolic executors (e.g., KLEE)
